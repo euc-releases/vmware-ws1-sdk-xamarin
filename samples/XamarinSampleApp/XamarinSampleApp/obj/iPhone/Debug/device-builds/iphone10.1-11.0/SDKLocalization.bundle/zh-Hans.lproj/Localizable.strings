@@ -1,0 +1,405 @@
+/*
+ Copyright © 2014 AirWatch, LLC. All rights reserved.
+ This product is protected by copyright and intellectual property laws in the United States and other countries as well as by international treaties.
+ AirWatch products may be covered by one or more patents listed at http://www.vmware.com/go/patents.
+ */
+
+/* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
+
+/*************  Common AW Localized strings **********/
+"UnknownServerErrorMessage" ="服务器出现了未知错误。请联系您的管理员。";
+"InvalidCredentialsTitle" = "无法验证所提供的凭证。请重试。";
+"UnknownTitle" = "未知";
+"UserCancelledOperation" = "用户取消了连接。";
+"Ok" = "确定";
+"DataSampleFailedTransmitTitle" = "DataSample 无法传输";
+"ConnectionFailureFormat" = "连接失败，状态代码为 %d";
+"ErrorAuthenticating" = "身份验证时出错";
+"LoginMessage" ="重试前，请登录";
+"EndpointUnavailable" = "您当前版本控制台上的这项请求不可用。";
+"Retry" = "重试";
+"Wipe" = "擦除";
+"Warning" = "警告";
+"DeviceNotEnrolledOrAppNotWhitelistedError" = "发生了错误。请确保您已注册并获准使用这款应用。";
+
+/*************  AWAssetTracker Localized strings **********/
+"UnableToRetrieveDeviceStatus" = "无法检索设备状态";
+"DeviceMustBeEnrolled" = "设备必须注册";
+"DeviceCheckoutFailed" = "设备签出失败";
+"ConnectionLostError" = "失去服务器连接。\n请稍后再试";
+"NetworkConnectionLost" = "失去网络连接";
+"ConnectionUnavailable" = "连接不可用";
+"DeviceNotEnrolled" = "设备尚未注册";
+"ErrorTitle" = "错误";
+"DeviceNonCompliant" = "设备不合规";
+"InvalidLocationGroup"  = "组织组无效";
+"DeviceAlreadyCheckedIn" = "设备已签入";
+"DeviceAlreadyCheckedOut" = "设备已签出";
+"InvalidCheckOutRequest" = "签出请求无效";
+"DeviceCanNotShared" = "设备不可共享";
+"UnknownErrorMessage" = "出现了未知错误。请联系您的管理员";
+"UnknownError" = "未知错误";
+
+/************ AWSDK *********/
+"UDIDiOS7CompatibiltiyError" = "设备和此环境不兼容。请联系您的系统管理员请求进一步协助。错误代码%d";
+"AWSDKInitializationError" = "连接服务器时出错。请联系您的系统管理员请求进一步协助。错误代码%d";
+"AgentInitializationError" = "发生错误。请重新注册您的设备。如需进一步协助，请联系您的系统管理员。错误代码%d";
+"CompatibilityVerifiedTitle" = "已验证兼容性";
+"CompatibilityVerifiedMessage" = "已验证与服务器兼容。";
+"NotEnrolledOrNotCompliant" = "设备尚未注册或与此环境不兼容。请联系您的 IT 管理员请求进一步协助。";
+
+/*************  AWClaimedAuthenticationViewController Localized strings **********/
+"Office365NavBarTitle" = "Office 365";
+
+/*************  AWCompliance Localized strings **********/
+"AWComplianceFailedToStart" = "无法启动 AW 合规";
+
+
+/*************  AWContentController Localized strings **********/
+"BadRequestURL" = "URL 请求错误";
+"RequestCauseServerConflict" = "请求造成服务器冲突";
+"InvalidSessionTokenError" = "无效会话令牌错误";
+"ServerCommunicationError" = "服务器通信错误";
+
+
+/*************  AWDataSamplerTransmitter Localized strings **********/
+
+
+/*************  AWEnrollmentAccountAuthenticator Localized strings **********/
+"InvalidCredentialsErrorTitle" = "凭证无效。请检查您的登录信息和组 ID，然后重试。";
+"InvalidActivationCodeErrorMessage" = "提供的组 ID 无效。请重试。";
+"InvalidServerURLErrorMessage" = "提供的 服务器 URL 无效。请重试。";
+"DeviceNotFoundErrorMessage" = "在 AirWatch 实例上没有找到设备。请在尝试使用 Secure Content Locker 前注册设备。";
+"DeviceNotEnrolledErrorMessage" = "设备没有在 AirWatch 实例上注册。请在尝试使用 Secure Content Locker 前注册设备。";
+"DeviceMismatchErrorMessage" = "设备没有使用本 AirWatch 用户账户注册。";
+"AccountLockedErrorMessage"                 = "您的账户被锁定在 LDAP/Airwatch 之外，请向管理员查询";
+"InActiveErrorMessage"                      = "您的帐户已在 AirWatch 控制台停用，请向管理员查询";
+"NotMDMEnrolledErrorMessage"                = "用户尝试登录到需要 MDM 注册的环境，请向管理员查询";
+"InvalidTokenErrorMessage"                  = "用户尝试以过期令牌或不存在的令牌登录，请向管理员查询";
+"DeviceNotFoundErrorMessage"                = "找不到设备，请向管理员查询";
+"SyncClientNotEnabledErrorMessage"          = "同步客户端未启用，请向管理员查询";
+"PersonalContentNotEnabledErrorMessage"     = "个人内容未启用，请向管理员查询";
+"AwchatNotEnabled"                          = "AWChat 未启用，请向管理员查询";
+"AccountLockedOutError"                     = "此帐户已被锁定。";
+"InactiveAccountError"                      = "此帐户尚未被激活。";
+"MDMEnrollmentRequiredError"                = "此 AirWatch 实例需要 MDM 注册。";
+"InvalidTokenError"                         = "提供了无效令牌。";
+"ConfigurationError"                        = "出现了配置错误。";
+
+
+/*************  AWHTTPRequestOperation Localized strings **********/
+"UnexpectedStatusCodeFormat" = "收到了意外的%d状态代码";
+"UnexpectedContentTypeFormat"  = "预期的内容类型%@，实际内容类型则为%@";
+
+
+/*************  AWLog Localized strings **********/
+"NoDeviceLogsToSend" = "没有要发送的设备日志";
+"NoCrashLogsToSend" = "没有要发送的故障日志";
+"EmptyLogFile" ="日志文件空白";
+"NoLogsForSeverityGreaterOrEqualConfiguredLevel"   = "日志记录不含严重程度高于或等于所配置程度的条目。";
+"FailedToSendLogData" = "发送日志数据失败。";
+"WiFiConnectionError" = "连接 WI-FI 网络，或联系您的系统管理员。";
+"NeedsWiFiToSendLogData" ="AW 控制台需要建立 WI-FI 连接才能发送日志数据。";
+
+/*************  AWRestrictions Localized strings **********/
+"AWRestrictionsFailedToStart" = "AWRestrictions 启动失败";
+
+
+/*************  AWSecureChannelWrapper Localized strings **********/
+"SecureChannelServerCertErr" = "服务器证书加密错误";
+"SecureChannelHandshakeFailed"  = "握手失败";
+"FailedToGetToken"  = "无法签出设备。请重试或联系管理员。";
+"FailedToInvalidateToken" = "无法使令牌失效。";
+
+
+/*************  UIDevice+Power Localized strings **********/
+"UIDeviceBatteryStateFullMessage" = "充满";
+"UIDeviceBatteryStateChargingMessage" = "正在充电";
+"UIDeviceBatteryStateUnpluggedMessage" = "拔除电源";
+
+
+/*************  AWProxy Localized strings **********/
+"TheProxyConfigurationIsMissing" = "缺少代理服务器配置";
+"CheckServerConfigurationPropertyHasBeenSetAndValidObject" = "请确保服务器配置属性已设置完毕并且是有效对象";
+"ServerConfigurationPropertyHasNotBeenSet" = "尚未设置服务器配置属性";
+"ProxyConfigurationIsInvalid" = "代理服务器配置无效";
+"CheckServerConfigurationTypeIsSet" = "请确保已设置服务器配置类型";
+"ServerConfigurationTypeIsUnknown" = "服务器配置类型未知";
+"FailedToRegisterWithNSURLProtocol" = "注册 NSURLProtocol 失败";
+"CheckTheClassYouAreRegisteringIsSubclassOfNSURLProtocol" = "请确保您所注册的类属于 NSURLProtocol 的子类";
+"TheClassYouAttemptedToRegisterIsNotSubclassOfNSURLProtocol" = "您试图注册的类不属于 NSURLProtocol 的子类";
+
+
+/*************  AWProxy Localized strings **********/
+"FailedToSignRequest" = "签字请求失败";
+"MAGAuthCertificateNotStoredOnTheDevice,OrItIsInvalid" = "没有在设备上存储 MAG 授权证书，或该证书无效。";
+"ProxyAuthenticationRequired" = "需要代理服务器身份验证。";
+"InvalidAuthenticationForProxy" = "为代理服务器提供的身份验证无效。";
+"CheckAuthenticationCredentialsAndTryAgain" = "请检查您的身份验证凭证，然后重试。";
+"MissingDeviceRootCertificate" = "缺少设备根证书";
+"AnActivationCode(LG)WasNeverSaved" = "从未保存激活码（组织组）。";
+"FailedToGetPACscript" = "获取 PAC 脚本失败。";
+"SetAutoConfigURLProperty" = "设置自动配置 URL 属性。";
+"AutoConfigURLPropertyIsNotSet" = "尚未设置自动配置 URL 属性。";
+"MakeSureForValidScriptLocatedAtAutoConfigURL" = "请确保指定的自动配置 URL 内有一个有效的脚本。";
+"FailedToDecodeAutoConfigUrlRetrievedData" = "无法对从自动配置 URL 检索到的数据进行解码。";
+"FailedToRetrievedAutoConfigUrlData" = "无法从自动配置 URL 中检索数据。";
+"MakeSurePACURLisValid" = "请确保 PAC URL 有效。";
+"ErrorAlertProxy" = "配置 MAG 时发生故障。请检查您的 MAG 设置。";
+
+/********************** AWPasscode Handler ************/
+"Dismiss"    = "解除";
+"CurrentPassword" = "当前密码";
+"NewPassword"  = "新密码";
+"ReenterNewPassword" = "重新输入新密码";
+"Change"            = "更改";
+"Cancel"            = "取消";
+"Enteryourpasscode:" = "请输入您的密码：";
+"Passcode"          = "密码";
+"Login"             = "登录";
+"Notice"            = "通知";
+"Passworddoesnotmatch" = "您输入的新密码不匹配。";
+"OK"                = "确定";
+"EnterPasscodeError" = "请输入新密码";
+"ReenterPasscodeError" = "请重新输入新密码";
+"Passworddonotcomplyrestriction"  = "您的密码不符合限制规定。";
+"MaximumPasscodeAttemptsMessage" = "您已达到失败尝试次数上限。将对您的设备执行企业擦除。";
+"MaximumPasscodeAgeHasExpired" = "您当前的密码已过期。请新建一个密码。";
+"PasscodePolicyViolation" = "请参考密码策略来设置一个密码。";
+"MaximumPasscodeAttemptsMessageForApplication" = "您已达到失败尝试次数的上限。您的应用程序数据将被擦除。";
+
+"AttemptsLeftMessage" = "您还有%d次尝试机会";
+"IncorrectPasscodeEntered" = "输入的密码不正确";
+"BackOffMessage"  = "您的应用被禁用。请在%d秒内再试";
+"NonSimplePasscode" =   "您的密码不得为简单密码。";
+"AlphanumericPasscodeRequired" = "您的密码不是字母数字密码。";
+"NumericPasscodeRequired" = "您的密码不是数字密码";
+"MimimumPasscodeLength"   = "您的密码应当至少含有%d个字符。";
+"MimimumComplexCharacters"= "您的密码应当至少含有%d个复杂字符。";
+"ExpiredPasscode"         = "此密码以前使用过。请输入一个不同的密码。";
+"EnterYourPin"            = "创建密码";
+"PinCreationMessage"      = "此密码将被用于登录本应用。";
+"CreatePin"               = "请设置密码";
+"PasscodeDidntMatch"      = "密码不匹配，请重新输入";
+"Continue"                = "继续";
+"EnterAPin"               = "请输入一个 PIN 码";
+"Pin"                     = "PIN";
+"ConfirmPin"              = "确认 PIN 码";
+"ConfirmPasscode"         = "确认密码";
+"RetrievingOldPasscode"   = "正在检索您的旧密码...";
+"NotValidCredentials"     = "无效凭证！";
+"OldPasscodeCannotBeEmpty"   = "旧密码字段不能为空";
+"PasscodeCannotBeEmpty"   = "新密码字段不能为空";
+"ForgotPasscode"          = "忘记密码？";
+"ReEnterNewPasscode"      = "重新输入新密码";
+"PasscodeRestriction"     = "密码限制";
+"PasscodePolicyInitial"   = "您的密码应当 \n";
+"PasscodePolicyNumeric"   = "至少有%d个数字\n";
+"PasscodePolicySimple"    = "不能重复或按升序/降序排序";
+"PasscodePolicyAplhaNumeric"    =   "长度至少为%d个字符";
+"PasscodePolicyAplhaNumeric2"   =   "至少有一个数字和一个字母";
+"PasscodePolicyComplexChar"     =   "以及%d个符号";
+"Create" = "创建";
+"AttemptLeftMessage" = "您还有%d次尝试机会";
+
+/********************** Offline Access *******************/
+"OfflineAccessNotAllowed"       = "脱机访问受一定限制。请连接到互联网后再访问有关资源。";
+"OfflineAccessDurationExceeded" = "您已达到脱机访问的时限。请连接到互联网后再访问有关资源。";
+"OfflineMessage" = "您需要处于联机状态才能使用此功能。";
+
+/********************** Command Processor *******************/
+"NoProfilesAvailableForRepublish" = "没有可用于重新发布的配置文件。";
+
+/*************AWEnrollmentAuthenticationViewController**********/
+"CompleteAllFieldsAlertMessage"="请填满所有字段，然后重试。";
+"AuthenticatingTitle" = "正在验证";
+"ErrorAlert"="请提供一个 AirWatch 设备服务网址再继续。";
+"DeviceNotEnrolledAlertMessage"="此设备当前尚未注册。您现在要注册吗？";
+"ErrorAlertServerUnreachable"= "目前似乎无法访问服务器。请稍后再试。";
+
+/************* AWAuthorizeTokenView**********/
+"AuthorizationToken" ="授权令牌";
+"WorkOnline" = "联机工作";
+
+"Username"="用户名";
+"Password" = "密码";
+
+/************* Passcode Rules - AWEnrollmentCreatePinViewController **********/
+"YourPasscodeShould" = "您的密码应当：";
+"NumericPasscodeLengthInstruction" = "\n - 至少有 （%d） 个数字";
+"DontAllowSimpleNumericPasscodeInstrution" = "\n - 不能重复或按升序/降序排序";
+"AlphaNumericPasscodeLengthInstruction" = "\n - 至少为 （%d） 个字符长";
+"AlphaNumericSimplePasscodeInstrution" = "\n - 至少有 (1) 个数字和 (1) 个字母";
+"ComplexSymbolsRequiredInstruction" = " 以及 （%d） 个符号";
+"DontAllowSimpleAlphanumericInstrution" = "\n - 不能有重复或按升序/降序排序的字符";
+"PasscodeHistoryInstruction" = "\n- 与最后（%d）个密码不匹配。";
+
+/******************************* SAML Error Handling *******************************************/
+"PleaseContactYourAdminstrator" = "请联系您的管理员。";
+
+/******************************* AWAuthenticationViewController *******************************************/
+"UsernamePasswordRememberMe" = "记住用户名？";
+
+/******************************* AWServerDetailsViewController *******************************************/
+"Success" = "成功";
+"ChangeServerDetailsTitle" = "服务器详细信息";
+"ConfirmChangeServerDetails" = "您确定要更改服务器的明细吗？这样做的后果是应用程序数据被删除";
+"ChangeServerDetailsMessage" = "服务器详细信息更改成功";
+"ScanQRCodeTitle" = "扫描二维码以填写表格";
+"ServerURLPlaceholder" = "https://example.com";
+"GroupID" = "组 ID";
+"InvalidQRCodeErrorMessage" = "无效二维码。请使用有效的二维码重试";
+"QRCodeScanErrorMessage" = "二维码扫描失败。请重试";
+"ServerURLConnectionError" = "连接到服务器时出错。请检查您的网络连接或者联系您的系统管理员";
+"EmptyServerDetailsErrorMessage" = "请输入有效服务器 URL 和组 ID";
+
+"AWDeleteReInstall" = "删除并重新安装之后，您必须建立与 AirWatch 服务器之间的活跃网络连接才能继续。";
+
+/*****************  Touch ID Authentication  ************************************/
+"UseTouchID" = "使用 Touch ID";
+"AuthenticateForAccess" = "进行访问验证";
+
+"CryptKeyRetrievalFromTouchIDFailedPasscodeMessage" = "设备上的指纹列表显示为已更改。为安全起见，请重新输入您的密码以再次启用使用 TouchID。";
+"CryptKeyRetrievalFromTouchIDFailedCredentialsMessage" = "设备上的指纹列表显示为已更改。为安全起见，请重新输入您的凭证以再次启用使用 TouchID。";
+
+/********* Compromised Blocker View *********/
+"AWCompromiseBlockerMessageWhenNoNetwork" = "您的设备被破解（被越狱），并且由于网络连接问题，您无法访问该应用程序。";
+
+
+/*************  Common AW Localized strings **********/
+"TryAgain"= "重试";
+"of"= "/";
+"No"= "否";
+"YesTitle"="是";
+"Accept"="接受";
+"DeleteTitle"="删除";
+"CancelTitle"="取消";
+"SubmitTitle" = "提交";
+"PageNoTitle"="第%d页";
+"MarkUnreadtitle" = "标为未读";
+"MarkReadTitle" = "标为已读";
+"MarkAction" = "操作";
+"DeleteAllTitle"="全部删除";
+"Prev" = "上一步";
+"Next" = "下一步";
+
+/*******************AWTableViewController********************************************/
+"ReleaseTitle"= "释放以刷新";
+"LoadingLabel"="Loading..." ;
+"RefreshTitle"="下拉以刷新";
+
+/*************AWDocumentContainerView**********/
+"BookmarkedPagesTitle"= "已加入书签的页面";
+"AllPagesTitle" ="所有页面";
+
+/************* AWDocumentInteractionController**********/
+"AccessAlertMessage" = "管理员不允许在这款应用中打开这份文档。";
+"WarningMessageTitle"="警告";
+
+/************* AWDocumentSearchView**********/
+"EnterSearchText" = "输入搜索文字";
+
+/*************AWEULAViewController**********/
+"DeclineTitle" = "拒绝";
+"TermsOfUse" = "使用条款";
+"Back" = "返回";
+
+/*************AWMessageDetailViewController**********/
+"ComplianceCheckTitle"="必须进行合规检查";
+"ComplianceCheckSentTitle" = "合规检查已发送";
+"DeleteMessageTitle" = "删除消息";
+"ConfirmDeleteMessageTitle" = "永久删除消息日志？";
+"MessageDetailSectionTitle" = "消息明细";
+"ConsoleMessageTitle" = "控制台消息";
+"MessageActionSectionTitle" = "操作";
+
+/*************AWMessageTypesViewController**********/
+"MessageTypesTitle"="消息类型";
+"TableCellAllMessages"="所有消息";
+"TableCellCompliance"="合规";
+"TableCellUserAgreement"="使用条款";
+"TableCellAppCatalog"="应用目录";
+"TableCellMessages"="消息";
+
+/*************AWMessageViewController**********/
+"AllTitle" = "全部";
+"UnreadTitle" = "未读";
+"ReadTitle" = "已读";
+"NoMessagesTitle" = "没有消息";
+"MarkAllTitle" = "全部标记";
+"MarkItemsTitle"= "标记";
+"DeleteMessagesTitle"="删除消息";
+"ConfirmDeleteMessages"= "永久删除所选的消息吗？";
+"Messages" = "消息";
+
+/**********AWPDFDocumentDocument**********/
+"PasswordAlertTitle" = "文档密码";
+
+/**********AWPDFOutlineViewCell**********/
+"NoTitle" = "（无标题）";
+
+/**********AWPDFSearchViewController**********/
+"SearchViewTitle"="搜索文档";
+"HeaderSectionHitNumber"="( %d )";
+"HeaderSectionTOCTitle"= "%@";
+"HeaderSectionPageAndHitNumber" ="第%d ( %d )页";
+"ExpandAllTitle"= "全部展开";
+"CollapseAllTitle"= "全部折叠";
+"SortByHitTitle" = "按点击率排序";
+"SortByPageTitle" = "按页排序";
+"PauseTitle"= "暂停";
+"ResumeTitle" = "恢复";
+"DoneTitle"= "完成";
+"NoResultTitle"="没有找到结果";
+"SearchCompleteTitle"= "搜索完毕";
+"SearchingPageMessageTitle"= "Searching page %i..." ;
+
+/**********AWServerPathView**********/
+"ServerPath"="服务器路径";
+
+/**********AWServerSetupController**********/
+"UrlTitle"="URL";
+"URLPlaceholder" ="https://example.com";
+"GroupIDPlaceholder"="ID 示例";
+"InvalidURLAlert"="输入的 URL 似乎不是一个有效的 URL。";
+
+/**********AWTabBar*******************/
+"NewTab" = "新标签页";
+
+/* RSA Adaptive Auth */
+
+"BlankAnswerErrorMsg" = "PIN 字段不能为空。请输入您的 PIN 再继续。";
+"WrongAnswerLengthErrorMsg"  = "PIN 长度无效。您的 PIN 长度应当在 %lu 和 %lu 个字符之间。";
+
+
+"AnswerPlaceHolderPinAndSecureIDToken" = "请输入您的 PIN 和 SecurID 令牌。";
+"AnswerPlaceHolderNewPin" = "PIN";
+
+"ChallengeServerError" = "服务器错误。请联系您的管理员。";
+"ChallengeLocked" = "您的账户已被锁定。请联系您的管理员。";
+"ChallengeNextTokenAuth" = "请输入您的 PIN 和下一个 SecurID 令牌";
+"ChallengeNextTokenAuthAfterNewPinSet" = "请输入您的 PIN 和 SecurID 令牌";
+"ChallengeNewPinFromSystem" = "输入 PIN：";
+"ChallengeNewPinFromUser" = "输入新 PIN";
+"ChallengeTokenAuth" = "输入您的 PIN 和 SecurID 令牌。如果您尚未设置 PIN，请仅输入您的 SecurID 令牌。";
+
+/*************  AW Localized strings for Errors **********/
+"ApplicationRegistrationDidNotComplete" = "验证应用程序请求时出错";
+
+/************ AW Certificate Pinning *************/
+"AutodiscoveryPublicKeyAuthenticationFailureMessage" = "尝试从自动发现中提取证书时，AW-SDK 发生公钥身份验证失败";
+"EnrollmentServerPublicKeyAuthenticationFailureMessage" = "尝试与设备服务通信时，AW-SDK 发生公钥身份验证失败";
+
+/* SAML Authentication */
+"SAMLVerificationUnavailableErrorMessage" = "SAML 被应用程序禁用。请启用后再试。";
+"SAMLVerificationInvalidGroupIDErrorMessage" = "组 ID 无效";
+"SAMLVerificationInvalidServerURLErrorMessage" = "服务器 URL 无效";
+"SAMLVerificationNoServerResponseErrorMessage" = "服务器无响应";
+"SAMLVerificationNoRedirectURLErrorMessage" = "服务器没有返回服务提供者 URL";
+"LogoutMessage" = "您已注销";
+"SAMLIDPAuthenticationMessage" = "正在与标识提供者进行身份验证";
+"SAMLContactingSPMessage" = "正在联系服务提供商";
+"SAMLAuthenticationCancelledMessage" = "用户已取消身份验证。请重试。";
+
+/* Intercept Links */
+"TargetAppNotInstalledMessage" = "您设备上没有安装允许的应用来执行%@操作。";

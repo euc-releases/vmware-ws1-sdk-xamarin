@@ -1,0 +1,1 @@
+# XamarinSampleApp license

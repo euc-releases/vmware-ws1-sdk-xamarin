@@ -1,0 +1,516 @@
+Function=xamarin_timezone_get_data
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_GetFolderPath
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_log
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/mscorlib.dll
+Function=UIApplicationMain
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_get_block_descriptor
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/Xamarin.iOS.dll
+Function=CreateZStream
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/System.dll
+Function=CloseZStream
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/System.dll
+Function=Flush
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/System.dll
+Function=ReadZStream
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/System.dll
+Function=WriteZStream
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/System.dll
+Function=xamarin_start_wwan
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/System.dll
+ObjectiveCClass=OBJC_CLASS_$_ApplicationInfo
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWAction
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWAlertController
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWAlertHandler
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWAnalytics
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWAnalyticsPayload
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWAnchorHelper
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWAppCatalog
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWAppCatalogApplication
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWApplicationAuthenticate
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWApplicationList
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWAppSnapshotController
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWAssetTracker
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWAuthenticationMainViewController
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWAuthenticationPayload
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWAutoDiscover
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWBarCodeViewController
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWBaseMessage
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWBatteryMonitoring
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWBeacon
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWBeaconPayload
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWBeaconTransmitter
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWBeaconUtility
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWBinaryStorageHelper
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWBlockerView
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWBranding
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWBrandingFetchURLImage
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWBrandingPayload
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWBufferedEncryptor
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCallLog
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCallLogManager
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCertificateCredentials
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCertificateHandler
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCertificatePayload
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCertificateTrust
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCertPin
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCertStore
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWClearPasscodeCommand
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWClearSSOPasscodeCommand
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWClipboard
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCommand
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCommandFactory
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCommandManager
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCommandProcessor
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCommandResponse
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCommandTypes
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCommonIdentityManager
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCommunication
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCompliance
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCompliancePayload
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCompliancePolicy
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCompliancePolicyManager
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCompromisedCompliancePolicy
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCompromisedDeviceViewController
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWConnection
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWConsoleLog
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWContainer
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWContentFilter
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWContentFilterHandler
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWContentFilteringPayload
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWController
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWControllerUtility
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCrashLogReporter
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCrashTracker
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCreatePassCodeViewController
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCrypt
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCryptDetails
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCryptHeader
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCryptHelper
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWCustomPayload
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDataCollectionDelegate
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDataLog
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDataPayload
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDataSampler
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDataSamplerAnalyticsModule
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDataSamplerAnalyticsSample
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDataSamplerApplicationModule
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDataSamplerApplicationSample
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDataSamplerConfiguration
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDataSamplerDataUsageModule
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDataSamplerGPSModule
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDataSamplerGPSSample
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDataSamplerHTTPTransmitter
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDataSamplerMemorySample
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDataSamplerModule
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDataSamplerNetworkAdapterInfoSample
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDataSamplerNetworkAdapterModule
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDataSamplerPacket
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDataSamplerPayload
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDataSamplerPowerSample
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDataSamplerSample
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDataSamplerSystemInfoSample
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDataSamplerSystemModule
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDataSamplerTransmitter
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDataSamplerWLan2Module
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDataUsageConfiguration
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDataUsageManager
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDefaultSegue
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDefaultUnwindSegue
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDeviceDNDStatus
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDeviceInfo
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDeviceInfoController
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDeviceLockCommand
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDeviceStatusConfiguration
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDeviceStatusController
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDeviceStatusJSONProcessor
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDeviceUnEnrollmentProcessor
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDigest
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDigestDetails
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDocumentInteractionController
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWDynamicRotationNavigationController
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWEncryptedFileHeader
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWEnrollmentAccount
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWEnrollmentAccountAuthenticator
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWEnrollmentAuthenticationCredentialsTypes
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWEraseDeviceCommand
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWEVValidationViewController
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWFileManager
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWFileProtection
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWFIPSHelper
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWGeofence
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWGeofenceArea
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWGeofencePayload
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWGzip
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWHandler
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWHMAC
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWHMACHelper
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWHUDView
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWIdentityPayload
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWInstallContentCommand
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWInstallProfileCommand
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWIntegratedAuthPayload
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWIntegrationServicesPayload
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWJSONSerialization
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWKeychain
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWKeyData
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWKeyStore
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWLocationService
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWLockSSOCommand
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWLog
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWLoggingPayload
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWLogInsightTransmitter
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWLogModule
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWLogTransmitter
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWMDMInformationController
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWMessageLog
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWMessageLogManager
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWMutableURLRequest
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWNAPPSAppAccessTokenRequest
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWNAPPSAppAccessTokenResponse
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWNAPPSAuthWebViewController
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWNAPPSController
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWNAPPSLoadingViewController
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWNAPPSRegister
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWNAPPSRegisterRequest
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWNAPPSRegisterResponse
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWNetworkAccessHandler
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWNetworkAccessPayload
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWNetworkActivityIndicator
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWNetworkAdapter
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWNetworkConnection
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWNIAPPolicySignatureValidator
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWNIAPPolicySigningCertificateFetchHelper
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWNIAPTLSClientAuthenticationHelper
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWOfflineAccessPayload
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWOfflinePolicyHandler
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWPasscodeCompliance
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWPasscodeCompliancePolicy
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWPasscodeUtility
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWProfile
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWProfileGroup
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWProfilePayload
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWProfileRetriever
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWProfileSetting
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWProfileStore
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWProxy
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWProxyCertService
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWProxyConnection
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWProxyHandler
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWProxyPayload
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWReachability
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWReadyMessagePayload
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWRegistrationRequestHandler
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWRemoveApplicationProfilesCommand
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWRemoveContentCommand
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWRequestCertificatesCommand
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWRequestProfilesCommand
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWRequestSigner
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWResetAppPasscodeCommand
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWRestrictions
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWRestrictionsPayload
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWRSAAdaptiveAuthViewController
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSafariController
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSAMLVerifier
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSampleHandler
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSchemeResolver
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWScreenCaptureCommand
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSDK
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSDKAppProfileRetriever
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSDKContainerStatus
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSDKContext
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSDKEnroller
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSDKLocalizationBundle
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSDKLogoutViewController
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSDKMessageViewController
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSDKPasteboard
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSDKPresentation
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSecPacket
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSecRSAWrapper
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSecureMessageHelper
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSecureRequestWrapper
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSecureStorageHelper
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSecurityWrapper
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWServer
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWServerDetailsViewController
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWServerSetup
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWServiceSetIdentifier
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSession
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSettingsDataController
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSettingsHandler
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSharedCommandHandler
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSignatureCache
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSignatureCacheEntry
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSSLPinningManager
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSSLPinningPayload
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSSOCommunication
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSSOHMACCredential
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSSORequest
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSSOResponse
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSSOSecurityHelper
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSSOSessionInfo
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWSyncHelper
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWTermsOfUse
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWTextViewDisable
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWUnderlineTextButton
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWUploadLogsCommand
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWUploadLogsCommandExecuter
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWURLCertChallengeHandler
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWURLChallengeHandler
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWURLConnection
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWURLCredentialChallengeHandler
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWURLCredentials
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWURLRedirectValidator
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWUtility
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_AWWebsiteFilteringPayload
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+ObjectiveCClass=OBJC_CLASS_$_BaseCommandHandler
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache/Link/AirWatchSDK.dll
+Function=mono_pmip
+Function=mono_profiler_startup_log

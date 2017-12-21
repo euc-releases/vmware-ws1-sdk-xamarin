@@ -1,0 +1,405 @@
+/*
+ Copyright © 2014 AirWatch, LLC. All rights reserved.
+ This product is protected by copyright and intellectual property laws in the United States and other countries as well as by international treaties.
+ AirWatch products may be covered by one or more patents listed at http://www.vmware.com/go/patents.
+ */
+
+/* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
+
+/*************  Common AW Localized strings **********/
+"UnknownServerErrorMessage" ="Ett okänt serverfel har inträffat. Kontakta din administratör.";
+"InvalidCredentialsTitle" = "De angivna autentiseringsuppgifterna kan inte valideras. Försök igen.";
+"UnknownTitle" = "Okänd";
+"UserCancelledOperation" = "Användaren avbröt anslutningen.";
+"Ok" = "OK";
+"DataSampleFailedTransmitTitle" = "Datasampel kunde inte överföras";
+"ConnectionFailureFormat" = "Anslutningen misslyckades med statuskoden %d";
+"ErrorAuthenticating" = "Fel vid autentisering";
+"LoginMessage" ="Logga in innan du försöker igen";
+"EndpointUnavailable" = "Denna förfrågan är inte tillgänglig i nuvarande konsolversion.";
+"Retry" = "Försök igen";
+"Wipe" = "Rensa";
+"Warning" = "Varning";
+"DeviceNotEnrolledOrAppNotWhitelistedError" = "Ett fel inträffade. Kontrollera att du är registrerad och har behörighet att använda den här appen.";
+
+/*************  AWAssetTracker Localized strings **********/
+"UnableToRetrieveDeviceStatus" = "Kunde inte hämta enhetsstatus";
+"DeviceMustBeEnrolled" = "Enheten måste vara registrerad";
+"DeviceCheckoutFailed" = "Utcheckning av enhet misslyckades";
+"ConnectionLostError" = "Anslutning till servern förlorades.\nFörsök igen.";
+"NetworkConnectionLost" = "Nätverksanslutningen har förlorats";
+"ConnectionUnavailable" = "Anslutningen är inte tillgänglig";
+"DeviceNotEnrolled" = "Enheten är inte registrerad";
+"ErrorTitle" = "Fel";
+"DeviceNonCompliant" = "Enheten har säkerhetsbrister";
+"InvalidLocationGroup"  = "Organisationsgruppen är inte giltig";
+"DeviceAlreadyCheckedIn" = "Enheten är redan incheckad";
+"DeviceAlreadyCheckedOut" = "Enheten är redan utcheckad";
+"InvalidCheckOutRequest" = "Ogiltig utcheckningsförfrågan";
+"DeviceCanNotShared" = "Enheten kan inte delas";
+"UnknownErrorMessage" = "Ett okänt fel har inträffat. Kontakta din administratör";
+"UnknownError" = "Okänt fel";
+
+/************ AWSDK *********/
+"UDIDiOS7CompatibiltiyError" = "Enheten är inte kompatibel med denna miljö. Kontakta din systemadministratör för hjälp. Felkod %d";
+"AWSDKInitializationError" = "Anslutningsfel till servern. Kontakta din systemadministratör för hjälp. Felkod %d";
+"AgentInitializationError" = "Ett fel har inträffat. Du måste registrera enheten på nytt. Kontakta din systemadministratör om du behöver hjälp. Felkod %d";
+"CompatibilityVerifiedTitle" = "Kompatibiliteten har kontrollerats";
+"CompatibilityVerifiedMessage" = "Serverkompatibiliteten har kontrollerats.";
+"NotEnrolledOrNotCompliant" = "Enheten är oregistrerad eller inte kompatibel med miljön. Kontakta din IT-administratör.";
+
+/*************  AWClaimedAuthenticationViewController Localized strings **********/
+"Office365NavBarTitle" = "Office 365";
+
+/*************  AWCompliance Localized strings **********/
+"AWComplianceFailedToStart" = "AWCompliance kunde inte startas";
+
+
+/*************  AWContentController Localized strings **********/
+"BadRequestURL" = "Webbadress för felaktig förfrågan";
+"RequestCauseServerConflict" = "Begäran orsakar en serverkonflikt";
+"InvalidSessionTokenError" = "Fel p.g.a ogiltig sessionstoken";
+"ServerCommunicationError" = "Fel uppstod med serverkommunikationen";
+
+
+/*************  AWDataSamplerTransmitter Localized strings **********/
+
+
+/*************  AWEnrollmentAccountAuthenticator Localized strings **********/
+"InvalidCredentialsErrorTitle" = "Ogiltiga inloggningsuppgifter. Kontrollera dina inloggningsuppgifter och ditt grupp-ID och försök igen.";
+"InvalidActivationCodeErrorMessage" = "Ett ogiltigt grupp-ID har angetts. Försök igen.";
+"InvalidServerURLErrorMessage" = "Ett ogiltigt grupp-ID har angetts. Försök igen.";
+"DeviceNotFoundErrorMessage" = "Enheten kunde inte hittas i AirWatch. Registrera enheten om du vill använda Content Locker.";
+"DeviceNotEnrolledErrorMessage" = "Enheten är inte registrerad i Airwatch. Registrera enheten om du vill använda Content Locker.";
+"DeviceMismatchErrorMessage" = "Enheten är inte registrerad i AirWatch med det här användarkontot.";
+"AccountLockedErrorMessage"                 = "Ditt konto har uteslutits från LDAP/Airwatch. Kontakta din IT-administratör.";
+"InActiveErrorMessage"                      = "Ditt konto har avaktiverats i AirWatch-konsolen. Kontakta din IT-administratör.";
+"NotMDMEnrolledErrorMessage"                = "Du har försökt ansluta till en miljö som kräver MDM-registrering. Kontakta din IT-administratör.";
+"InvalidTokenErrorMessage"                  = "Du har försökt ansluta utan token eller med förfallen token. Kontakta din IT-administratör.";
+"DeviceNotFoundErrorMessage"                = "Enheten hittades inte. Kontakta din IT-administratör.";
+"SyncClientNotEnabledErrorMessage"          = "Synkklienten är inte aktiverad. Kontakta din IT-administratör.";
+"PersonalContentNotEnabledErrorMessage"     = "Personligt innehåll är inte aktiverat. Kontakta din IT-administratör.";
+"AwchatNotEnabled"                          = "AWChat är inte aktiverad. Kontakta din IT-administratör.";
+"AccountLockedOutError"                     = "Det här kontot är låst.";
+"InactiveAccountError"                      = "Det här kontot har inte aktiverats.";
+"MDMEnrollmentRequiredError"                = "MDM-registrering är nödvändig för den här Airwatch-instansen.";
+"InvalidTokenError"                         = "En ogiltig token angavs.";
+"ConfigurationError"                        = "Ett konfigurationsfel inträffade.";
+
+
+/*************  AWHTTPRequestOperation Localized strings **********/
+"UnexpectedStatusCodeFormat" = "Mottog den oväntade statuskoden %d";
+"UnexpectedContentTypeFormat"  = "Förväntad innehållstyp %@, har %@";
+
+
+/*************  AWLog Localized strings **********/
+"NoDeviceLogsToSend" = "Det finns inga enhetsloggar att skicka";
+"NoCrashLogsToSend" = "Det finns inga kraschloggar att skicka";
+"EmptyLogFile" ="Loggfilen är tom.";
+"NoLogsForSeverityGreaterOrEqualConfiguredLevel"   = "Loggen innehåller inga poster med en allvarsgrad som är högre eller lika med den konfigurerade nivån.";
+"FailedToSendLogData" = "Loggdata kunde inte skickas.";
+"WiFiConnectionError" = "Anslut till ett trådlöst nätverk eller kontakta din systemadministratör.";
+"NeedsWiFiToSendLogData" ="AirWatch-konsolen kräver Wi-Fi-anslutning för att loggdata ska skickas.";
+
+/*************  AWRestrictions Localized strings **********/
+"AWRestrictionsFailedToStart" = "AWRestrictions kunde inte starta";
+
+
+/*************  AWSecureChannelWrapper Localized strings **********/
+"SecureChannelServerCertErr" = "Krypteringsfel med servercertifikatet";
+"SecureChannelHandshakeFailed"  = "Handskakning misslyckades";
+"FailedToGetToken"  = "Enheten kunde inte checkas ut. Försök igen eller kontakta en administratör.";
+"FailedToInvalidateToken" = "Token kunde inte ogiltiggöras.";
+
+
+/*************  UIDevice+Power Localized strings **********/
+"UIDeviceBatteryStateFullMessage" = "Laddat";
+"UIDeviceBatteryStateChargingMessage" = "Laddar";
+"UIDeviceBatteryStateUnpluggedMessage" = "Ej ansluten";
+
+
+/*************  AWProxy Localized strings **********/
+"TheProxyConfigurationIsMissing" = "Det saknas en proxykonfiguration";
+"CheckServerConfigurationPropertyHasBeenSetAndValidObject" = "Kontrollera att egenskapen för ServerConfiguration har ställts in och att det är ett giltigt objekt";
+"ServerConfigurationPropertyHasNotBeenSet" = "Egenskapen för ServerConfiguration har inte ställts in";
+"ProxyConfigurationIsInvalid" = "Proxykonfigurationen är ogiltig";
+"CheckServerConfigurationTypeIsSet" = "Kontrollera att serverkonfigurationstypen har ställts in";
+"ServerConfigurationTypeIsUnknown" = "Serverkonfigurationtypen är okänd";
+"FailedToRegisterWithNSURLProtocol" = "Kunde inte registrera med NSURLProtocol";
+"CheckTheClassYouAreRegisteringIsSubclassOfNSURLProtocol" = "Kontrollera att klassen du registrerar är en underklass till NSURLProtocol";
+"TheClassYouAttemptedToRegisterIsNotSubclassOfNSURLProtocol" = "Klassen du vill registrera är inte en underklass till NSURLProtocol";
+
+
+/*************  AWProxy Localized strings **********/
+"FailedToSignRequest" = "Förfrågan kunde inte signeras";
+"MAGAuthCertificateNotStoredOnTheDevice,OrItIsInvalid" = "Det finns inget eller ett ogiltigt autentiseringscertifikat för MAG lagrat på enheten.";
+"ProxyAuthenticationRequired" = "Det krävs autentisering med proxy.";
+"InvalidAuthenticationForProxy" = "Autentiseringen mot proxyn är ogiltig.";
+"CheckAuthenticationCredentialsAndTryAgain" = "Kontrollera dina autentiseringsuppgifter och försök igen.";
+"MissingDeviceRootCertificate" = "Enhetsrotcertifikat saknas";
+"AnActivationCode(LG)WasNeverSaved" = "Ingen aktiveringskod har sparats(organisationsgrupp).";
+"FailedToGetPACscript" = "Kunde inte hämta PAC-skript.";
+"SetAutoConfigURLProperty" = "Ställ in egenskap för autoConfigURL.";
+"AutoConfigURLPropertyIsNotSet" = "Det har inte ställts in någon egenskap för autoConfigURL.";
+"MakeSureForValidScriptLocatedAtAutoConfigURL" = "Kontrollera att det finns ett giltigt skript vid den angivna webbadressen för automatisk konfiguration.";
+"FailedToDecodeAutoConfigUrlRetrievedData" = "Datan som hämtades från webbadressen för automatisk konfiguration kunde inte avkodas.";
+"FailedToRetrievedAutoConfigUrlData" = "Kunde inte hämta data från webbadressen för automatisk konfiguration.";
+"MakeSurePACURLisValid" = "Kontrollera att PAC-webbadressen är giltig.";
+"ErrorAlertProxy" = "MAG kan inte konfigureras. Kontrollera din inställningar för MAG.";
+
+/********************** AWPasscode Handler ************/
+"Dismiss"    = "Avfärda";
+"CurrentPassword" = "Nuvarande lösenkod";
+"NewPassword"  = "Ny lösenkod";
+"ReenterNewPassword" = "Ange den nya lösenkoden igen";
+"Change"            = "Byt";
+"Cancel"            = "Avbryt";
+"Enteryourpasscode:" = "Ange din lösenkod:";
+"Passcode"          = "Lösenkod";
+"Login"             = "Logga in";
+"Notice"            = "Meddelande";
+"Passworddoesnotmatch" = "Det nya lösenordet du angivit matchar inte.";
+"OK"                = "OK";
+"EnterPasscodeError" = "Ange den nya lösenkoden";
+"ReenterPasscodeError" = "Ange den nya lösenkoden på nytt";
+"Passworddonotcomplyrestriction"  = "Lösenkoden uppfyller inte kraven.";
+"MaximumPasscodeAttemptsMessage" = "Du har uppnått max. antal misslyckade inloggningsförsök. En företagsrensning utförs på din enhet.";
+"MaximumPasscodeAgeHasExpired" = "Din nuvarande lösenkod har förfallit. Var god skapa en ny.";
+"PasscodePolicyViolation" = "Se policy för lösenkod för mer information om hur du ställer in en lösenkod.";
+"MaximumPasscodeAttemptsMessageForApplication" = "Du har uppnått max. antal misslyckade försök. Dina appdata kommer att rensas.";
+
+"AttemptsLeftMessage" = "Du har %d försök kvar";
+"IncorrectPasscodeEntered" = "Lösenkoden som du har angett är felaktig";
+"BackOffMessage"  = "Appen är avaktiverad. Försök igen om %d sekunder";
+"NonSimplePasscode" =   "Lösenkoden får inte vara enkel";
+"AlphanumericPasscodeRequired" = "Lösenkoden är inte alfanumerisk.";
+"NumericPasscodeRequired" = "Lösenkoden är inte numerisk";
+"MimimumPasscodeLength"   = "Lösenkoden bör bestå av minst %d tecken.";
+"MimimumComplexCharacters"= "Lösenkoden bör bestå av minst %d komplexa tecken.";
+"ExpiredPasscode"         = "Lösenkoden har redan använts. Ange en annan lösenkod.";
+"EnterYourPin"            = "Skapa en lösenkod";
+"PinCreationMessage"      = "Lösenkoden kommer att användas för att logga in på appen.";
+"CreatePin"               = "Ställ min en lösenkod";
+"PasscodeDidntMatch"      = "Lösenkoden stämmer inte. Försök igen.";
+"Continue"                = "Fortsätt";
+"EnterAPin"               = "Ange en PIN-kod";
+"Pin"                     = "PIN-kod";
+"ConfirmPin"              = "Bekräfta PIN-koden";
+"ConfirmPasscode"         = "Bekräfta lösenkoden";
+"RetrievingOldPasscode"   = "Hämtar din gamla lösenkod...";
+"NotValidCredentials"     = "Ogiltiga autentiseringsuppgifter!";
+"OldPasscodeCannotBeEmpty"   = "Fältet för den gamla lösenkoden får inte vara tom.";
+"PasscodeCannotBeEmpty"   = "Fältet för den nya lösenkoden får inte vara tom.";
+"ForgotPasscode"          = "Glömt lösenkoden?";
+"ReEnterNewPasscode"      = "Ange det nya lösenordet på nytt";
+"PasscodeRestriction"     = "Löskodsbegränsning";
+"PasscodePolicyInitial"   = "Din lösenkod måste \n";
+"PasscodePolicyNumeric"   = "bestå av minst %d siffror\n";
+"PasscodePolicySimple"    = "inte innehålla upprepade tecken eller tecken i stigande/fallande ordning";
+"PasscodePolicyAplhaNumeric"    =   "innehålla minst %d tecken";
+"PasscodePolicyAplhaNumeric2"   =   "innehålla minst ett nummer och en bokstav";
+"PasscodePolicyComplexChar"     =   "och %d symboler";
+"Create" = "Skapa";
+"AttemptLeftMessage" = "Du har %d försök kvar";
+
+/********************** Offline Access *******************/
+"OfflineAccessNotAllowed"       = "Åtkomst offline har begränsats. Koppla upp dig på nätet för åtkomst till resurser.";
+"OfflineAccessDurationExceeded" = "Du har nått gränsen för antalet åtkomster offline. Koppla upp dig till internet för åtkomst till resurser.";
+"OfflineMessage" = "Du måste vara online för att använda funktionen.";
+
+/********************** Command Processor *******************/
+"NoProfilesAvailableForRepublish" = "Det finns inga tillgängliga profiler för ompublicering.";
+
+/*************AWEnrollmentAuthenticationViewController**********/
+"CompleteAllFieldsAlertMessage"="Fyll i alla fält och försök igen.";
+"AuthenticatingTitle" = "Autentiserar";
+"ErrorAlert"="Ange en webbadress för AirWatchs enhetstjänster om du vill fortsätta.";
+"DeviceNotEnrolledAlertMessage"="Den här enheten är inte registrerad. Vill du registrera den nu?";
+"ErrorAlertServerUnreachable"= "Servern verkar vara onåbar just nu. Försök igen.";
+
+/************* AWAuthorizeTokenView**********/
+"AuthorizationToken" ="Autentiseringstoken";
+"WorkOnline" = "Arbeta online";
+
+"Username"="Användarnamn";
+"Password" = "Lösenord";
+
+/************* Passcode Rules - AWEnrollmentCreatePinViewController **********/
+"YourPasscodeShould" = "Lösenkoden måste:";
+"NumericPasscodeLengthInstruction" = "\n - innehålla minst (%d) siffror";
+"DontAllowSimpleNumericPasscodeInstrution" = "\n - inte innehålla upprepade tecken eller tecken i stigande/fallande ordning";
+"AlphaNumericPasscodeLengthInstruction" = "\n - innehålla minst (%d) tecken";
+"AlphaNumericSimplePasscodeInstrution" = "\n - innehålla minst (1) nummer och (1) bokstäver";
+"ComplexSymbolsRequiredInstruction" = " och (%d) symboler";
+"DontAllowSimpleAlphanumericInstrution" = "\n - inte innehålla upprepade tecken eller tecken i stigande eller fallande ordning";
+"PasscodeHistoryInstruction" = "\n - inte vara identisk med de (%d) senaste lösenkoderna.";
+
+/******************************* SAML Error Handling *******************************************/
+"PleaseContactYourAdminstrator" = "Kontakta din systemadministratör.";
+
+/******************************* AWAuthenticationViewController *******************************************/
+"UsernamePasswordRememberMe" = "Kom ihåg användarnamnet";
+
+/******************************* AWServerDetailsViewController *******************************************/
+"Success" = "Slutfört";
+"ChangeServerDetailsTitle" = "Serverinformation";
+"ConfirmChangeServerDetails" = "Är du säker på att du vill ändra serverinformationen? Om du gör detta på appdata att gå förlorade.";
+"ChangeServerDetailsMessage" = "Serverinformationen har ändrats";
+"ScanQRCodeTitle" = "Skanna QR-koden för att fylla i formuläret";
+"ServerURLPlaceholder" = "https://exempel.com";
+"GroupID" = "Grupp-ID";
+"InvalidQRCodeErrorMessage" = "Ogiltig QR-kod. Försök igen med en giltig QR-kod";
+"QRCodeScanErrorMessage" = "Det gick inte att skanna QR-koden. Försök igen";
+"ServerURLConnectionError" = "Det gick inte att ansluta till servern. Kontrollera nätverksanslutningen eller kontakta din systemadministratör";
+"EmptyServerDetailsErrorMessage" = "Ange en giltig server-URL och ett grupp-ID när du vill fortsätta.";
+
+"AWDeleteReInstall" = "Efter en ominstallation måste du ha en aktiv internetanslutning till servern för enhetshantering för att fortsätta.";
+
+/*****************  Touch ID Authentication  ************************************/
+"UseTouchID" = "Använd Touch ID";
+"AuthenticateForAccess" = "Autentisera för åtkomst";
+
+"CryptKeyRetrievalFromTouchIDFailedPasscodeMessage" = "Fingeravtryckslistan på enheten verkar ha ändrats. Av säkerhetsskäl måste du ange din lösenkod igen för att åter kunna använda TouchID.";
+"CryptKeyRetrievalFromTouchIDFailedCredentialsMessage" = "Fingeravtryckslistan på enheten verkar ha ändrats. Av säkerhetsskäl måste du ange dina inloggningsuppgifter igen för att åter kunna använda TouchID.";
+
+/********* Compromised Blocker View *********/
+"AWCompromiseBlockerMessageWhenNoNetwork" = "Din enhet har säkerhetsbrister (jailbreakad). Du kan inte ansluta till applikationen utan ett nätverk.";
+
+
+/*************  Common AW Localized strings **********/
+"TryAgain"= "Försök igen";
+"of"= "av";
+"No"= "Nej";
+"YesTitle"="Ja";
+"Accept"="Godkänn";
+"DeleteTitle"="Ta bort";
+"CancelTitle"="Avbryt";
+"SubmitTitle" = "Skicka";
+"PageNoTitle"="Sida %d";
+"MarkUnreadtitle" = "Markera som oläst";
+"MarkReadTitle" = "Markera som läst";
+"MarkAction" = "Åtgärd";
+"DeleteAllTitle"="Ta bort alla";
+"Prev" = "Föreg.";
+"Next" = "Nästa";
+
+/*******************AWTableViewController********************************************/
+"ReleaseTitle"= "Släpp för att uppdatera";
+"LoadingLabel"="Loading..." ;
+"RefreshTitle"="Dra nedåt för att uppdatera";
+
+/*************AWDocumentContainerView**********/
+"BookmarkedPagesTitle"= "Sidor med bokmärken";
+"AllPagesTitle" ="Alla sidor";
+
+/************* AWDocumentInteractionController**********/
+"AccessAlertMessage" = "Administratören tillåter inte att det här dokumentet öppnas i den här appen.";
+"WarningMessageTitle"="Varning";
+
+/************* AWDocumentSearchView**********/
+"EnterSearchText" = "Ange söktext";
+
+/*************AWEULAViewController**********/
+"DeclineTitle" = "Avböj";
+"TermsOfUse" = "Användarvillkor";
+"Back" = "Tillbaka";
+
+/*************AWMessageDetailViewController**********/
+"ComplianceCheckTitle"="Efterlevnadskontroll krävs";
+"ComplianceCheckSentTitle" = "Efterlevnadskontroll har skickats";
+"DeleteMessageTitle" = "Radera meddelande";
+"ConfirmDeleteMessageTitle" = "Vill du radera meddelandeloggen permanent?";
+"MessageDetailSectionTitle" = "Meddelandeinformation";
+"ConsoleMessageTitle" = "Konsolmeddelande";
+"MessageActionSectionTitle" = "Åtgärd";
+
+/*************AWMessageTypesViewController**********/
+"MessageTypesTitle"="Meddelandetyp";
+"TableCellAllMessages"="Alla meddelanden";
+"TableCellCompliance"="Efterlevnad";
+"TableCellUserAgreement"="Användaravtal";
+"TableCellAppCatalog"="App Catalog";
+"TableCellMessages"="Meddelanden";
+
+/*************AWMessageViewController**********/
+"AllTitle" = "Alla";
+"UnreadTitle" = "Olästa";
+"ReadTitle" = "Läst";
+"NoMessagesTitle" = "Inga meddelanden";
+"MarkAllTitle" = "Markera alla";
+"MarkItemsTitle"= "Markera";
+"DeleteMessagesTitle"="Ta bort meddelanden";
+"ConfirmDeleteMessages"= "Vill du ta bort markerade meddelanden permanent?";
+"Messages" = "Meddelanden";
+
+/**********AWPDFDocumentDocument**********/
+"PasswordAlertTitle" = "Dokumentlösenord";
+
+/**********AWPDFOutlineViewCell**********/
+"NoTitle" = "(Ingen titel)";
+
+/**********AWPDFSearchViewController**********/
+"SearchViewTitle"="Sök dokument";
+"HeaderSectionHitNumber"="( %d )";
+"HeaderSectionTOCTitle"= "%@";
+"HeaderSectionPageAndHitNumber" ="Sida %d ( %d )";
+"ExpandAllTitle"= "Expandera alla";
+"CollapseAllTitle"= "Förminska alla";
+"SortByHitTitle" = "Sortera efter träff";
+"SortByPageTitle" = "Sortera efter sida";
+"PauseTitle"= "Pausa";
+"ResumeTitle" = "Återuppta";
+"DoneTitle"= "Klar";
+"NoResultTitle"="Inga träffar";
+"SearchCompleteTitle"= "Sökningen slutförd";
+"SearchingPageMessageTitle"= "Searching page %i..." ;
+
+/**********AWServerPathView**********/
+"ServerPath"="Sökväg till servern";
+
+/**********AWServerSetupController**********/
+"UrlTitle"="Webbadress";
+"URLPlaceholder" ="https://exempel.com";
+"GroupIDPlaceholder"="Exempel-ID";
+"InvalidURLAlert"="Den webbadress du angett verkar inte vara en giltig URL.";
+
+/**********AWTabBar*******************/
+"NewTab" = "Ny flik";
+
+/* RSA Adaptive Auth */
+
+"BlankAnswerErrorMsg" = "Fältet för PIN-kod får inte vara tomt. Ange en PIN-kod för att fortsätta.";
+"WrongAnswerLengthErrorMsg"  = "Ogiltig PIN-kodlängd. PIN-koden måste vara mellan %lu och %lu tecken.";
+
+
+"AnswerPlaceHolderPinAndSecureIDToken" = "Ange din PIN-kod och SecureID-token.";
+"AnswerPlaceHolderNewPin" = "PIN-kod";
+
+"ChallengeServerError" = "Serverfel. Kontakta din administratör.";
+"ChallengeLocked" = "Ditt konto har låsts. Kontakta din administratör.";
+"ChallengeNextTokenAuth" = "Ange din PIN-kod och nästa SecureID-token";
+"ChallengeNextTokenAuthAfterNewPinSet" = "Ange din PIN-kod och SecureID-token";
+"ChallengeNewPinFromSystem" = "Ange PIN-kod som";
+"ChallengeNewPinFromUser" = "Ange ny PIN-kod";
+"ChallengeTokenAuth" = "Ange din PIN-kod och SecureID-token. Om du inte har ställt in PIN-kod anger du SecureID-token.";
+
+/*************  AW Localized strings for Errors **********/
+"ApplicationRegistrationDidNotComplete" = "Ett fel uppstod vid autentisering av appen";
+
+/************ AW Certificate Pinning *************/
+"AutodiscoveryPublicKeyAuthenticationFailureMessage" = "AW-SDK mottar ett fel med autentisering av publik nyckel vid försök att hämta certifikatet från automatiskt identifiering";
+"EnrollmentServerPublicKeyAuthenticationFailureMessage" = "AW-SDK mottar ett fel med autentisering av publik nyckel vid försök att kommunicera med enhetstjänster";
+
+/* SAML Authentication */
+"SAMLVerificationUnavailableErrorMessage" = "SAML har avaktiverats av appen. Aktivera och försök igen.";
+"SAMLVerificationInvalidGroupIDErrorMessage" = "Ogiltigt grupp-ID";
+"SAMLVerificationInvalidServerURLErrorMessage" = "Ogiltig server-URL";
+"SAMLVerificationNoServerResponseErrorMessage" = "Inget svar från servern";
+"SAMLVerificationNoRedirectURLErrorMessage" = "Servern svarade inte med webbadressen till tjänsteleverantören";
+"LogoutMessage" = "Du är utloggad";
+"SAMLIDPAuthenticationMessage" = "Autentisera med identitetsleveratör";
+"SAMLContactingSPMessage" = "Kontaktar tjänsteleverantör";
+"SAMLAuthenticationCancelledMessage" = "Användaren avbröt autentiseringen. Försök igen.";
+
+/* Intercept Links */
+"TargetAppNotInstalledMessage" = "Du har inte installerat de tillåtna apparna för att kunna utföra %@ åtgärden.";
