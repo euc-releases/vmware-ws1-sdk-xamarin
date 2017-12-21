@@ -1,0 +1,408 @@
+/*
+ Copyright © 2014 AirWatch, LLC. All rights reserved.
+ This product is protected by copyright and intellectual property laws in the United States and other countries as well as by international treaties.
+ AirWatch products may be covered by one or more patents listed at http://www.vmware.com/go/patents.
+ */
+
+/* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
+
+/*************  Common AW Localized strings **********/
+"UnknownServerErrorMessage" ="لقد حدث خطأ غير معروف من خادم. الرجاء الاتصال بالمسؤول الخاص بك.";
+"InvalidCredentialsTitle" = "تعذر التحقق من صحة بيانات الاعتماد التي تم توفيرها. الرجاء إعادة المحاولة.";
+"UnknownTitle" = "غير معروف";
+"UserCancelledOperation" = "قام المستخدم بإلغاء الاتصال.";
+"Ok" = "حسنا";
+"DataSampleFailedTransmitTitle" = "فشل إرسال نموذج بيانات";
+"ConnectionFailureFormat" = "فشل مع رمز حالة الاتصال %d";
+"ErrorAuthenticating" = "خطأ في المصادقة";
+"LoginMessage" ="قم بتسجيل الدخول قبل المحاولة مرة أخرى";
+"EndpointUnavailable" = "هذا الطلب غير متوفر في إصدار وحدة التحكم الخاصة بك.";
+"Retry" = "اعادة المحاولة";
+"Wipe" = "مسح";
+"Warning" = "تنبيه";
+"DeviceNotEnrolledOrAppNotWhitelistedError" = "لقد حصل خطأ ما. الرجاء التحقق من انك مسجل ولديك الصلاحية لإستخدام هذا التطبيق.";
+
+/*************  AWAssetTracker Localized strings **********/
+"UnableToRetrieveDeviceStatus" = "غير قادر على استرداد حالة الجهاز";
+"DeviceMustBeEnrolled" = "يجب تسجيل الجهاز";
+"DeviceCheckoutFailed" = "فشل الحصول على الجهاز";
+"ConnectionLostError" = "تم فقد الاتصال بالخادم. \nحاول مرة أخرى لاحقاً.";
+"NetworkConnectionLost" = "فقدان الاتصال بالشبكة";
+"ConnectionUnavailable" = "اتصال غير متوفر";
+"DeviceNotEnrolled" = "الجهاز غير مسجل";
+"ErrorTitle" = "خطأ";
+"DeviceNonCompliant" = "الجهاز غير متوافق";
+"InvalidLocationGroup"  = "مجموعة الموقع غير صالح";
+"DeviceAlreadyCheckedIn" = "تم اعادة الجهاز بالفعل ";
+"DeviceAlreadyCheckedOut" = "تم الحصول على الجهاز بالفعل";
+"InvalidCheckOutRequest" = "طلب الحصول غير صالحا";
+"DeviceCanNotShared" = "لا يمكن مشاركة الأجهزة";
+"UnknownErrorMessage" = "لقد حدث خطأ غير معروف. الرجاء الاتصال بالمسؤول";
+"UnknownError" = "خطأ غير معروف";
+
+/************ AWSDK *********/
+"UDIDiOS7CompatibiltiyError" = "الجهاز غير متوافق مع هذه البيئة. الرجاء الاتصال بمسؤول النظام لديك لمزيد من المساعدة. رمز الخطأ %d";
+"AWSDKInitializationError" = "حدث خطأ أثناء الاتصال بالخادم. الرجاء الاتصال بمسؤول النظام الخاص بك للحصول على مزيد من المساعدة. رمز الخطأ %d";
+"AgentInitializationError" = "حدث خطأ ما. يرجى إعادة تسجيل الجهاز. اذا كنت بحاجة الى مزيد من المساعدة اتصل بمسؤول النظام لديك. رمز الخطأ %d";
+"CompatibilityVerifiedTitle" = "تم التحقق من التوافق";
+"CompatibilityVerifiedMessage" = "تم التحقق من التوافق مع الخادم.";
+"NotEnrolledOrNotCompliant" = "الجهاز غير مسجل أو غير متوافق مع هذه البيئة. الرجاء الاتصال بمسؤول تقنية المعلومات الخاص بك للحصول على مزيد من المساعدة.";
+
+/*************  AWClaimedAuthenticationViewController Localized strings **********/
+"Office365NavBarTitle" = "Office 365";
+
+/*************  AWCompliance Localized strings **********/
+"AWComplianceFailedToStart" = " فشل في بدء الامتثال ";
+
+
+/*************  AWContentController Localized strings **********/
+"BadRequestURL" = "طلب ال URL غير صالح";
+"RequestCauseServerConflict" = "طلب الخادم تسبب في تعارض";
+"InvalidSessionTokenError" = "  الرمز المميز لدورة غير صالح خطأ";
+"ServerCommunicationError" = "خطأ في الاتصال بالخادم
+";
+
+
+/*************  AWDataSamplerTransmitter Localized strings **********/
+
+
+/*************  AWEnrollmentAccountAuthenticator Localized strings **********/
+"InvalidCredentialsErrorTitle" = "بيانات الاعتماد غير صالحة. الرجاء التحقق من معلومات تسجيل الدخول الخاصة بك ومعرف المجموعة وإعادة المحاولة.";
+"InvalidActivationCodeErrorMessage" = "معرف المجموعة التي تم توفيرها غير صالح. الرجاء إعادة المحاولة.";
+"InvalidServerURLErrorMessage" = " URL الخادم الذي تم توفيره غير صالح. الرجاء إعادة المحاولة.";
+"DeviceNotFoundErrorMessage" = "تعذر العثور على الجهاز في مثيل AirWatch هذا. الرجاء التسجيل قبل محاولة استخدام Secure Content Locker.";
+"DeviceNotEnrolledErrorMessage" = "الجهاز غير مسجل في مثيل AirWatch هذا. الرجاء  التسجيل قبل محاولة استخدام Secure Content Locker.";
+"DeviceMismatchErrorMessage" = "الجهاز غير مسجل في حساب مستخدم AirWatch هذا.";
+"AccountLockedErrorMessage"                 = "تم حظر الحساب الخاص بك في LDAP/Airwatch, الرجاء التحقق مع مسؤول ";
+"InActiveErrorMessage"                      = "لقد تم إلغاء تفعيل الحساب الخاص بك في وحدة تحكم Airwatch, الرجاء التحقق مع مسؤول ";
+"NotMDMEnrolledErrorMessage"                = "محاولة المستخدم لتسجيل الدخول إلى بيئة تتطلب التسجيل، الرجاء التحقق مع مسؤول ";
+"InvalidTokenErrorMessage"                  = "محاولة المستخدم لتسجيل الدخول باستخدام رمز منتهي الصلاحية / رمز مميز غير موجود، الرجاء التحقق مع مسؤول";
+"DeviceNotFoundErrorMessage"                = "الجهاز غير موجود، الرجاء التحقق مع مسؤول";
+"SyncClientNotEnabledErrorMessage"          = "مزامنة العميل غير ممكنة، الرجاء التحقق مع مسؤول";
+"PersonalContentNotEnabledErrorMessage"     = "المحتوى الشخصي غير ممكن، الرجاء التحقق مع مسؤول";
+"AwchatNotEnabled"                          = "AWChat غير ممكن، الرجاء التحقق مع مسؤول";
+"AccountLockedOutError"                     = "لقد تم حظر هذا الحساب.";
+"InactiveAccountError"                      = "لم يتم تفعيل هذا الحساب.";
+"MDMEnrollmentRequiredError"                = "تسجيل MDM مطلوب لحالة Airwatch هذه.
+";
+"InvalidTokenError"                         = "تم توفير رمز مرور غير صالح.";
+"ConfigurationError"                        = "حصل خطأ ما في التكوين.";
+
+
+/*************  AWHTTPRequestOperation Localized strings **********/
+"UnexpectedStatusCodeFormat" = "استلم حالة رمز غير متوقعة من%d";
+"UnexpectedContentTypeFormat"  = " نوع المحتوى المتوقع  %@, حصل على %@";
+
+
+/*************  AWLog Localized strings **********/
+"NoDeviceLogsToSend" = "لا توجد أي سجلات جهاز لارسالها";
+"NoCrashLogsToSend" = "لا توجد سجلات معطلة لارسالها";
+"EmptyLogFile" ="ملف السجل فارغا.";
+"NoLogsForSeverityGreaterOrEqualConfiguredLevel"   = " السجل لا يحتوي على إدخال مع خطورة أكبر من أو مساوية لمستوى تكوين.";
+"FailedToSendLogData" = "فشل في إرسال بيانات السجل.";
+"WiFiConnectionError" = "الاتصال بشبكة  WIFI أو اتصل بمسؤول النظام الخاص بك.";
+"NeedsWiFiToSendLogData" =" وحدة تحكم AW تتطلب الاتصال ب WIFI لإرسال بيانات السجل.
+";
+
+/*************  AWRestrictions Localized strings **********/
+"AWRestrictionsFailedToStart" = "فشل في بدء تشغيل قيود AW";
+
+
+/*************  AWSecureChannelWrapper Localized strings **********/
+"SecureChannelServerCertErr" = "خطأ في التشفير مع شهادة الخادم";
+"SecureChannelHandshakeFailed"  = " فشل Handshake";
+"FailedToGetToken"  = "غير قادر على الحصول على الجهاز. الرجاء المحاولة مرة أخرى أو اتصل بمسؤول.";
+"FailedToInvalidateToken" = "فشل في الغاء صلاحية الرمز المميز";
+
+
+/*************  UIDevice+Power Localized strings **********/
+"UIDeviceBatteryStateFullMessage" = "كاملا";
+"UIDeviceBatteryStateChargingMessage" = "يتم الان الشحن";
+"UIDeviceBatteryStateUnpluggedMessage" = "غير متصل";
+
+
+/*************  AWProxy Localized strings **********/
+"TheProxyConfigurationIsMissing" = "تكوين الوكيل مفقود";
+"CheckServerConfigurationPropertyHasBeenSetAndValidObject" = "التأكد من تعيين خاصية تكوين الخادم على انها كائن صحيح";
+"ServerConfigurationPropertyHasNotBeenSet" = "لم يتم تعيين خاصية تكوين الخادم";
+"ProxyConfigurationIsInvalid" = "تكوين الوكيل غير صالح";
+"CheckServerConfigurationTypeIsSet" = "تأكد من تعيين نوع تكوين الخادم";
+"ServerConfigurationTypeIsUnknown" = "نوع تكين الخادم غير معروف";
+"FailedToRegisterWithNSURLProtocol" = "فشل في التسجيل مع بروتوكول NSURL";
+"CheckTheClassYouAreRegisteringIsSubclassOfNSURLProtocol" = "تأكد من أن الدرجة التي  تسجل بها فئة فرعية من بروتوكول NSURL";
+"TheClassYouAttemptedToRegisterIsNotSubclassOfNSURLProtocol" = "الدرجة التي تحاول أن تسجل بها ليست فئة فرعية من بروتوكول NSURL";
+
+
+/*************  AWProxy Localized strings **********/
+"FailedToSignRequest" = "فشل طلب التسجيل";
+"MAGAuthCertificateNotStoredOnTheDevice,OrItIsInvalid" = "لا يوجد شهادة مصدقة ل MAG مخزنة على الجهاز، أو انها غير صالحة.";
+"ProxyAuthenticationRequired" = "مصادقة الوكيل مطلوبة";
+"InvalidAuthenticationForProxy" = "المصادقة المقدمة إلى الوكيل غير صالحة.";
+"CheckAuthenticationCredentialsAndTryAgain" = "التحقق من أوراق اعتماد المصادقة الخاصة بك والمحاولة مرة أخرى.";
+"MissingDeviceRootCertificate" = "شهادة جذر الجهاز مفقودة";
+"AnActivationCode(LG)WasNeverSaved" = "رمز التفعيل (LG) لم يتم حفظه أبدا.";
+"FailedToGetPACscript" = "فشل في الحصول على البرنامج النصي PAC";
+"SetAutoConfigURLProperty" = "قم بتعيين خاصية URL التكوين التلقائي.";
+"AutoConfigURLPropertyIsNotSet" = "لم يتم بتعيين خاصية URL التكوين التلقائي.";
+"MakeSureForValidScriptLocatedAtAutoConfigURL" = "تأكد من أن هناك نص صالح موجود في URL التكوين التلقائي المحدد.";
+"FailedToDecodeAutoConfigUrlRetrievedData" = "فشل في فك تشفير البيانات التي تم استردادها من url التكوين التلقائي.";
+"FailedToRetrievedAutoConfigUrlData" = "فشل استرداد البيانات من url التكوين التلقائي.";
+"MakeSurePACURLisValid" = "تأكد من أن عنوان URL PAC صالحاً.";
+"ErrorAlertProxy" = "هناك مشكلة في تكوين  MAG. يرجى التحقق من إعداد MAG الخاص بك.";
+
+/********************** AWPasscode Handler ************/
+"Dismiss"    = "إستبعاد";
+"CurrentPassword" = "رمز المرور الحالي";
+"NewPassword"  = "رمز مرور جديد";
+"ReenterNewPassword" = "أعد إدخال رمز المرور الجديد";
+"Change"            = "تغيير";
+"Cancel"            = "الغاء";
+"Enteryourpasscode:" = "الرجاء إدخال رمز المرور الخاص بك:";
+"Passcode"          = "رمز المرور";
+"Login"             = "تسجيل الدخول";
+"Notice"            = "ملاحظة";
+"Passworddoesnotmatch" = " كلمة المرور الجديدة التي قمت بإدخالها لا تتطابق.";
+"OK"                = "حسنا";
+"EnterPasscodeError" = "الرجاء إدخال رمز المرور الجديد";
+"ReenterPasscodeError" = "الرجاء اعد إدخال رمز المرور الجديد";
+"Passworddonotcomplyrestriction"  = "رمز المرور الخاص بك لا يتوافق مع القيود.";
+"MaximumPasscodeAttemptsMessage" = "لقد وصلت إلى الحد الأقصى لعدد المحاولات الفاشلة. ويجري الأن مسح جهاز المؤسسة.";
+"MaximumPasscodeAgeHasExpired" = "انتهت صلاحية رمز المرور الحالي الخاص بك. الرجاء إنشاء رمز مرور جديد.";
+"PasscodePolicyViolation" = "يرجى الاشارة إلى سياسة رمز المرور لإعداد رمز مرور.";
+"MaximumPasscodeAttemptsMessageForApplication" = "لقد وصلت إلى العدد الأقصى من المحاولات الفاشلة. يجري الأن مسح بيانات التطبيقات الخاصة بك.";
+
+"AttemptsLeftMessage" = " لديك %d محاولات متبقية";
+"IncorrectPasscodeEntered" = "رمز المرور الذي تم إدخاله غير صحيح";
+"BackOffMessage"  = "لقد تم تعطيل التطبيق الخاص بك. حاول مرة أخرى في %d ثوان";
+"NonSimplePasscode" =   "لا يمكن أن يكون رمز المرور الخاص بك بسيط.";
+"AlphanumericPasscodeRequired" = "رمز المرور الخاص بك لا يحتوي على الأبجدية الرقمية.";
+"NumericPasscodeRequired" = "رمز المرور الخاص بك غير رقمي";
+"MimimumPasscodeLength"   = "رمز المرور الخاص بك يجب أن يحتوي على الأقل %d حروفا.";
+"MimimumComplexCharacters"= "رمز المرور الخاص بك يجب أن يحتوي على الأقل %d من الأحرف المعقدة.";
+"ExpiredPasscode"         = "تم استخدام رمز مرور هذا من قبل. الرجاء إدخال رمز مرور مختلف.";
+"EnterYourPin"            = "قم بانشاء رمز مرور";
+"PinCreationMessage"      = "سيتم استخدام  رمز المرور هذا في تسجيل الدخول إلى التطبيق.";
+"CreatePin"               = "الرجاء تعيين رمز مرور";
+"PasscodeDidntMatch"      = " رمز المرور لا يتطابق، إعادة إدخاله مرة أخرى";
+"Continue"                = "المواصلة";
+"EnterAPin"               = "الرجاء ادخل معرف المجموعة";
+"Pin"                     = "معرف المجموعة";
+"ConfirmPin"              = "تاكيد معرف المجموعة";
+"ConfirmPasscode"         = "تأكيد رمز المرور";
+"RetrievingOldPasscode"   = "استرداد رمز المرور القديم الخاص بك ...";
+"NotValidCredentials"     = "بيانات الاعتماد غير صالحة!";
+"OldPasscodeCannotBeEmpty"   = "لا يمكن ترك حقل رمز المرور القديم فارغاً";
+"PasscodeCannotBeEmpty"   = "لا يمكن ترك حقل رمز المرور الجديد فارغاً";
+"ForgotPasscode"          = "هل نسيت رمز المرور؟";
+"ReEnterNewPasscode"      = "إعادة إدخال كلمة المرور الجديدة";
+"PasscodeRestriction"     = " القيود المفروضة على رمز المرور";
+"PasscodePolicyInitial"   = "رمز المرور الخاص بك يجب أن يكون  \n";
+"PasscodePolicyNumeric"   = "يحتوي علي الاقل %d حرفا \n";
+"PasscodePolicySimple"    = "لا يمكن تكرار/تصاعدي/تنازلي";
+"PasscodePolicyAplhaNumeric"    =   "ان يكون على الاقل %d حرفا طولا";
+"PasscodePolicyAplhaNumeric2"   =   "يحتوي على الاقل عدد وأبجدية";
+"PasscodePolicyComplexChar"     =   "و%d رمزا";
+"Create" = "انشاء";
+"AttemptLeftMessage" = "لديك %d محاولة متبقية";
+
+/********************** Offline Access *******************/
+"OfflineAccessNotAllowed"       = " تم تقييد الوصول دون اتصال. الرجاء الاتصال بإنترنت للوصول إلى الموارد.";
+"OfflineAccessDurationExceeded" = "لقد وصلت إلى الحد الأقصى من  الوصول دون اتصال. الرجاء الاتصال بإنترنت للوصول إلى الموارد.";
+"OfflineMessage" = "انت بحاجة إلى أن تكون على الإنترنت لاستخدام هذه الميزة.";
+
+/********************** Command Processor *******************/
+"NoProfilesAvailableForRepublish" = "لا تتوفر أية ملفات تعريف لإعادة نشرها.";
+
+/*************AWEnrollmentAuthenticationViewController**********/
+"CompleteAllFieldsAlertMessage"="الرجاء إكمال جميع الحقول ثم أعد المحاولة.";
+"AuthenticatingTitle" = "مصادقة";
+"ErrorAlert"="الرجاء توفير ال URL لخدمات جهاز AirWatch للمتابعة.";
+"DeviceNotEnrolledAlertMessage"="هذا الجهازغير مسجل حاليا .هل ترغب في التسجيل الآن؟";
+"ErrorAlertServerUnreachable"= "يبدو انه لا يمكن الوصول الى الخادم بالوقت الحاليز اعد المحاولة مره اخرى لاحقا.";
+
+/************* AWAuthorizeTokenView**********/
+"AuthorizationToken" ="تفويض الرمز المميز";
+"WorkOnline" = "العمل اثناء الاتصال";
+
+"Username"="اسم المستخدم";
+"Password" = "كلمة المرور";
+
+/************* Passcode Rules - AWEnrollmentCreatePinViewController **********/
+"YourPasscodeShould" = "رمز المرور الخاص بك يجب:";
+"NumericPasscodeLengthInstruction" = " \n -ان يحتوي على الاقل(%d) رقما";
+"DontAllowSimpleNumericPasscodeInstrution" = " لا يمكن تكرار/تصاعدي/تنازلي";
+"AlphaNumericPasscodeLengthInstruction" = "أن يكون على الأقل %d حرفا ";
+"AlphaNumericSimplePasscodeInstrution" = "\n - أن يكون على الأقل(1) عدد و(1) حرف";
+"ComplexSymbolsRequiredInstruction" = " و(%d) رمزا";
+"DontAllowSimpleAlphanumericInstrution" = "\n - لا يحتوي على حروف مكررة/تصاعدي/تنازلي";
+"PasscodeHistoryInstruction" = " لا تتطابق مع (%d) الرموز السابقة.";
+
+/******************************* SAML Error Handling *******************************************/
+"PleaseContactYourAdminstrator" = "الرجاء الاتصال بالمسؤول الخاص بك";
+
+/******************************* AWAuthenticationViewController *******************************************/
+"UsernamePasswordRememberMe" = "تذكر اسم المستخدم؟";
+
+/******************************* AWServerDetailsViewController *******************************************/
+"Success" = "نجاح";
+"ChangeServerDetailsTitle" = "تفاصيل الخادم";
+"ConfirmChangeServerDetails" = "هل أنت متأكد من أنك تريد تغيير تفاصيل الخادم الخاص بك؟ القيام بذلك سيؤدي إلى ازالة بيانات التطبيق الخاص بك. ";
+"ChangeServerDetailsMessage" = "تم تغيير تفاصيل الخادم بنجاح";
+"ScanQRCodeTitle" = "مسح رمز QR لتعبئة النموذج";
+"ServerURLPlaceholder" = "https://example.com";
+"GroupID" = "معرف المجموعة";
+"InvalidQRCodeErrorMessage" = "رمزQR غير صالح. الرجاء المحاولة مرة أخرى مع رمزQR صالح";
+"QRCodeScanErrorMessage" = "حدث خطأ أثناء مسح رمزQR. الرجاء المحاولة مرة أخرى";
+"ServerURLConnectionError" = "حدث خطأ أثناء الاتصال بالخادم. الرجاء التحقق من اتصال الشبكة الخاص بك أو اتصل بمسؤول النظام الخاص بك";
+"EmptyServerDetailsErrorMessage" = "الرجاء إدخال URL الخادم صالحاً و  ID المجموعة للمتابعة.";
+
+"AWDeleteReInstall" = "بعد حذف وإعادة تثبيت، يجب أن يكون لديك اتصال نشط بإنترنت إلى خادم إدارة الجهاز الخاص بك قبل أن نتمكن من المتابعة.";
+
+/*****************  Touch ID Authentication  ************************************/
+"UseTouchID" = "استخدم Touch ID";
+"AuthenticateForAccess" = "المصادقة للوصول";
+
+"CryptKeyRetrievalFromTouchIDFailedPasscodeMessage" = "يبدو أن قائمة بصمات الأصابع على الجهاز قد تغيرت. ولأغراض أمنية، الرجاء إعادة إدخال رمز المرور الخاص بك لتمكين استخدام TouchID مرة أخرى.";
+"CryptKeyRetrievalFromTouchIDFailedCredentialsMessage" = "يبدو أن قائمة بصمات الأصابع على الجهاز قد تغيرت. ولأغراض أمنية، الرجاء إعادة إدخال بيانات الإعتماد الخاصة بك لتمكين استخدام TouchID مرة أخرى.";
+
+/********* Compromised Blocker View *********/
+"AWCompromiseBlockerMessageWhenNoNetwork" = "تم اختراق الجهاز الخاص بك (jail broken). ويرجع ذلك إلى الاتصال بالشبكة، لا يمكنك الوصول إلى التطبيق الخاص بك.";
+
+
+/*************  Common AW Localized strings **********/
+"TryAgain"= "إعادة المحاولة";
+"of"= "من";
+"No"= "لا";
+"YesTitle"="نعم";
+"Accept"="قبول";
+"DeleteTitle"="حذف";
+"CancelTitle"="الغاء";
+"SubmitTitle" = "ارسال";
+"PageNoTitle"="صفحة %d";
+"MarkUnreadtitle" = "علامة كغير مقروءة";
+"MarkReadTitle" = "علامة كمقروء";
+"MarkAction" = "الاجراء";
+"DeleteAllTitle"="حذف كافة";
+"Prev" = "السابق";
+"Next" = "التّالي";
+
+/*******************AWTableViewController********************************************/
+"ReleaseTitle"= "الإصدار لتحديث";
+"LoadingLabel"="Loading..." ;
+"RefreshTitle"="السحب للاسفل لتحديث";
+
+/*************AWDocumentContainerView**********/
+"BookmarkedPagesTitle"= "الصفحات ذات الإشارة المرجعية";
+"AllPagesTitle" ="كافة الصفحات";
+
+/************* AWDocumentInteractionController**********/
+"AccessAlertMessage" = "المسؤول لا يسمح بفتح هذا المستند في التطبيق المحدد.";
+"WarningMessageTitle"="تنبيه";
+
+/************* AWDocumentSearchView**********/
+"EnterSearchText" = "أدخل نص البحث";
+
+/*************AWEULAViewController**********/
+"DeclineTitle" = "رفض";
+"TermsOfUse" = "شروط الاستخدام";
+"Back" = "العودة";
+
+/*************AWMessageDetailViewController**********/
+"ComplianceCheckTitle"="اختيار الامتثال المطلوب";
+"ComplianceCheckSentTitle" = "تم ارسال اختيار الامتثال";
+"DeleteMessageTitle" = "حذف الرسالة";
+"ConfirmDeleteMessageTitle" = "حذف سجل الرسائل بشكل دائم؟";
+"MessageDetailSectionTitle" = "تفاصيل الرسالة";
+"ConsoleMessageTitle" = "رسالة وحدة التحكم";
+"MessageActionSectionTitle" = "الاجراء";
+
+/*************AWMessageTypesViewController**********/
+"MessageTypesTitle"="انواع الرسالة";
+"TableCellAllMessages"="كافة الرساائل";
+"TableCellCompliance"="الامتثال";
+"TableCellUserAgreement"="اتفاقية المستخدم";
+"TableCellAppCatalog"="كتالوج التطبيق";
+"TableCellMessages"="الرسائل";
+
+/*************AWMessageViewController**********/
+"AllTitle" = "الكلّ";
+"UnreadTitle" = "رسائل غير مقروءة";
+"ReadTitle" = "الرّسائل المقروءة";
+"NoMessagesTitle" = "لا توجد رسائل";
+"MarkAllTitle" = "وضع علامة للكل";
+"MarkItemsTitle"= "وضع علامة ";
+"DeleteMessagesTitle"="حذف الرسئل";
+"ConfirmDeleteMessages"= "حذف الرسائل المحددة بشكل دائم؟";
+"Messages" = "الرسائل";
+
+/**********AWPDFDocumentDocument**********/
+"PasswordAlertTitle" = "كلمة مرور المستند";
+
+/**********AWPDFOutlineViewCell**********/
+"NoTitle" = "(بلا عنوان)";
+
+/**********AWPDFSearchViewController**********/
+"SearchViewTitle"="البحث في المستند";
+"HeaderSectionHitNumber"="( %d )";
+"HeaderSectionTOCTitle"= "%@";
+"HeaderSectionPageAndHitNumber" ="صفحة %d ( %d )";
+"ExpandAllTitle"= "توسيع الكل";
+"CollapseAllTitle"= "طي الكل";
+"SortByHitTitle" = "فرز حسب النقر";
+"SortByPageTitle" = "فرز حسب الصفحة";
+"PauseTitle"= "إيقاف مؤقت";
+"ResumeTitle" = "استئنف";
+"DoneTitle"= "تم";
+"NoResultTitle"="لا توجد نتائج";
+"SearchCompleteTitle"= " استكمال البحث";
+"SearchingPageMessageTitle"= "Searching page %i..." ;
+
+/**********AWServerPathView**********/
+"ServerPath"="خادم المسار";
+
+/**********AWServerSetupController**********/
+"UrlTitle"="URL";
+"URLPlaceholder" ="https://example.com";
+"GroupIDPlaceholder"="مثال ID";
+"InvalidURLAlert"="ال URL الذي تم إدخاله يبدو انه URL غير صالحا.";
+
+/**********AWTabBar*******************/
+"NewTab" = "نافذة جديدة";
+
+/* RSA Adaptive Auth */
+
+"BlankAnswerErrorMsg" = "لا يمكن ترك حقل PIN فارغا. الرجاء إدخال رقم PIN الخاص بك اللمتابعة.";
+"WrongAnswerLengthErrorMsg"  = "طول ال PIN غير صالحا. يجب أن يكون ال PIN الخاص بك بين %lu و %lu أحرف طويلة.";
+
+
+"AnswerPlaceHolderPinAndSecureIDToken" = "الرجاء إدخال ال PIN والرمز المميز التالي SecureID.";
+"AnswerPlaceHolderNewPin" = "PIN";
+
+"ChallengeServerError" = "خطأ في الخادم. الرجاء الاتصال بالمسؤول.";
+"ChallengeLocked" = "تم قفل الحساب الخاص بك. الرجاء الاتصال بالمسؤول الخاص بك.";
+"ChallengeNextTokenAuth" = "الرجاء إدخال ال PIN والرمز المميز التالي SecureID";
+"ChallengeNextTokenAuthAfterNewPinSet" = "الرجاء إدخال ال PIN و SecureID";
+"ChallengeNewPinFromSystem" = "أدخل ال PIN ك";
+"ChallengeNewPinFromUser" = " ادخل PIN جديد";
+"ChallengeTokenAuth" = "الرجاء إدخال رمز PIN و SecureID الخاص بك. إذا لم يتم تعيين ال PIN الخاص بك، أدخل فقط الرمز المميز SecureID.";
+
+/*************  AW Localized strings for Errors **********/
+"ApplicationRegistrationDidNotComplete" = "خطأ في مصادقة طلب تطبيق";
+
+/************ AW Certificate Pinning *************/
+"AutodiscoveryPublicKeyAuthenticationFailureMessage" = "AW-SDK حصل على فشل مصادقة المفتاح العام، أثناء محاولته جلب شهادة من الاكتشاف التلقائي";
+"EnrollmentServerPublicKeyAuthenticationFailureMessage" = "AW-SDK حصل على فشل مصادقة المفتاح العام، أثناء محاولة التواصل مع خدمات الأجهزة";
+
+/* SAML Authentication */
+"SAMLVerificationUnavailableErrorMessage" = "تم تعطيل SAML من قبل التطبيق الخاص بك. يرجى تمكين وإعادة المحاولة مرة اخرى";
+"SAMLVerificationInvalidGroupIDErrorMessage" = "معرف المجموعة غير صالحا";
+"SAMLVerificationInvalidServerURLErrorMessage" = "خادم ال URL غير صالحا";
+"SAMLVerificationNoServerResponseErrorMessage" = "لا توجد استجابة من الخادم";
+"SAMLVerificationNoRedirectURLErrorMessage" = "الخادم لم يعيد ال URL مةزود الخدمة";
+"LogoutMessage" = "لقد قمت بتسجيل الخروج";
+"SAMLIDPAuthenticationMessage" = "المصادقة مع مزود الهوية";
+"SAMLContactingSPMessage" = " الاتصال بمقدم الخدمة";
+"SAMLAuthenticationCancelledMessage" = "إلغاء مصادقة المستخدم. الرجاء المحاولة مرة أخرى.";
+
+/* Intercept Links */
+"TargetAppNotInstalledMessage" = "لا يوجد لديك تطبيقات مسموح بها مثبتة على الجهاز الخاص بك لأداء ال  %@ إجراء.";

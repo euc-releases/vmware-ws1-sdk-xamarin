@@ -1,0 +1,42 @@
+# Version: 11.6.1.2 (xcode9.2: 6857dfcc)
+# [first argument, ignore] # --cache
+/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.2/lib/mtouch/mtouch.exe \
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-cache \
+	--dev \
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/bin/iPhone/Debug/device-builds/iphone10.1-11.0/XamarinSampleApp.app \
+	--executable \
+	XamarinSampleApp \
+	--debug \
+	--profiling \
+	--linksdkonly \
+	--sdkroot \
+	'/Applications/Xcode 2.app/Contents/Developer' \
+	--sdk \
+	11.0 \
+	--targetver \
+	8.1 \
+	--aot-options=-O=float32 \
+	--http-message-handler=HttpClientHandler \
+	--abi=arm64 \
+	--symbollist \
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/mtouch-symbols.list \
+	--dsym=no \
+	-r \
+	/Users/mbhattathiri/Desktop/awsdk-1.2/lib/ios-unified/AirWatchSDK.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Net.Http.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Xml.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Xamarin.iOS.dll \
+	-r \
+	/Users/mbhattathiri/Desktop/awsdk-1.2/lib/ios-unified/AirWatchSDK.dll \
+	--target-framework \
+	'Xamarin.iOS,v1.0' \
+	/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/bin/iPhone/Debug/XamarinSampleApp.exe \

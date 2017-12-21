@@ -1,0 +1,405 @@
+/*
+ Copyright © 2014 AirWatch, LLC. All rights reserved.
+ This product is protected by copyright and intellectual property laws in the United States and other countries as well as by international treaties.
+ AirWatch products may be covered by one or more patents listed at http://www.vmware.com/go/patents.
+ */
+
+/* A single strings file, whose title is specified in your preferences schema. The strings files provide the localized content to display to the user for each of your preferences. */
+
+/*************  Common AW Localized strings **********/
+"UnknownServerErrorMessage" ="אירעה שגיאת שרת לא ידועה. אנא צור קשר עם המנהל שלך.";
+"InvalidCredentialsTitle" = "לא ניתן היה לאמת את האישורים שסופקו. אנא נסה שוב.";
+"UnknownTitle" = "לא ידוע";
+"UserCancelledOperation" = "משתמש ביטל את החיבור.";
+"Ok" = "אישור";
+"DataSampleFailedTransmitTitle" = "נכשל שידור DataSample";
+"ConnectionFailureFormat" = "נכשל חיבור עם קוד סטטוס %d";
+"ErrorAuthenticating" = "שגיאה באימות";
+"LoginMessage" ="היכנס לפני שתנסה שוב";
+"EndpointUnavailable" = "בקשה זו אינה זמינה בגרסת מסוף הבקרה הנוכחית שלך.";
+"Retry" = "נסה שוב";
+"Wipe" = "מחק";
+"Warning" = "אזהרה";
+"DeviceNotEnrolledOrAppNotWhitelistedError" = "אירעה שגיאה. אנא וודא שאתה רשום ומותר לך להשתמש באפליקציה זו.";
+
+/*************  AWAssetTracker Localized strings **********/
+"UnableToRetrieveDeviceStatus" = "לא ניתן לאחזר סטטוס מכשיר";
+"DeviceMustBeEnrolled" = "על המכשיר להיות רשום";
+"DeviceCheckoutFailed" = "הוצאת מכשיר נכשלה";
+"ConnectionLostError" = "החיבור לשרת אבד.\nנסה שוב מאוחר יותר.";
+"NetworkConnectionLost" = "חיבור לרשת אבד";
+"ConnectionUnavailable" = "חיבור אינו זמין";
+"DeviceNotEnrolled" = "המכשיר אינו רשום";
+"ErrorTitle" = "שגיאה";
+"DeviceNonCompliant" = "המכשיר אינו עומד בתאימות";
+"InvalidLocationGroup"  = "קבוצת מיקום אינה חוקית";
+"DeviceAlreadyCheckedIn" = "מכשיר כבר הוחזר";
+"DeviceAlreadyCheckedOut" = "מכשיר כבר הוצא";
+"InvalidCheckOutRequest" = "בקשת הוצאה לא חוקית";
+"DeviceCanNotShared" = "מכשיר לא יכול להיות משותף";
+"UnknownErrorMessage" = "אירעה שגיאה לא ידועה. אנא צור קשר עם המנהל שלך";
+"UnknownError" = "שגיאה לא ידועה";
+
+/************ AWSDK *********/
+"UDIDiOS7CompatibiltiyError" = "המכשיר לא תואם לסביבה זו. אנא צור קשר עם מנהל המערכת שלך לקבלת עזרה נוספת. קוד שגיאה %d";
+"AWSDKInitializationError" = "שגיאה בחיבור לשרת. אנא צור קשר עם מנהל המערכת שלך לקבלת עזרה נוספת. קוד שגיאה %d";
+"AgentInitializationError" = "אירעה שגיאה. אנא רשום מחדש את מכשירך. אם אתה צריך עזרה נוספת צור קשר עם מנהל המערכת שלך. קוד שגיאה %d";
+"CompatibilityVerifiedTitle" = "התאמה אומתה";
+"CompatibilityVerifiedMessage" = "אומתה התאמה עם השרת.";
+"NotEnrolledOrNotCompliant" = "המכשיר אינו רשום או אינו תואם לסביבה זו. אנא צור קשר עם מנהל ה-IT שלך לקבלת עזרה נוספת.";
+
+/*************  AWClaimedAuthenticationViewController Localized strings **********/
+"Office365NavBarTitle" = "Office 365";
+
+/*************  AWCompliance Localized strings **********/
+"AWComplianceFailedToStart" = "נכשלה התחלת תאימות AW";
+
+
+/*************  AWContentController Localized strings **********/
+"BadRequestURL" = "כתובת URL של בקשה שגויה";
+"RequestCauseServerConflict" = "הבקשה גרמה לקונפליקט בשרת";
+"InvalidSessionTokenError" = "שגיאה של אסימון הפעלה לא חוקי";
+"ServerCommunicationError" = "שגיאה בתקשורת שרת";
+
+
+/*************  AWDataSamplerTransmitter Localized strings **********/
+
+
+/*************  AWEnrollmentAccountAuthenticator Localized strings **********/
+"InvalidCredentialsErrorTitle" = "אישורים לא חוקיים. אנא בדוק את פרטי הכניסה וזיהוי הקבוצה שלך ונסה שוב.";
+"InvalidActivationCodeErrorMessage" = "זיהוי הקבוצה שסופק אינו חוקי. אנא נסה שוב.";
+"InvalidServerURLErrorMessage" = "כתובת ה-URL של השרת שסופקה אינה חוקית. אנא נסה שוב.";
+"DeviceNotFoundErrorMessage" = "המכשיר לא נמצא במופע AirWatch זה. אנא נסה להירשם לפני שתנסה להשתמש ב-Content Locker.";
+"DeviceNotEnrolledErrorMessage" = "המכשיר אינו רשום למופע AirWatch זה. אנא הירשם לפני שתנסה להשתמש ב-Content Locker.";
+"DeviceMismatchErrorMessage" = "המכשיר אינו רשום באמצעות חשבון משתמש AirWatch זה.";
+"AccountLockedErrorMessage"                 = "החשבון שלך נעול ב-LDAP/Airwatch, אנא בדוק עם מנהל";
+"InActiveErrorMessage"                      = "החשבון שלך בוטל במסוף הבקרה של Airwatch, אנא בדוק עם מנהל";
+"NotMDMEnrolledErrorMessage"                = "המשתמש מנסה להיכנס לסביבה שבה נדרשת הרשמה ל-MDM, אנא בדוק עם מנהל";
+"InvalidTokenErrorMessage"                  = "משתמש מנסה להיכנס עם אסימון פג תוקף/אסימון שאינו קיים, אנא בדוק עם מנהל";
+"DeviceNotFoundErrorMessage"                = "מכשיר לא נמצא, אנא בדוק עם מנהל";
+"SyncClientNotEnabledErrorMessage"          = "סנכרון לקוח אינו מופעל, אנא בדוק עם מנהל";
+"PersonalContentNotEnabledErrorMessage"     = "תוכן אישי אינו מופעל, אנא בדוק עם מנהל";
+"AwchatNotEnabled"                          = "AWChat אינו מופעל, אנא בדוק עם מנהל";
+"AccountLockedOutError"                     = "חשבון זה נחסם.";
+"InactiveAccountError"                      = "חשבון זה לא הופעל.";
+"MDMEnrollmentRequiredError"                = "נדרשת הרשמת MDM במופע AirWatch זה.";
+"InvalidTokenError"                         = "סופק אסימון לא חוקי.";
+"ConfigurationError"                        = "אירעה שגיאת עיצוב תצורה.";
+
+
+/*************  AWHTTPRequestOperation Localized strings **********/
+"UnexpectedStatusCodeFormat" = "התקבל קוד סטטוס לא צפוי של %d";
+"UnexpectedContentTypeFormat"  = "סוג התוכן הצפוי %@, התקבל %@";
+
+
+/*************  AWLog Localized strings **********/
+"NoDeviceLogsToSend" = "אין יומני מכשיר לשליחה";
+"NoCrashLogsToSend" = "אין יומני קריסה לשליחה";
+"EmptyLogFile" ="קובץ יומן ריק.";
+"NoLogsForSeverityGreaterOrEqualConfiguredLevel"   = "היומן לא מכיל הזנה עם חומרה גדולה יותר או שווה לרמה שתצורתה עוצבה.";
+"FailedToSendLogData" = "נכשלה שליחה של נתוני יומן.";
+"WiFiConnectionError" = "התחבר לרשת WiFi, או צור קשר עם מנהל המערכת שלך.";
+"NeedsWiFiToSendLogData" ="מסוף הבקרה של AW דורש חיבור ל-WiFi כדי לשלוח נתוני יומן.";
+
+/*************  AWRestrictions Localized strings **********/
+"AWRestrictionsFailedToStart" = "נכשלה התחלת הגבלות AW";
+
+
+/*************  AWSecureChannelWrapper Localized strings **********/
+"SecureChannelServerCertErr" = "שגיאת הצפנה עם אישור שרת";
+"SecureChannelHandshakeFailed"  = "לחיצת יד נכשלה";
+"FailedToGetToken"  = "לא ניתן להוציא את המכשיר. אנא נסה שוב או צור קשר עם מנהל.";
+"FailedToInvalidateToken" = "נכשל ביטול תוקף האסימון.";
+
+
+/*************  UIDevice+Power Localized strings **********/
+"UIDeviceBatteryStateFullMessage" = "מלא";
+"UIDeviceBatteryStateChargingMessage" = "טוען";
+"UIDeviceBatteryStateUnpluggedMessage" = "לא מחובר";
+
+
+/*************  AWProxy Localized strings **********/
+"TheProxyConfigurationIsMissing" = "עיצוב תצורת ה-Proxy חסר";
+"CheckServerConfigurationPropertyHasBeenSetAndValidObject" = "וודא שתכונת עיצוב תצורת השרת הוגדרה והיא אובייקט חוקי";
+"ServerConfigurationPropertyHasNotBeenSet" = "תכונת עיצוב תצורת השרת לא הוגדרה";
+"ProxyConfigurationIsInvalid" = "עיצוב תצורת ה-Proxy אינו חוקי";
+"CheckServerConfigurationTypeIsSet" = "וודא שסוג עיצוב תצורת השרת הוגדר";
+"ServerConfigurationTypeIsUnknown" = "סוג עיצוב תצורת השרת אינו ידוע";
+"FailedToRegisterWithNSURLProtocol" = "נכשל רישום עם NSURLProtocol";
+"CheckTheClassYouAreRegisteringIsSubclassOfNSURLProtocol" = "וודא שהמחלקה שאתה רושם היא תת-מחלקה של NSURLProtocol";
+"TheClassYouAttemptedToRegisterIsNotSubclassOfNSURLProtocol" = "המחלקה שאתה מנסה לרשום איננה תת-מחלקה של NSURLProtocol";
+
+
+/*************  AWProxy Localized strings **********/
+"FailedToSignRequest" = "נכשלה חתימה על בקשה";
+"MAGAuthCertificateNotStoredOnTheDevice,OrItIsInvalid" = "אין אישור אימות MAG מאוחסן במכשיר, או שהוא אינו חוקי.";
+"ProxyAuthenticationRequired" = "נדרש אימות Proxy.";
+"InvalidAuthenticationForProxy" = "האימות שסופק ל-Proxy אינו חוקי.";
+"CheckAuthenticationCredentialsAndTryAgain" = "בדוק את אישורי האימות שלך ונסה שוב.";
+"MissingDeviceRootCertificate" = "חסר אישור בסיס של מכשיר";
+"AnActivationCode(LG)WasNeverSaved" = "קוד הפעלה (LG) מעולם לא נשמר.";
+"FailedToGetPACscript" = "נכשלה הבאת PAC script.";
+"SetAutoConfigURLProperty" = "הגדר את מאפיין כתובת URL לעיצוב תצורה אוטומטי.";
+"AutoConfigURLPropertyIsNotSet" = "מאפיין כתובת URL לעיצוב תצורה אוטומטי לא הוגדר.";
+"MakeSureForValidScriptLocatedAtAutoConfigURL" = "וודא שיש script חוקי במיקום של כתובת ה-URL לעיצוב תצורה אוטומטי.";
+"FailedToDecodeAutoConfigUrlRetrievedData" = "נכשל פענוח הנתונים שאוחזרו מכתובת ה-URL לעיצוב תצורה אוטומטי.";
+"FailedToRetrievedAutoConfigUrlData" = "נכשל אחזור נתונים מכתובת URL לעיצוב תצורה אוטומטי.";
+"MakeSurePACURLisValid" = "וודא שכתובת URL PAC היא חוקית.";
+"ErrorAlertProxy" = "ישנה בעיה כלשהי לעצב תצורת MAG. אנא בדוק את הגדרות ה-MAG שלך.";
+
+/********************** AWPasscode Handler ************/
+"Dismiss"    = "התעלם";
+"CurrentPassword" = "סיסמה נוכחית";
+"NewPassword"  = "סיסמה חדשה";
+"ReenterNewPassword" = "הזן שוב סיסמה חדשה";
+"Change"            = "שנה";
+"Cancel"            = "ביטול";
+"Enteryourpasscode:" = "אנא הזן את הסיסמה שלך:";
+"Passcode"          = "סיסמה";
+"Login"             = "כניסה";
+"Notice"            = "הודעה";
+"Passworddoesnotmatch" = "הסיסמה החדשה שהזנת אינה תואמת.";
+"OK"                = "אישור";
+"EnterPasscodeError" = "אנא הזן את הסיסמה החדשה";
+"ReenterPasscodeError" = "אנא הזן מחדש את הסיסמה החדשה";
+"Passworddonotcomplyrestriction"  = "הסיסמה שלך אינה תואמת להגבלות.";
+"MaximumPasscodeAttemptsMessage" = "הגעת למספר המקסימלי של ניסיונות כושלים. משאבי חברה נמחקים מהמכשיר שלך.";
+"MaximumPasscodeAgeHasExpired" = "הסיסמה הנוכחית פגה. אנא צור סיסמה חדשה.";
+"PasscodePolicyViolation" = "אנא עיין במדיניות הסיסמה כדי להגדיר סיסמה.";
+"MaximumPasscodeAttemptsMessageForApplication" = "הגעת למספר המקסימלי של ניסיונות כושלים. נתוני האפליקציה שלך נמחקים.";
+
+"AttemptsLeftMessage" = "נותרו לך %d נסיונות";
+"IncorrectPasscodeEntered" = "הסיסמה שהוזנה אינה נכונה";
+"BackOffMessage"  = "האפליקציה שלך אינה פעילה. נסה שוב בעוד %d שניות";
+"NonSimplePasscode" =   "הסיסמה שלך לא יכולה להיות פשוטה.";
+"AlphanumericPasscodeRequired" = "הסיסמה שלך אינה אלפאנומרית.";
+"NumericPasscodeRequired" = "הסיסמה שלך אינה מספרית.";
+"MimimumPasscodeLength"   = "לסיסמה שלך צריכים להיות לפחות %d תווים.";
+"MimimumComplexCharacters"= "לסיסמה שלך צריכים להיות לפחות %d תווים מורכבים.";
+"ExpiredPasscode"         = "נעשה בסיסמה זו שימוש בעבר. אנא הזן סיסמה שונה.";
+"EnterYourPin"            = "צור סיסמה";
+"PinCreationMessage"      = "יעשה שימוש בסיסמה זו כדי להיכנס אל האפליקציה.";
+"CreatePin"               = "אנא הגדר סיסמה";
+"PasscodeDidntMatch"      = "סיסמאות לא תאמו, הזן אותם שוב.";
+"Continue"                = "המשך";
+"EnterAPin"               = "אנא הזן PIN";
+"Pin"                     = "PIN";
+"ConfirmPin"              = "אשר PIN";
+"ConfirmPasscode"         = "אשר סיסמה";
+"RetrievingOldPasscode"   = "מאחזר את הסיסמה הישנה שלך...";
+"NotValidCredentials"     = "אישורים לא חוקיים!";
+"OldPasscodeCannotBeEmpty"   = "שדה סיסמה ישנה לא יכול להיות ריק";
+"PasscodeCannotBeEmpty"   = "שדה סיסמה חדשה לא יכול להיות ריק";
+"ForgotPasscode"          = "שכחת סיסמה?";
+"ReEnterNewPasscode"      = "הזן שוב סיסמה חדשה";
+"PasscodeRestriction"     = "הגבלת סיסמה";
+"PasscodePolicyInitial"   = "הסיסמה שלך צריכה לכלול \n";
+"PasscodePolicyNumeric"   = "לפחות %d מספרים\n";
+"PasscodePolicySimple"    = "בלי תווים חוזרים/עולים/יורדים";
+"PasscodePolicyAplhaNumeric"    =   "לפחות %d תווים";
+"PasscodePolicyAplhaNumeric2"   =   "לפחות מספר ואות";
+"PasscodePolicyComplexChar"     =   "ו-%d סימנים";
+"Create" = "צור";
+"AttemptLeftMessage" = "נותרו לך %d נסיונות";
+
+/********************** Offline Access *******************/
+"OfflineAccessNotAllowed"       = "גישה לא מקוונת היא מוגבלת. אנא התחבר לאינטרנט כדי לגשת למשאבים.";
+"OfflineAccessDurationExceeded" = "הגעת למכסת גישה לא מקוונת. אנא התחבר לאינטרנט כדי לגשת למשאבים.";
+"OfflineMessage" = "אתה צריך להיות מקוון כדי להשתמש בתכונה זו.";
+
+/********************** Command Processor *******************/
+"NoProfilesAvailableForRepublish" = "אין פרופילים זמינים לפרסום חוזר.";
+
+/*************AWEnrollmentAuthenticationViewController**********/
+"CompleteAllFieldsAlertMessage"="אנא השלם את כל השדות ונסה שוב.";
+"AuthenticatingTitle" = "מאמת";
+"ErrorAlert"="אנא ספק כתובת URL של שרותי מכשיר AirWatch כדי להמשיך.";
+"DeviceNotEnrolledAlertMessage"="מכשיר זה אינו רשום כרגע. האם ברצונך לרשום אותו כעת?";
+"ErrorAlertServerUnreachable"= "נראה שאי אפשר להגיע לשרת כרגע. נסה שוב מאוחר יותר.";
+
+/************* AWAuthorizeTokenView**********/
+"AuthorizationToken" ="אסימון הרשאה";
+"WorkOnline" = "עבוד באופן מקוון";
+
+"Username"="שם משתמש";
+"Password" = "סיסמה";
+
+/************* Passcode Rules - AWEnrollmentCreatePinViewController **********/
+"YourPasscodeShould" = "על הסיסמה שלך:";
+"NumericPasscodeLengthInstruction" = "\n - לכלול לפחות (%d) מספרים";
+"DontAllowSimpleNumericPasscodeInstrution" = "\n - לא לכלול תווים חוזרים/עולים/יורדים";
+"AlphaNumericPasscodeLengthInstruction" = "\n - להיות לפחות באורך (%d) תווים";
+"AlphaNumericSimplePasscodeInstrution" = "\n - לכלול לפחות מספר (1) ואות (1)";
+"ComplexSymbolsRequiredInstruction" = " לכלול (%d) סמלים";
+"DontAllowSimpleAlphanumericInstrution" = "\n - בלי תווים חוזרים/עולים/יורדים";
+"PasscodeHistoryInstruction" = "\n - לא להיות זהה ל-(%d) סיסמאות אחרונות.";
+
+/******************************* SAML Error Handling *******************************************/
+"PleaseContactYourAdminstrator" = "אנא צור קשר עם המנהל שלך";
+
+/******************************* AWAuthenticationViewController *******************************************/
+"UsernamePasswordRememberMe" = "לזכור שם משתמש?";
+
+/******************************* AWServerDetailsViewController *******************************************/
+"Success" = "הצלחה";
+"ChangeServerDetailsTitle" = "פרטי שרת";
+"ConfirmChangeServerDetails" = "האם אתה בטוח שברצונך לשנות את פרטי השרת שלך? פעולה זו תגרום להסרת נתוני האפליקציה";
+"ChangeServerDetailsMessage" = "פרטי שרת השתנו בהצלחה";
+"ScanQRCodeTitle" = "סרוק קוד QR כדי למלא טופס";
+"ServerURLPlaceholder" = "https://example.co.il";
+"GroupID" = "זיהוי קבוצה";
+"InvalidQRCodeErrorMessage" = "קוד QR לא חוקי. אנא נסה שוב עם קוד QR חוקי";
+"QRCodeScanErrorMessage" = "שגיאה בסריקת קוד QR. אנא נסה שוב";
+"ServerURLConnectionError" = "שגיאה בחיבור לשרת. אנא בדוק את חיבור הרשת שלך או צור קשר עם מנהל המערכת שלך";
+"EmptyServerDetailsErrorMessage" = "כדי להמשיך, אנא הזן כתובת URL של השרת וזיהוי קבוצה חוקיים.";
+
+"AWDeleteReInstall" = "לאחר מחיקה והתקנה מחדש, אתה צריך חיבור אינטרנט פעיל לשרת ניהול המכשירים כדי שנוכל להמשיך.";
+
+/*****************  Touch ID Authentication  ************************************/
+"UseTouchID" = "השתמש ב-Touch ID";
+"AuthenticateForAccess" = "אמת לקבלת גישה";
+
+"CryptKeyRetrievalFromTouchIDFailedPasscodeMessage" = "נראה שרשימת טביעות האצבע במכשיר שונתה. למטרות אבטחה, אנא הזן מחדש את הסיסמה שלך כדי לאפשר שוב את השימוש ב-TouchID.";
+"CryptKeyRetrievalFromTouchIDFailedCredentialsMessage" = "נראה שרשימת טביעות האצבע במכשיר שונתה. למטרות אבטחה, אנא הזן מחדש את האישורים שלך כדי לאפשר שוב את השימוש ב-TouchID.";
+
+/********* Compromised Blocker View *********/
+"AWCompromiseBlockerMessageWhenNoNetwork" = "המכשיר שלך פגוע (jail broken). ובגלל קישוריות הרשת, אינך יכול לגשת אל האפליקציה שלך.";
+
+
+/*************  Common AW Localized strings **********/
+"TryAgain"= "נסה שוב";
+"of"= "מתוך";
+"No"= "לא";
+"YesTitle"="כן";
+"Accept"="קבל";
+"DeleteTitle"="מחק";
+"CancelTitle"="בטל";
+"SubmitTitle" = "הגש";
+"PageNoTitle"="עמוד %d";
+"MarkUnreadtitle" = "סמן כלא נקרא";
+"MarkReadTitle" = "סמן כנקרא";
+"MarkAction" = "פעולה";
+"DeleteAllTitle"="מחק הכל";
+"Prev" = "קודם";
+"Next" = "הבא";
+
+/*******************AWTableViewController********************************************/
+"ReleaseTitle"= "שחרר כדי לרענן";
+"LoadingLabel"="Loading..." ;
+"RefreshTitle"="משוך כדי לרענן";
+
+/*************AWDocumentContainerView**********/
+"BookmarkedPagesTitle"= "עמודים מסומנים";
+"AllPagesTitle" ="כל העמודים";
+
+/************* AWDocumentInteractionController**********/
+"AccessAlertMessage" = "המנהל אינו מאפשר לפתוח מסמך זה באפליקציה שנבחרה.";
+"WarningMessageTitle"="אזהרה";
+
+/************* AWDocumentSearchView**********/
+"EnterSearchText" = "הזן טקסט חיפוש";
+
+/*************AWEULAViewController**********/
+"DeclineTitle" = "דחה";
+"TermsOfUse" = "תנאי שימוש";
+"Back" = "חזרה";
+
+/*************AWMessageDetailViewController**********/
+"ComplianceCheckTitle"="נדרשת בדיקת תאימות";
+"ComplianceCheckSentTitle" = "נשלחה בדיקת תאימות";
+"DeleteMessageTitle" = "מחק הודעה";
+"ConfirmDeleteMessageTitle" = "למחוק לצמיתות יומן הודעות?";
+"MessageDetailSectionTitle" = "פרטי הודעה";
+"ConsoleMessageTitle" = "הודעת מסוף בקרה";
+"MessageActionSectionTitle" = "פעולה";
+
+/*************AWMessageTypesViewController**********/
+"MessageTypesTitle"="סוגי הודעה";
+"TableCellAllMessages"="כל ההודעות";
+"TableCellCompliance"="תאימות";
+"TableCellUserAgreement"="הסכם משתמש";
+"TableCellAppCatalog"="App Catalog";
+"TableCellMessages"="הודעות";
+
+/*************AWMessageViewController**********/
+"AllTitle" = "הכל";
+"UnreadTitle" = "לא נקרא";
+"ReadTitle" = "נקרא";
+"NoMessagesTitle" = "אין הודעות";
+"MarkAllTitle" = "סמן הכל";
+"MarkItemsTitle"= "סמן";
+"DeleteMessagesTitle"="מחק הודעות";
+"ConfirmDeleteMessages"= "למחוק לצמיתות הודעות שנבחרו?";
+"Messages" = "הודעות";
+
+/**********AWPDFDocumentDocument**********/
+"PasswordAlertTitle" = "סיסמת מסמך";
+
+/**********AWPDFOutlineViewCell**********/
+"NoTitle" = "(אין כותרת)";
+
+/**********AWPDFSearchViewController**********/
+"SearchViewTitle"="חפש במסמך";
+"HeaderSectionHitNumber"="( %d )";
+"HeaderSectionTOCTitle"= "%@";
+"HeaderSectionPageAndHitNumber" ="עמוד %d ( %d )";
+"ExpandAllTitle"= "הרחב הכל";
+"CollapseAllTitle"= "צמצם הכל";
+"SortByHitTitle" = "מיין לפי תוצאה";
+"SortByPageTitle" = "מיין לפי עמוד";
+"PauseTitle"= "השהה";
+"ResumeTitle" = "חדש פעולה";
+"DoneTitle"= "בוצע";
+"NoResultTitle"="לא נמצאו תוצאות";
+"SearchCompleteTitle"= "חיפוש הושלם";
+"SearchingPageMessageTitle"= "Searching page %i..." ;
+
+/**********AWServerPathView**********/
+"ServerPath"="נתיב שרת";
+
+/**********AWServerSetupController**********/
+"UrlTitle"="כתובת URL";
+"URLPlaceholder" ="https://example.co.il";
+"GroupIDPlaceholder"="זיהוי לדוגמה";
+"InvalidURLAlert"="נראה שכתובת ה-URL שהוזנה אינה כתובת URL חוקית.";
+
+/**********AWTabBar*******************/
+"NewTab" = "לשונית חדשה";
+
+/* RSA Adaptive Auth */
+
+"BlankAnswerErrorMsg" = "שדה PIN אינו יכול להיות ריק. אנא הזן את ה-PIN שלך כדי להמשיך.";
+"WrongAnswerLengthErrorMsg"  = "מספר תווי PIN לא חוקי. ה-PIN שלך צריך להכיל בין %lu ל-%lu תווים.";
+
+
+"AnswerPlaceHolderPinAndSecureIDToken" = "אנא הזן את ה-PIN ואסימון ה-SecurID שלך.";
+"AnswerPlaceHolderNewPin" = "PIN";
+
+"ChallengeServerError" = "שגיאת שרת. אנא צור קשר עם המנהל שלך.";
+"ChallengeLocked" = "החשבון שלך ננעל. אנא צור קשר עם המנהל שלך.";
+"ChallengeNextTokenAuth" = "אנא הזן את ה-PIN ואסימון ה-SecurID הבא שלך";
+"ChallengeNextTokenAuthAfterNewPinSet" = "אנא הזן את ה-PIN ואסימון ה-SecurID שלך";
+"ChallengeNewPinFromSystem" = "הזן PIN כ-";
+"ChallengeNewPinFromUser" = "הזן PIN חדש";
+"ChallengeTokenAuth" = "אנא הזן את ה-PIN ואסימון ה-SecurID שלך. אם לא הגדרת לעצמך PIN, הזן רק את אסימון ה-SecurID שלך.";
+
+/*************  AW Localized strings for Errors **********/
+"ApplicationRegistrationDidNotComplete" = "שגיאה באימות בקשת האפליקציה";
+
+/************ AW Certificate Pinning *************/
+"AutodiscoveryPublicKeyAuthenticationFailureMessage" = "בעת ניסיון להביא אישור מהגילוי האוטומטי, AW-SDK נתקל בכשל אימות מפתח ציבורי";
+"EnrollmentServerPublicKeyAuthenticationFailureMessage" = "בעת ניסיון לתקשר עם שירותי המכשיר, AW-SDK נתקל בכשל אימות מפתח ציבורי";
+
+/* SAML Authentication */
+"SAMLVerificationUnavailableErrorMessage" = "האפליקציה שלך הופכת את SAML ללא זמין. אנא הפוך לזמין ונסה שוב";
+"SAMLVerificationInvalidGroupIDErrorMessage" = "זיהוי קבוצה לא חוקי";
+"SAMLVerificationInvalidServerURLErrorMessage" = "כתובת URL של שרת לא חוקית";
+"SAMLVerificationNoServerResponseErrorMessage" = "אין תגובה מהשרת";
+"SAMLVerificationNoRedirectURLErrorMessage" = "השרת לא החזיר כתובת URL של ספק שירות";
+"LogoutMessage" = "אתה מנותק";
+"SAMLIDPAuthenticationMessage" = "מבצע אימות עם ספק הזהות";
+"SAMLContactingSPMessage" = "יוצר קשר עם ספק השירות";
+"SAMLAuthenticationCancelledMessage" = "המשתמש ביטל את האימות. אנא נסה שוב.";
+
+/* Intercept Links */
+"TargetAppNotInstalledMessage" = "לא מותקנות במכשירך האפליקציות המתאימות לביצוע הפעולה %@.";

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>get-task-allow</key>
+	<true/>
+	<key>application-identifier</key>
+	<string>Z7N7QHVWT2.com.air-watch.secure.browser</string>
+	<key>com.apple.developer.icloud-container-environment</key>
+	<string>Development</string>
+	<key>com.apple.developer.icloud-container-identifiers</key>
+	<array>
+		<string>iCloud.com.air-watch.secure.browser</string>
+	</array>
+	<key>com.apple.developer.ubiquity-container-identifiers</key>
+	<array>
+		<string>iCloud.com.air-watch.secure.browser</string>
+	</array>
+	<key>com.apple.developer.team-identifier</key>
+	<string>S2ZMFGQM93</string>
+	<key>aps-environment</key>
+	<string>development</string>
+</dict>
+</plist>

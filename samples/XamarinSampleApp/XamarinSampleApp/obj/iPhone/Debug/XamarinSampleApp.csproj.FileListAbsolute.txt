@@ -1,0 +1,18 @@
+/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/bin/iPhone/Debug/XamarinSampleApp.exe
+/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/bin/iPhone/Debug/XamarinSampleApp.pdb
+/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/bin/iPhone/Debug/AirWatchSDK.dll
+/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/ibtool/_BundleResourceWithLogicalName.items
+/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/actool/_PartialAppManifest.items
+/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/actool/_BundleResourceWithLogicalName.items
+/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/optimized/Images/Information.png
+/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/optimized/Images/Authentication.png
+/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/optimized/Images/DLP.png
+/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/optimized/Images/Encryption.png
+/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/optimized/Images/Instrumentation.png
+/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/optimized/Images/Remote Config.png
+/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/optimized/Images/Tunneling.png
+/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/optimized/AWSDKDefaults.bundle/AWSDKDefaultSettings.plist
+/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/device-builds/iphone10.1-11.0/optimized/
+/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/XamarinSampleApp.csproj.CoreCompileInputs.cache
+/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/XamarinSampleApp.exe
+/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/obj/iPhone/Debug/XamarinSampleApp.pdb
