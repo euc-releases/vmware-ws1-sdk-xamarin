@@ -14,7 +14,7 @@ In order to inject AirWatch SDK functionality into your  Xamarin AWSDK App, inte
 * Xamarin Studio
 	* If you have Visual Studio with the Xamarin plug-in, this should also work, but this document is based on Xamarin Studio.
 * AirWatch-enrolled iOS test device 
-* The AirWatch Xamarin SDK from the Xamarin Component Store `AirWatchSDK.dll`.
+* The AirWatch Xamarin SDK from the Nuget Store  `AirWatchSDK.dll`.
 * A Xamarin iOS app to integrate with the Airwatch SDK
 	* If you do not have a suitable application, you can create a new application in Xamarin Studio and integrate the SDK into that.
 
@@ -203,7 +203,7 @@ To integrate AirWatch Android SDK Xamarin components into an existing Xamarin An
 
 ### Requirements
 * Xamarin Studio or Visual Studio with the Xamarin plugin.
-* AirWatch Xamarin Android SDK binaries from the Xamarin Component Store.
+* AirWatch Xamarin Android SDK binaries from the Nuget Store.
 * Android test device running Ice Cream Sandwich and above.
 * Xamarin Android app to integrate with the Airwatch SDK targeting Android 4.0(ICS)+ / API Level 14+.
 * AirWatch Agent v7.0+ for Android from Google Playstore.
@@ -211,7 +211,7 @@ To integrate AirWatch Android SDK Xamarin components into an existing Xamarin An
 
 ### Integrating AirWatch SDK
 1. While integrating **AirWatch SDK**, application method count may exceed 64k due to library dependencies. Enable Multi-Dex option for the app in Xamarin/Visual studio.
-2. Add the five AirWatch Android SDK binaries downloaded through Xamarin Component store(.dll's) as References to the application.
+2. Add the six AirWatch Android SDK binaries downloaded through  Nuget store(.dll's) as References to the application.
 
         AWClientSDKBindings
         AWCredentialsExtLibraryBinding

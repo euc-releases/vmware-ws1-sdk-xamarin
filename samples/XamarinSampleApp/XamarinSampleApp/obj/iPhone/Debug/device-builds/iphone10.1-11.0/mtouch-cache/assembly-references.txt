@@ -1,8 +1,0 @@
-/Users/mbhattathiri/Desktop/awsdk-1.2/samples/XamarinSampleApp/XamarinSampleApp/bin/iPhone/Debug/XamarinSampleApp.exe
-/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.2/lib/mono/Xamarin.iOS/mscorlib.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.2/lib/mono/Xamarin.iOS/../../64bits/Xamarin.iOS.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.2/lib/mono/Xamarin.iOS/System.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.2/lib/mono/Xamarin.iOS/Mono.Security.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.2/lib/mono/Xamarin.iOS/System.Xml.dll
-/Library/Frameworks/Xamarin.iOS.framework/Versions/11.6.1.2/lib/mono/Xamarin.iOS/System.Core.dll
-/Users/mbhattathiri/Desktop/awsdk-1.2/lib/ios-unified/AirWatchSDK.dll
