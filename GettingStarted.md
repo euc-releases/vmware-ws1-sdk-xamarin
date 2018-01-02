@@ -10,7 +10,7 @@ This document explains how to integrate the AirWatch SDKs into your Xamarin-buil
 In order to inject AirWatch SDK functionality into your  Xamarin AWSDK App, integrate the two systems.
 
 ### Requirements
-* iOS 8.0+
+* iOS 8.1+
 * Xamarin Studio
 	* If you have Visual Studio with the Xamarin plug-in, this should also work, but this document is based on Xamarin Studio.
 * AirWatch-enrolled iOS test device 
@@ -205,7 +205,7 @@ To integrate AirWatch Android SDK Xamarin components into an existing Xamarin An
 * Xamarin Studio or Visual Studio with the Xamarin plugin.
 * AirWatch Xamarin Android SDK binaries from the Nuget Store.
 * Android test device running Ice Cream Sandwich and above.
-* Xamarin Android app to integrate with the Airwatch SDK targeting Android 4.0(ICS)+ / API Level 14+.
+* Xamarin Android app to integrate with the AirWatch SDK targeting Android 4.0(ICS)+ / API Level 14+.
 * AirWatch Agent v7.0+ for Android from Google Playstore.
 * Whitelisted Release/Debug signing key as explained below should be used for signing the Xamarin android application.
 
@@ -328,7 +328,7 @@ To integrate AirWatch Android SDK Xamarin components into an existing Xamarin An
 4. Data Loss Prevention:
     a) Restricting screenshot as per policy is enforced when your activity extends GatewayBaseActivity.
     b) For restricting copy-paste, application should use AirWatch wrapped textviews like AWEditText, AWTextView and AWWebView.
-    c) Inorder to restrict OpenIn for documents, weblinks and email, use `UriOpenerFactory.Instance.OpenUri(context, uri)` and `UriOpenerFactory.Instance.OpenUri(context, filepath)` as shown in the sample app.
+    c) In order to restrict OpenIn for documents, weblinks and email, use `UriOpenerFactory.Instance.OpenUri(context, uri)` and `UriOpenerFactory.Instance.OpenUri(context, filepath)` as shown in the sample app.
 5. Custom Settings: Inorder to get custom settings set on the console, SDKManager API needs to be used. In general any SDKManager API can be used in below manner:
 
         Using SDKManager APIs
