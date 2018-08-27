@@ -2,7 +2,7 @@
 # VMware AirWatch Software Development Kit (SDK)
 ## iOS And Android - Getting Started
 
-This document explains how to integrate the AirWatch SDKs into your Xamarin-built apps. 
+This document explains how to integrate the AirWatch SDKs into your Xamarin-built apps.
 
  For detailed information about the AirWatch SDK and managing internal apps, See the **VMware AirWatch Mobile Application Management (MAM) Guide** and the **VMware AirWatch SDK Technical Implementation Guides** located on the AirWatch Resources Portal at https://resources.air-watch.com.
 
@@ -10,35 +10,34 @@ This document explains how to integrate the AirWatch SDKs into your Xamarin-buil
 In order to inject AirWatch SDK functionality into your  Xamarin AWSDK App, integrate the two systems.
 
 ### Requirements
-* iOS 8.1+
+* iOS 9.0+
 * Xamarin Studio
 	* If you have Visual Studio with the Xamarin plug-in, this should also work, but this document is based on Xamarin Studio.
-* AirWatch-enrolled iOS test device 
-* The AirWatch Xamarin SDK from the Nuget Store  `AirWatchSDK.dll`.
+* AirWatch-enrolled iOS test device
+* The AirWatch Xamarin SDK (AWSDK) package from the Nuget Store.
 * A Xamarin iOS app to integrate with the Airwatch SDK
 	* If you do not have a suitable application, you can create a new application in Xamarin Studio and integrate the SDK into that.
 
 ### Add App to the AirWatch Console
-Upload your internal app to the AirWatch Admin Console to register it with the system. This step enables AirWatch to identify the app and to add functionality to it. The **AirWatch MAM Guide** details how to upload an internal app. 
+Upload your internal app to the AirWatch Admin Console to register it with the system. This step enables AirWatch to identify the app and to add functionality to it. The **AirWatch MAM Guide** details how to upload an internal app.
 
 1. In Xamarin, export the app as a signed IPA.
 2. Log into the AirWatch Admin Console as an administrator.
-3. Navigate to **Apps & Books > Applications > List View > Internal** and then choose **Add Application**. 
+3. Navigate to **Apps & Books > Applications > List View > Internal** and then choose **Add Application**.
 4. Select **Upload > Local File**, add the IPA file, and select **Continue**.
 5. Select **More** and choose **SDK**.
 6. Select the **iOS Default Settings** profile in the *SDK Profile* field.
 7. Select **Save and Assign** to continue to the **Assignment** page.
-8. Assign the app to a smart group and select a **Push Mode**. 
+8. Assign the app to a smart group and select a **Push Mode**.
 9. Select **Add**, and **Save & Publish** the app to complete the upload process.
 
 ### Add Required SDK DLL to Project
-Add the AirWatch SDK DLL to your Xamarin project to enable the Xamarin IPA file in AirWatch to recognize and apply the AirWatch SDK functionality. 
+Add the AirWatch SDK DLL to your Xamarin project to enable the Xamarin IPA file in AirWatch to recognize and apply the AirWatch SDK functionality.
 
 1. Open Xamarin Studio.
-2. Right-click **References** and choose **Edit References**.
-3. Select the *.Net Assembly* tab and then choose **Browse**.
-4. Select the **AirWatchSDK.dll** file from your file system.
-5. Enable the *Assembly* check box if it isn't already and select **Ok**.
+2. Right-click **Packages** and select **Add Packages**.
+3. Search AWSDK on nuget.org and add it to the project.
+4. Enable the *Assembly* check box if it isn't already and select **Ok**.
 
 ### Enable Communication Between the AirWatch Agent and the Xamarin IPA File
 Expose a custom scheme in the Info.plist file in the Xamarin project to enable the app to receive a call back from the AirWatch Agent. Your app receives communications from the AirWatch Admin Console through the AirWatch Agent. To expose the scheme, add a callback scheme registration and add a query scheme to your Xamarin project.
@@ -61,12 +60,13 @@ Expose a custom scheme in the Info.plist file in the Xamarin project to enable t
 5. Change the *Type* from *String* to *Array*.
 6. Within the *Array*, select *Add new entry*.
 7. Select the green "PLUS" in the selected row.
-8. Double-click the *Value* column, and set the value to **airwatch**.
-9. Add another entry under **LSApplicationQueriesSchemes** for **workspace**.
-10. Save the file.
+8. Double-click the *Value* column, and set the value depending on the anchor application.
+   * If the is device enrolled with the AirWatch Agent, use airwatch.
+   * If the is device enrolled with the Workspace ONE app, use awws1enroll.
+9. Save the file.
 
-### Add an App Delegate to the Xamarin Project 
-To complete integration of Xamarin and AirWatch SDK within your app use a custom Application Delegate. Create a class to act as an `AWSDKDelegate`, define the callback scheme within the class, and set the class to recognize when initialization is complete. 
+### Add an App Delegate to the Xamarin Project
+To complete integration of Xamarin and AirWatch SDK within your app use a custom Application Delegate. Create a class to act as an `AWSDKDelegate`, define the callback scheme within the class, and set the class to recognize when initialization is complete.
 
 1. Create a class to act as an `AWSDKDelegate` and to receive SDK callbacks.  
 
@@ -74,19 +74,19 @@ To complete integration of Xamarin and AirWatch SDK within your app use a custom
 		using System.Diagnostics;
 		using System;
 		using AirWatchSDK;
-			
+
 		namespace sdkSampleApp
 		{
 			public class AirWatchSDKManager: AWSDKDelegate
 			{			
 				private static AirWatchSDKManager instance;
 				private static string LogCategory = "AirWatchSDK";
-				
+
 				// private, use the Instance below
 				private AirWatchSDKManager ()
 				{
 				}
-			
+
 				// singleton
 				public static AirWatchSDKManager Instance {
 					get {
@@ -96,48 +96,48 @@ To complete integration of Xamarin and AirWatch SDK within your app use a custom
 						return instance;
 					}
 				}
-			
+
 				// Below are all the protocol methods defined in AWSDKDelegate
 				// Add customization here for SDK results
-			
+
 				override public void InitialCheckDoneWithError (NSError error)
 				{
 					// Add any SDK Customization here
 					string message = String.Format ("InitialCheckDoneWithError received {0}, SDK initialized if no error", error);
 					Debug.WriteLine (message, LogCategory);
 				}
-			
+
 				override public void ReceivedProfiles (AWProfile[] profiles)
 				{
 					// Add any SDK Customization here
 					string message = String.Format ("ReceivedProfiles received {0}", profiles);
 					Debug.WriteLine (message, LogCategory);
 				}
-			
+
 				override public void Wipe ()
 				{
 					// Add any SDK Customization here
 					Debug.WriteLine ("Wipe command received", LogCategory);
 				}
-			
+
 				override public void Lock ()
 				{
 					// Add any SDK Customization here
 					Debug.WriteLine ("Lock command received", LogCategory);
 				}
-			
+
 				override public void Unlock ()
 				{
 					// Add any SDK Customization here
 					Debug.WriteLine ("Unlock command received", LogCategory);
 				}
-			
+
 				public override void StopNetworkActivity(AWNetworkActivityStatus status)
         		{
         			// Add any SDK Customization here
             		Debug.WriteLine("StopNetworkActivity received", LogCategory);
         		}
-			
+
 				override public void ResumeNetworkActivity ()
 				{
 					// Add any SDK Customization here
@@ -147,12 +147,12 @@ To complete integration of Xamarin and AirWatch SDK within your app use a custom
 			}
 
 2. Add the listed functionality to the `AppDelegate.cs`.
-	
+
 		using System;
 		using ObjCRuntime;
 		using System.Diagnostics;
 		using AirWatchSDK;
-	
+
 	   ...
 
 		public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
@@ -182,7 +182,7 @@ To complete integration of Xamarin and AirWatch SDK within your app use a custom
 		{
 			return AWController.ClientInstance ().HandleOpenURL (url, "");
 		}
-		
+
 If you are using Xamarin Forms on iOS, you need to add this to your AppDelegate as well.  This will expose the `UIWindow` that is part of the iOS `AppDelegate` but is hidden in `Xamarin.Forms.Platform.iOS.FormsApplicationDelegate`:
 
 	[Export("window")]
@@ -193,9 +193,9 @@ If you are using Xamarin Forms on iOS, you need to add this to your AppDelegate 
 
 
 ### Debug Your Application
-Your application is now SDK-enlightened!  If you do not see an SSO passcode, ensure that the Organization Group has **Single Sign On** enabled and that an **Authentication Type** is configured. These configurations are explained in the **AirWatch MAM Guide**. 
+Your application is now SDK-enlightened!  If you do not see an SSO passcode, ensure that the Organization Group has **Single Sign On** enabled and that an **Authentication Type** is configured. These configurations are explained in the **AirWatch MAM Guide**.
 
- 
+
 
 ## Android Overview
 
@@ -211,42 +211,48 @@ To integrate AirWatch Android SDK Xamarin components into an existing Xamarin An
 
 ### Integrating AirWatch SDK
 1. While integrating **AirWatch SDK**, application method count may exceed 64k due to library dependencies. Enable Multi-Dex option for the app in Xamarin/Visual studio.
-2. Add the six AirWatch Android SDK binaries downloaded through  Nuget store(.dll's) as References to the application.
+2. Add the VMware AirWatch SDK package from the NuGet Gallery.
+3. Add the following dependency (if not already present) NuGet packages from NuGet Package Manager as References to application.
 
-        AWClientSDKBindings
-        AWCredentialsExtLibraryBinding
-        AWMixPanelBindings
-        AWSQLCipherBindings
-        AWFrameworkBindings
-        AWNetworkLibraryBindings
-    
-3. Add the following dependency NuGet packages from NuGet Package Manager as References to application.
+        Xamarin.Android.Support.v13.26.1.0.1
+        Xamarin.Android.Support.Annotations.26.1.0.1
+        Xamarin.Android.Support.Compat.26.1.0.1
+        Xamarin.Android.Support.v7.AppCompat.26.1.0.1
+        Xamarin.Android.Support.v7.CardView.26.1.0.1
+        Xamarin.Android.Support.v7.Preference.26.1.0.1
+        Xamarin.Android.Support.v7.RecyclerView.26.1.0.1
+        Xamarin.Android.Support.Transition.26.1.0.1
+        Xamarin.Android.Support.Media.Compat.26.1.0.1
+        Xamarin.Android.Support.Fragment.26.1.0.1
+        Xamarin.Android.Support.Core.UI.26.1.0.1
+        Xamarin.Android.Support.Core.Utils.26.1.0.1
+        Xamarin.Android.Support.Design.26.1.0.1
+        Xamarin.Android.Support.v14.26.1.0.1
+        Xamarin.Android.Support.v4.26.1.0.1
+        Xamarin.Android.Support.Vector.Drawable.26.1.0.1
+        Xamarin.GooglePlayServices.SafetyNet.32.961.0
+        Xamarin.Android.Support.Fragment.26.1.0.1
+        Xamarin.Google.Guava.23.2.0
+        Square.OkHttp3.3.6.0
+        Square.OkIO.1.11.0
+        Xamarin.Kotlin.StdLib.1.1.3.2
 
-        Xamarin.Android.Support.v13 - version 25.3.1
-        Xamarin.Android.Support.v7.AppCompat - version 25.3.1
-        Xamarin.Android.Support.v7.CardView - version 25.3.1
-        Xamarin.Android.Support.v7.RecyclerView - version 25.3.1
-        Xamarin.Android.Support.Design - version 25.3.1
-        Xamarin.Android.Support.v14.Preference - version 25.3.1
-        Xamarin.GooglePlayServices.SafetyNet - version 32.961.0
-        Square.OkHttp3 - version 3.5.0
-    
 4. Initialize AirWatch SDK:
     a) Extend the application class of the Xamarin app from **AWApplication** class of AirWatch SDK. Override the **MainActivityIntent** to return application's main landing activity. Move app's `onCreate()` business logic to `onPostCreate()`.
-    
+
     **Application class**
-    
+
         namespace XamarinAndroidSampleApp.Landing
         {
             [Application(Label = "@string/app_name", Icon = "@drawable/AppLogo", Theme = "@style/AppTheme")]
-            
+
             public class SampleApplication : AWApplication
             {
                 public SampleApplication(IntPtr handle, JniHandleOwnership ownerShip)
                 : base(handle, ownerShip)
                 {
                 }
-                
+
                 public override Intent MainActivityIntent
                 {
                     get
@@ -255,7 +261,7 @@ To integrate AirWatch Android SDK Xamarin components into an existing Xamarin An
                     return intent;
                     }
                 }
-                
+
                 public override Intent MainLauncherIntent
                 {
                     get
@@ -264,7 +270,7 @@ To integrate AirWatch Android SDK Xamarin components into an existing Xamarin An
                     return intent;
                     }
                 }
-                
+
                 public override bool MagCertificateEnable
                 {
                     get
@@ -272,7 +278,7 @@ To integrate AirWatch Android SDK Xamarin components into an existing Xamarin An
                     return true; // to fetch mag certificate during initial setup
                     }
                 }
-                
+
                 protected override bool IsInputLogoBrandable
                 {
                     get
@@ -280,7 +286,7 @@ To integrate AirWatch Android SDK Xamarin components into an existing Xamarin An
                     return true; // to brand application logo
                     }
                 }
-                
+
                 public override void OnPostCreate()
                 {
                     base.OnPostCreate();
@@ -288,12 +294,12 @@ To integrate AirWatch Android SDK Xamarin components into an existing Xamarin An
                 }
             }
         }
-    
+
     b) Add **AirWatchSDKIntentService** by setting the name as `<AppPackageName>.AirWatchSDKIntentService`.
     c) Set `GatewaySplashActivity` as your main launching activity and and `AirWatchSDKBroadcastReceiver` broadcast receiver declarations in manifest file. With these changes, the manifest file should have entries as shown below:
-    
+
     **Manifest File**
-    
+
         <application android:name="SampleApplication" android:theme="@style/AppTheme" tools:replace="android:label">
         <activity android:name="com.airwatch.gateway.ui.GatewaySplashActivity" android:label="@string/app_name">
         <intent-filter>
@@ -319,7 +325,7 @@ To integrate AirWatch Android SDK Xamarin components into an existing Xamarin An
 
 
     d) For authentication, timeout and data-loss prevention features, all the application activities should extend from `Com.Airwatch.Gateway.UI.GatewayBaseActivity`. It allows the application to handle the lifecycle correctly and to manage the state of **AirWatch SDK**.
-    
+
 ### Features
 
 1. Application level branding, authentication, timeout behavior and offline access are enforced by following by above integration process and extending AirWatch base activity.
@@ -370,4 +376,3 @@ For applications that are deployed publicly through the Play Store, send the pub
 ### Push App to Dev Device using App Catalog
 
 In order for the **AirWatch Agent** to manage an app, it needs to be sent to the device.  This can be done via an installation policy of **Automatic** or by pushing the app down once using the **Agent**'s *APP CATALOG*.  Once the app is listed in the *Managed Apps* section of the Agent, it is ready for local management.
-
