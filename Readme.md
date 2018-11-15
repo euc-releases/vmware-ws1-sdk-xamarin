@@ -1,11 +1,11 @@
 
-# VMware AirWatch Software Development Kit (SDK)
+# VMware Workspace ONE Software Development Kit (SDK)
 ### Xamarin Component for iOS and Android
 
-The VMware Airwatch SDK Component for Xamarin helps enterprise app developers add enterprise- grade security, conditional access, and compliance capabilities to Xamarin-based mobile applications.
+The VMware Workspace ONE SDK Component for Xamarin helps enterprise app developers add enterprise- grade security, conditional access, and compliance capabilities to Xamarin-based mobile applications.
 
-This repo contains sample applications built using VMware AirWatch SDK Plugin for Xamarin, and would help app developers understand how to easily integrate VMware AirWatch SDK into their Xamarin apps in matter of minutes.
+This repo contains sample applications built using VMware Workspace ONE SDK Plugin for Xamarin, and would help app developers understand how to easily integrate VMware Workspace ONE SDK into their Xamarin apps in matter of minutes.
 
-For detailed information about the AirWatch SDK and managing internal apps, See the **VMware AirWatch Mobile Application Management (MAM) Guide** and the **VMware AirWatch SDK Technical Implementation Guides** located on the AirWatch Resources Portal at [https://resources.air-watch.com/](https://resources.air-watch.com/).
+For detailed information about the Workspace ONE SDK and managing internal apps, See the **VMware AirWatch Mobile Application Management (MAM) Guide** and the **VMware Workspace ONE SDK Technical Implementation Guides** located on the Workspace ONE Resources Portal at [https://resources.workspaceone.com](https://resources.workspaceone.com).
 
 Let us know if you have any questions or feedback by emailing us at support@air-watch.com

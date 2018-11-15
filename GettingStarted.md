@@ -1,28 +1,28 @@
 
-# VMware AirWatch Software Development Kit (SDK)
+# VMware Workspace ONE Software Development Kit (SDK)
 ## iOS And Android - Getting Started
 
-This document explains how to integrate the AirWatch SDKs into your Xamarin-built apps.
+This document explains how to integrate the Workspace ONE SDKs into your Xamarin-built apps.
 
- For detailed information about the AirWatch SDK and managing internal apps, See the **VMware AirWatch Mobile Application Management (MAM) Guide** and the **VMware AirWatch SDK Technical Implementation Guides** located on the AirWatch Resources Portal at https://resources.air-watch.com.
+ For detailed information about the Workspace ONE SDK and managing internal apps, See the **VMware AirWatch Mobile Application Management (MAM) Guide** and the **VMware Workspace ONE SDK Technical Implementation Guides** located on the Workspace ONE Resources Portal at https://resources.workspaceone.com.
 
 ## iOS Overview
-In order to inject AirWatch SDK functionality into your  Xamarin AWSDK App, integrate the two systems.
+In order to inject Workspace ONE SDK functionality into your  Xamarin AWSDK App, integrate the two systems.
 
 ### Requirements
-* iOS 9.0+
+* iOS 10.0+
 * Xamarin Studio
 	* If you have Visual Studio with the Xamarin plug-in, this should also work, but this document is based on Xamarin Studio.
-* AirWatch-enrolled iOS test device
-* The AirWatch Xamarin SDK (AWSDK) package from the Nuget Store.
-* A Xamarin iOS app to integrate with the Airwatch SDK
+* Workspace ONE-enrolled iOS test device
+* The Workspace ONE Xamarin SDK (AWSDK) package from the Nuget Store.
+* A Xamarin iOS app to integrate with the Workspace ONE SDK
 	* If you do not have a suitable application, you can create a new application in Xamarin Studio and integrate the SDK into that.
 
-### Add App to the AirWatch Console
-Upload your internal app to the AirWatch Admin Console to register it with the system. This step enables AirWatch to identify the app and to add functionality to it. The **AirWatch MAM Guide** details how to upload an internal app.
+### Add App to the Workspace ONE UEM Console
+Upload your internal app to the Workspace ONE UEM Console to register it with the system. This step enables UEM Console to identify the app and to add functionality to it. The **AirWatch MAM Guide** details how to upload an internal app.
 
 1. In Xamarin, export the app as a signed IPA.
-2. Log into the AirWatch Admin Console as an administrator.
+2. Log into the Workspace ONE UEM Console as an administrator.
 3. Navigate to **Apps & Books > Applications > List View > Internal** and then choose **Add Application**.
 4. Select **Upload > Local File**, add the IPA file, and select **Continue**.
 5. Select **More** and choose **SDK**.
@@ -32,15 +32,15 @@ Upload your internal app to the AirWatch Admin Console to register it with the s
 9. Select **Add**, and **Save & Publish** the app to complete the upload process.
 
 ### Add Required SDK DLL to Project
-Add the AirWatch SDK DLL to your Xamarin project to enable the Xamarin IPA file in AirWatch to recognize and apply the AirWatch SDK functionality.
+Add the Workspace ONE SDK DLL to your Xamarin project to enable the Xamarin IPA file in UEM Console to recognize and apply the Workspace ONE SDK functionality.
 
 1. Open Xamarin Studio.
 2. Right-click **Packages** and select **Add Packages**.
 3. Search AWSDK on nuget.org and add it to the project.
 4. Enable the *Assembly* check box if it isn't already and select **Ok**.
 
-### Enable Communication Between the AirWatch Agent and the Xamarin IPA File
-Expose a custom scheme in the Info.plist file in the Xamarin project to enable the app to receive a call back from the AirWatch Agent. Your app receives communications from the AirWatch Admin Console through the AirWatch Agent. To expose the scheme, add a callback scheme registration and add a query scheme to your Xamarin project.
+### Enable Communication Between the AirWatch Agent / Intelligent Hub and the Xamarin IPA File
+Expose a custom scheme in the Info.plist file in the Xamarin project to enable the app to receive a call back from the AirWatch Agent/ Intelligent Hub. Your app receives communications from the Workspace ONE UEM Console through the AirWatch Agent / Intelligent Hub. To expose the scheme, add a callback scheme registration and add a query scheme to your Xamarin project.
 
 ##### Add Callback Scheme Registration
 
@@ -61,12 +61,12 @@ Expose a custom scheme in the Info.plist file in the Xamarin project to enable t
 6. Within the *Array*, select *Add new entry*.
 7. Select the green "PLUS" in the selected row.
 8. Double-click the *Value* column, and set the value depending on the anchor application.
-   * If the is device enrolled with the AirWatch Agent, use airwatch.
-   * If the is device enrolled with the Workspace ONE app, use awws1enroll.
+   * If the is device enrolled with the AirWatch Agent/ Intelligent Hub, use airwatch.
+   * If the is device enrolled with the Workspace ONE app, use awWorkspace ONEenroll.
 9. Save the file.
 
 ### Add an App Delegate to the Xamarin Project
-To complete integration of Xamarin and AirWatch SDK within your app use a custom Application Delegate. Create a class to act as an `AWSDKDelegate`, define the callback scheme within the class, and set the class to recognize when initialization is complete.
+To complete integration of Xamarin and Workspace ONE SDK within your app use a custom Application Delegate. Create a class to act as an `AWSDKDelegate`, define the callback scheme within the class, and set the class to recognize when initialization is complete.
 
 1. Create a class to act as an `AWSDKDelegate` and to receive SDK callbacks.  
 
@@ -199,19 +199,19 @@ Your application is now SDK-enlightened!  If you do not see an SSO passcode, ens
 
 ## Android Overview
 
-To integrate AirWatch Android SDK Xamarin components into an existing Xamarin Android app follow described steps.
+To integrate Workspace ONE Android SDK Xamarin components into an existing Xamarin Android app follow described steps.
 
 ### Requirements
 * Xamarin Studio or Visual Studio with the Xamarin plugin.
-* AirWatch Xamarin Android SDK binaries from the Nuget Store.
+* Workspace ONE Xamarin Android SDK binaries from the Nuget Store.
 * Android test device running Ice Cream Sandwich and above.
-* Xamarin Android app to integrate with the AirWatch SDK targeting Android 4.0(ICS)+ / API Level 14+.
-* AirWatch Agent v7.0+ for Android from Google Playstore.
+* Xamarin Android app to integrate with the Workspace ONE SDK targeting Android 5.0+ / API Level 14+.
+* AirWatch Agent v7.0+ / Intelligent Hub 9.0for Android from Google Playstore.
 * Whitelisted Release/Debug signing key as explained below should be used for signing the Xamarin android application.
 
-### Integrating AirWatch SDK
-1. While integrating **AirWatch SDK**, application method count may exceed 64k due to library dependencies. Enable Multi-Dex option for the app in Xamarin/Visual studio.
-2. Add the VMware AirWatch SDK package from the NuGet Gallery.
+### Integrating Workspace ONE SDK
+1. While integrating **Workspace ONE SDK**, application method count may exceed 64k due to library dependencies. Enable Multi-Dex option for the app in Xamarin/Visual studio.
+2. Add the VMware Workspace ONE SDK package from the NuGet Gallery.
 3. Add the following dependency (if not already present) NuGet packages from NuGet Package Manager as References to application.
 
         Xamarin.Android.Support.v13.26.1.0.1
@@ -230,15 +230,15 @@ To integrate AirWatch Android SDK Xamarin components into an existing Xamarin An
         Xamarin.Android.Support.v14.26.1.0.1
         Xamarin.Android.Support.v4.26.1.0.1
         Xamarin.Android.Support.Vector.Drawable.26.1.0.1
-        Xamarin.GooglePlayServices.SafetyNet.32.961.0
+        Xamarin.GooglePlayServices.SafetyNet.60.1142.1
+        Xamarin.GooglePlayServices.Base.60.1142.1
         Xamarin.Android.Support.Fragment.26.1.0.1
         Xamarin.Google.Guava.23.2.0
         Square.OkHttp3.3.6.0
         Square.OkIO.1.11.0
-        Xamarin.Kotlin.StdLib.1.1.3.2
 
-4. Initialize AirWatch SDK:
-    a) Extend the application class of the Xamarin app from **AWApplication** class of AirWatch SDK. Override the **MainActivityIntent** to return application's main landing activity. Move app's `onCreate()` business logic to `onPostCreate()`.
+4. Initialize Workspace ONE SDK:
+    a) Extend the application class of the Xamarin app from **AWApplication** class of Workspace ONE SDK. Override the **MainActivityIntent** to return application's main landing activity. Move app's `onCreate()` business logic to `onPostCreate()`.
 
     **Application class**
 
@@ -324,7 +324,7 @@ To integrate AirWatch Android SDK Xamarin components into an existing Xamarin An
         </application>
 
 
-    d) For authentication, timeout and data-loss prevention features, all the application activities should extend from `Com.Airwatch.Gateway.UI.GatewayBaseActivity`. It allows the application to handle the lifecycle correctly and to manage the state of **AirWatch SDK**.
+    d) For authentication, timeout and data-loss prevention features, all the application activities should extend from `Com.Airwatch.Gateway.UI.GatewayBaseActivity`. It allows the application to handle the lifecycle correctly and to manage the state of **Workspace ONE SDK**.
 
 ### Features
 
@@ -352,14 +352,14 @@ To integrate AirWatch Android SDK Xamarin components into an existing Xamarin An
 
 ### Whitelist Signing Key
 
-Before you can begin using the **AirWatch SDK**, you must ensure your application signing key is whitelisted with your AirWatch Admin Console. When your SDK-integrated application starts up, the SDK checks the signing public key with which it is signed. It compared againt the list of whitelisted apps to determine whether your application is trusted.
+Before you can begin using the **Workspace ONE SDK**, you must ensure your application signing key is whitelisted with your Workspace ONE UEM Console. When your SDK-integrated application starts up, the SDK checks the signing public key with which it is signed. It compared againt the list of whitelisted apps to determine whether your application is trusted.
 
-AirWatch allows whitelisting for both apps deployed internally or deployed through a public app store.
+Workspace ONE allows whitelisting for both apps deployed internally or deployed through a public app store.
 
 #### Internally Deployed Applications
 1. After building the application apk, sign it using your own specific app signing key.
-2. Upload the signed apk file to the AirWatch Admin Console as described below. AirWatch Admin Console extracts the application's public signing key and adds it to the whitelisted apps list
-    a) Log into the AirWatch Admin Console as an administrator.
+2. Upload the signed apk file to the Workspace ONE UEM Console as described below. Workspace ONE UEM Console extracts the application's public signing key and adds it to the whitelisted apps list
+    a) Log into the Workspace ONE UEM Console as an administrator.
     b) Navigate to **Apps & Books > Applications > List View > Internal** and then choose *Add Application*.
     c) Select *Upload > Local File*, add the APK file, and select Continue.
     d) Select **More** and choose *SDK*.
@@ -375,4 +375,4 @@ For applications that are deployed publicly through the Play Store, send the pub
 
 ### Push App to Dev Device using App Catalog
 
-In order for the **AirWatch Agent** to manage an app, it needs to be sent to the device.  This can be done via an installation policy of **Automatic** or by pushing the app down once using the **Agent**'s *APP CATALOG*.  Once the app is listed in the *Managed Apps* section of the Agent, it is ready for local management.
+In order for the **AirWatch Agent / Intelligent Hub** to manage an app, it needs to be sent to the device.  This can be done via an installation policy of **Automatic** or by pushing the app down once using the **Agent**'s *APP CATALOG*.  Once the app is listed in the *Managed Apps* section of the Agent, it is ready for local management.
