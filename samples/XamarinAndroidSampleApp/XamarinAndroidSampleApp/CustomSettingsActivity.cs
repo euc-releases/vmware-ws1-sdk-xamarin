@@ -30,9 +30,6 @@ namespace XamarinAndroidSampleApp
                 // as it is already initialised as part of Login flow.
                 var sdkmanager = SDKManager.Init(this);
                 textView.Text = sdkmanager.CustomSettings;
-
-
-
             } catch (AirWatchSDKException e)
             {
                 textView.Text = "AirwatchSDKException during CustomSettings API call";
