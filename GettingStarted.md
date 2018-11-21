@@ -4,7 +4,7 @@
 
 This document explains how to integrate the Workspace ONE SDKs into your Xamarin-built apps.
 
- For detailed information about the Workspace ONE SDK and managing internal apps, See the **VMware AirWatch Mobile Application Management (MAM) Guide** and the **VMware Workspace ONE SDK Technical Implementation Guides** located on the Workspace ONE Resources Portal at https://resources.workspaceone.com.
+ For detailed information about the Workspace ONE SDK and managing internal apps, See the **VMware Workspace ONE UEM Mobile Application Management Guide** and the **VMware Workspace ONE SDK Technical Implementation Guides** located on the Workspace ONE Resources Portal at https://resources.workspaceone.com.
 
 ## iOS Overview
 In order to inject Workspace ONE SDK functionality into your  Xamarin AWSDK App, integrate the two systems.
@@ -19,7 +19,7 @@ In order to inject Workspace ONE SDK functionality into your  Xamarin AWSDK App,
 	* If you do not have a suitable application, you can create a new application in Xamarin Studio and integrate the SDK into that.
 
 ### Add App to the Workspace ONE UEM Console
-Upload your internal app to the Workspace ONE UEM Console to register it with the system. This step enables UEM Console to identify the app and to add functionality to it. The **AirWatch MAM Guide** details how to upload an internal app.
+Upload your internal app to the Workspace ONE UEM Console to register it with the system. This step enables UEM Console to identify the app and to add functionality to it. The **Workspace ONE UEM MAM Guide** details how to upload an internal app.
 
 1. In Xamarin, export the app as a signed IPA.
 2. Log into the Workspace ONE UEM Console as an administrator.
@@ -39,8 +39,8 @@ Add the Workspace ONE SDK DLL to your Xamarin project to enable the Xamarin IPA 
 3. Search AWSDK on nuget.org and add it to the project.
 4. Enable the *Assembly* check box if it isn't already and select **Ok**.
 
-### Enable Communication Between the AirWatch Agent / Intelligent Hub and the Xamarin IPA File
-Expose a custom scheme in the Info.plist file in the Xamarin project to enable the app to receive a call back from the AirWatch Agent/ Intelligent Hub. Your app receives communications from the Workspace ONE UEM Console through the AirWatch Agent / Intelligent Hub. To expose the scheme, add a callback scheme registration and add a query scheme to your Xamarin project.
+### Enable Communication Between the Intelligent Hub(formerly AirWatch Agent) and the Xamarin IPA File
+Expose a custom scheme in the Info.plist file in the Xamarin project to enable the app to receive a call back from the Intelligent Hub. Your app receives communications from the Workspace ONE UEM Console through the Intelligent Hub. To expose the scheme, add a callback scheme registration and add a query scheme to your Xamarin project.
 
 ##### Add Callback Scheme Registration
 
@@ -61,7 +61,7 @@ Expose a custom scheme in the Info.plist file in the Xamarin project to enable t
 6. Within the *Array*, select *Add new entry*.
 7. Select the green "PLUS" in the selected row.
 8. Double-click the *Value* column, and set the value depending on the anchor application.
-   * If the is device enrolled with the AirWatch Agent/ Intelligent Hub, use airwatch.
+   * If the is device enrolled with the Intelligent Hub, use airwatch.
    * If the is device enrolled with the Workspace ONE app, use awWorkspace ONEenroll.
 9. Save the file.
 
@@ -193,7 +193,7 @@ If you are using Xamarin Forms on iOS, you need to add this to your AppDelegate 
 
 
 ### Debug Your Application
-Your application is now SDK-enlightened!  If you do not see an SSO passcode, ensure that the Organization Group has **Single Sign On** enabled and that an **Authentication Type** is configured. These configurations are explained in the **AirWatch MAM Guide**.
+Your application is now SDK-enlightened!  If you do not see an SSO passcode, ensure that the Organization Group has **Single Sign On** enabled and that an **Authentication Type** is configured. These configurations are explained in the **Workspace ONE UEM MAM Guide**.
 
 
 
@@ -206,7 +206,7 @@ To integrate Workspace ONE Android SDK Xamarin components into an existing Xamar
 * Workspace ONE Xamarin Android SDK binaries from the Nuget Store.
 * Android test device running Ice Cream Sandwich and above.
 * Xamarin Android app to integrate with the Workspace ONE SDK targeting Android 5.0+ / API Level 14+.
-* AirWatch Agent v7.0+ / Intelligent Hub 9.0for Android from Google Playstore.
+* Intelligent Hub(formerly AirWatch Agent v7.0+) for Android from Google Playstore.
 * Whitelisted Release/Debug signing key as explained below should be used for signing the Xamarin android application.
 
 ### Integrating Workspace ONE SDK
@@ -227,15 +227,15 @@ To integrate Workspace ONE Android SDK Xamarin components into an existing Xamar
         Xamarin.Android.Support.Core.UI.26.1.0.1
         Xamarin.Android.Support.Core.Utils.26.1.0.1
         Xamarin.Android.Support.Design.26.1.0.1
-        Xamarin.Android.Support.v14.26.1.0.1
+        Xamarin.Android.Support.v14.Preference.26.1.0.1
         Xamarin.Android.Support.v4.26.1.0.1
         Xamarin.Android.Support.Vector.Drawable.26.1.0.1
         Xamarin.GooglePlayServices.SafetyNet.60.1142.1
         Xamarin.GooglePlayServices.Base.60.1142.1
         Xamarin.Android.Support.Fragment.26.1.0.1
         Xamarin.Google.Guava.23.2.0
-        Square.OkHttp3.3.6.0
-        Square.OkIO.1.11.0
+        Square.OkHttp3 3.6.0
+        Square.OkIO 1.11.0
 
 4. Initialize Workspace ONE SDK:
     a) Extend the application class of the Xamarin app from **AWApplication** class of Workspace ONE SDK. Override the **MainActivityIntent** to return application's main landing activity. Move app's `onCreate()` business logic to `onPostCreate()`.
@@ -375,4 +375,4 @@ For applications that are deployed publicly through the Play Store, send the pub
 
 ### Push App to Dev Device using App Catalog
 
-In order for the **AirWatch Agent / Intelligent Hub** to manage an app, it needs to be sent to the device.  This can be done via an installation policy of **Automatic** or by pushing the app down once using the **Agent**'s *APP CATALOG*.  Once the app is listed in the *Managed Apps* section of the Agent, it is ready for local management.
+In order for the **Intelligent Hub** to manage an app, it needs to be sent to the device.  This can be done via an installation policy of **Automatic** or by pushing the app down once using the **Hub**'s *APP CATALOG*.  Once the app is listed in the *Managed Apps* section of the Hub, it is ready for local management.
