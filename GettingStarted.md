@@ -65,6 +65,18 @@ Expose a custom scheme in the Info.plist file in the Xamarin project to enable t
    * If the is device enrolled with the Workspace ONE app, use awWorkspace ONEenroll.
 9. Save the file.
 
+### Add Support for QR Scan and FaceId
+
+##### QR Scan
+
+Include NSCameraUsageDescription in the application info.plist file to enable the SDK to scan QR codes with the device camera.
+Provide a description that devices prompt users to allow the application to enable this feature.
+
+##### FaceID
+
+Include NSFaceIDUsageDescription in the application info.plist file to enable the SDK to use FaceID.
+Provide a description that devices prompt users to allow the application to enable this feature. Consider controlling the message users read. If you do not include a description, the iOS system prompts users with native messages that might not align with the capabilities of the application.
+
 ### Add an App Delegate to the Xamarin Project
 To complete integration of Xamarin and Workspace ONE SDK within your app use a custom Application Delegate. Create a class to act as an `AWSDKDelegate`, define the callback scheme within the class, and set the class to recognize when initialization is complete.
 
