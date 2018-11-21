@@ -1,5 +1,6 @@
 
 # VMware Workspace ONE Software Development Kit (SDK)
+
 ## iOS And Android - Getting Started
 
 This document explains how to integrate the Workspace ONE SDKs into your Xamarin-built apps.
@@ -7,18 +8,21 @@ This document explains how to integrate the Workspace ONE SDKs into your Xamarin
  For detailed information about the Workspace ONE SDK and managing internal apps, See the **VMware Workspace ONE UEM Mobile Application Management Guide** and the **VMware Workspace ONE SDK Technical Implementation Guides** located on the Workspace ONE Resources Portal at https://resources.workspaceone.com.
 
 ## iOS Overview
+
 In order to inject Workspace ONE SDK functionality into your  Xamarin AWSDK App, integrate the two systems.
 
 ### Requirements
+
 * iOS 10.0+
 * Xamarin Studio
-	* If you have Visual Studio with the Xamarin plug-in, this should also work, but this document is based on Xamarin Studio.
+** If you have Visual Studio with the Xamarin plug-in, this should also work, but this document is based on Xamarin Studio.
 * Workspace ONE-enrolled iOS test device
 * The Workspace ONE Xamarin SDK (AWSDK) package from the Nuget Store.
 * A Xamarin iOS app to integrate with the Workspace ONE SDK
-	* If you do not have a suitable application, you can create a new application in Xamarin Studio and integrate the SDK into that.
+** If you do not have a suitable application, you can create a new application in Xamarin Studio and integrate the SDK into that.
 
 ### Add App to the Workspace ONE UEM Console
+
 Upload your internal app to the Workspace ONE UEM Console to register it with the system. This step enables UEM Console to identify the app and to add functionality to it. The **Workspace ONE UEM MAM Guide** details how to upload an internal app.
 
 1. In Xamarin, export the app as a signed IPA.
@@ -32,6 +36,7 @@ Upload your internal app to the Workspace ONE UEM Console to register it with th
 9. Select **Add**, and **Save & Publish** the app to complete the upload process.
 
 ### Add Required SDK DLL to Project
+
 Add the Workspace ONE SDK DLL to your Xamarin project to enable the Xamarin IPA file in UEM Console to recognize and apply the Workspace ONE SDK functionality.
 
 1. Open Xamarin Studio.
@@ -40,9 +45,10 @@ Add the Workspace ONE SDK DLL to your Xamarin project to enable the Xamarin IPA 
 4. Enable the *Assembly* check box if it isn't already and select **Ok**.
 
 ### Enable Communication Between the Intelligent Hub(formerly AirWatch Agent) and the Xamarin IPA File
+
 Expose a custom scheme in the Info.plist file in the Xamarin project to enable the app to receive a call back from the Intelligent Hub. Your app receives communications from the Workspace ONE UEM Console through the Intelligent Hub. To expose the scheme, add a callback scheme registration and add a query scheme to your Xamarin project.
 
-##### Add Callback Scheme Registration
+#### Add Callback Scheme Registration
 
 1. Double-click the Info.plist file in your Xamarin project.
 2. Select the **Advanced** tab.
@@ -51,7 +57,7 @@ Expose a custom scheme in the Info.plist file in the Xamarin project to enable t
 5. Set the *Role* to **Editor**.
 6. Save the file.
 
-##### Add SDK App Query Scheme
+#### Add SDK App Query Scheme
 
 1. Double-click the Info.plist file in your Xamarin project.
 2. Select the **Source** tab, and choose *Add new entry*.
@@ -67,17 +73,18 @@ Expose a custom scheme in the Info.plist file in the Xamarin project to enable t
 
 ### Add Support for QR Scan and FaceId
 
-##### QR Scan
+#### QR Scan
 
 Include NSCameraUsageDescription in the application info.plist file to enable the SDK to scan QR codes with the device camera.
 Provide a description that devices prompt users to allow the application to enable this feature.
 
-##### FaceID
+#### FaceID
 
 Include NSFaceIDUsageDescription in the application info.plist file to enable the SDK to use FaceID.
 Provide a description that devices prompt users to allow the application to enable this feature. Consider controlling the message users read. If you do not include a description, the iOS system prompts users with native messages that might not align with the capabilities of the application.
 
 ### Add an App Delegate to the Xamarin Project
+
 To complete integration of Xamarin and Workspace ONE SDK within your app use a custom Application Delegate. Create a class to act as an `AWSDKDelegate`, define the callback scheme within the class, and set the class to recognize when initialization is complete.
 
 1. Create a class to act as an `AWSDKDelegate` and to receive SDK callbacks.  
@@ -205,6 +212,7 @@ If you are using Xamarin Forms on iOS, you need to add this to your AppDelegate 
 
 
 ### Debug Your Application
+
 Your application is now SDK-enlightened!  If you do not see an SSO passcode, ensure that the Organization Group has **Single Sign On** enabled and that an **Authentication Type** is configured. These configurations are explained in the **Workspace ONE UEM MAM Guide**.
 
 
@@ -214,6 +222,7 @@ Your application is now SDK-enlightened!  If you do not see an SSO passcode, ens
 To integrate Workspace ONE Android SDK Xamarin components into an existing Xamarin Android app follow described steps.
 
 ### Requirements
+
 * Xamarin Studio or Visual Studio with the Xamarin plugin.
 * Workspace ONE Xamarin Android SDK binaries from the Nuget Store.
 * Android test device running Ice Cream Sandwich and above.
@@ -222,6 +231,7 @@ To integrate Workspace ONE Android SDK Xamarin components into an existing Xamar
 * Whitelisted Release/Debug signing key as explained below should be used for signing the Xamarin android application.
 
 ### Integrating Workspace ONE SDK
+
 1. While integrating **Workspace ONE SDK**, application method count may exceed 64k due to library dependencies. Enable Multi-Dex option for the app in Xamarin/Visual studio.
 2. Add the VMware Workspace ONE SDK package from the NuGet Gallery.
 3. Add the following dependency (if not already present) NuGet packages from NuGet Package Manager as References to application.
@@ -369,6 +379,7 @@ Before you can begin using the **Workspace ONE SDK**, you must ensure your appli
 Workspace ONE allows whitelisting for both apps deployed internally or deployed through a public app store.
 
 #### Internally Deployed Applications
+
 1. After building the application apk, sign it using your own specific app signing key.
 2. Upload the signed apk file to the Workspace ONE UEM Console as described below. Workspace ONE UEM Console extracts the application's public signing key and adds it to the whitelisted apps list
     a) Log into the Workspace ONE UEM Console as an administrator.
@@ -381,6 +392,7 @@ Workspace ONE allows whitelisting for both apps deployed internally or deployed 
     h) Select *Add*, and *Save & Publish* the app to complete the upload process.
 
 #### Publicly Deployed Applications
+
 For applications that are deployed publicly through the Play Store, send the public signing key of the application to AirWatch for whitelisting.
 
 **Note: Contact your professional services representative for the process of whitelisting the public signing key.**
