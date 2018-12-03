@@ -14,12 +14,11 @@ In order to inject Workspace ONE SDK functionality into your  Xamarin AWSDK App,
 ### Requirements
 
 * iOS 10.0+
-* Xamarin Studio
-** If you have Visual Studio with the Xamarin plug-in, this should also work, but this document is based on Xamarin Studio.
+* Visual Studio 15.7+ / Visual Studio for Mac 7.5+
 * Workspace ONE-enrolled iOS test device
 * The Workspace ONE Xamarin SDK (AWSDK) package from the Nuget Store.
 * A Xamarin iOS app to integrate with the Workspace ONE SDK
-** If you do not have a suitable application, you can create a new application in Xamarin Studio and integrate the SDK into that.
+** If you do not have a suitable application, you can create a new application in Visual Studio and integrate the SDK into that.
 
 ### Add App to the Workspace ONE UEM Console
 
@@ -39,7 +38,7 @@ Upload your internal app to the Workspace ONE UEM Console to register it with th
 
 Add the Workspace ONE SDK DLL to your Xamarin project to enable the Xamarin IPA file in UEM Console to recognize and apply the Workspace ONE SDK functionality.
 
-1. Open Xamarin Studio.
+1. Open Visual Studio.
 2. Right-click **Packages** and select **Add Packages**.
 3. Search AWSDK on nuget.org and add it to the project.
 4. Enable the *Assembly* check box if it isn't already and select **Ok**.
@@ -223,7 +222,7 @@ To integrate Workspace ONE Android SDK Xamarin components into an existing Xamar
 
 ### Requirements
 
-* Xamarin Studio or Visual Studio with the Xamarin plugin.
+* Visual Studio 15.7+ / Visual Studio for Mac 7.5+
 * Workspace ONE Xamarin Android SDK binaries from the Nuget Store.
 * Android test device running Ice Cream Sandwich and above.
 * Xamarin Android app to integrate with the Workspace ONE SDK targeting Android 5.0+ / API Level 14+.
@@ -232,29 +231,18 @@ To integrate Workspace ONE Android SDK Xamarin components into an existing Xamar
 
 ### Integrating Workspace ONE SDK
 
-1. While integrating **Workspace ONE SDK**, application method count may exceed 64k due to library dependencies. Enable Multi-Dex option for the app in Xamarin/Visual studio.
+1. While integrating **Workspace ONE SDK**, application method count may exceed 64k due to library dependencies. Enable Multi-Dex option for the app in Visual Studio.
 2. Add the VMware Workspace ONE SDK package from the NuGet Gallery.
 3. Add the following dependency (if not already present) NuGet packages from NuGet Package Manager as References to application.
 
         Xamarin.Android.Support.v13.26.1.0.1
-        Xamarin.Android.Support.Annotations.26.1.0.1
-        Xamarin.Android.Support.Compat.26.1.0.1
         Xamarin.Android.Support.v7.AppCompat.26.1.0.1
         Xamarin.Android.Support.v7.CardView.26.1.0.1
-        Xamarin.Android.Support.v7.Preference.26.1.0.1
         Xamarin.Android.Support.v7.RecyclerView.26.1.0.1
-        Xamarin.Android.Support.Transition.26.1.0.1
-        Xamarin.Android.Support.Media.Compat.26.1.0.1
-        Xamarin.Android.Support.Fragment.26.1.0.1
-        Xamarin.Android.Support.Core.UI.26.1.0.1
-        Xamarin.Android.Support.Core.Utils.26.1.0.1
         Xamarin.Android.Support.Design.26.1.0.1
         Xamarin.Android.Support.v14.Preference.26.1.0.1
-        Xamarin.Android.Support.v4.26.1.0.1
         Xamarin.Android.Support.Vector.Drawable.26.1.0.1
-        Xamarin.GooglePlayServices.SafetyNet.60.1142.1
         Xamarin.GooglePlayServices.Base.60.1142.1
-        Xamarin.Android.Support.Fragment.26.1.0.1
         Xamarin.Google.Guava.23.2.0
         Square.OkHttp3 3.6.0
         Square.OkIO 1.11.0
