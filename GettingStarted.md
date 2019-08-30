@@ -66,8 +66,8 @@ Expose a custom scheme in the Info.plist file in the Xamarin project to enable t
 6. Within the *Array*, select *Add new entry*.
 7. Select the green "PLUS" in the selected row.
 8. Double-click the *Value* column, and set the value depending on the anchor application.
-   * If the is device enrolled with the Intelligent Hub, use airwatch.
-   * If the is device enrolled with the Workspace ONE app, use awWorkspace ONEenroll.
+   * If the is device enrolled with the Intelligent Hub, use **airwatch**.
+   * If the is device enrolled with the Workspace ONE app, use **awws1enroll**.
 9. Save the file.
 
 ### Add Support for QR Scan and FaceId
