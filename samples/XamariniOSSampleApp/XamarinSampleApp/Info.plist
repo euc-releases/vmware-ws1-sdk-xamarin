@@ -4,8 +4,8 @@
 <dict>
 	<key>CFBundleName</key>
 	<string>XamarinSampleApp</string>
-	<key>CFBundleIdentifier</key>
-	<string>com.air-watch.secure.browser</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Sample App supports use of FaceID to unlock the app.</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.2</string>
 	<key>CFBundleVersion</key>
@@ -13,7 +13,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MinimumOSVersion</key>
-	<string>8.1</string>
+	<string>10.0</string>
 	<key>UIDeviceFamily</key>
 	<array>
 		<integer>1</integer>
@@ -70,5 +70,7 @@
 	<array>
 		<string></string>
 	</array>
+	<key>CFBundleIdentifier</key>
+	<string>com.vmware.sampleapp</string>
 </dict>
 </plist>
