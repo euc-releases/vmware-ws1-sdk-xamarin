@@ -331,7 +331,7 @@ To integrate Workspace ONE Android SDK Xamarin components into an existing Xamar
 
     d) For authentication, timeout and data-loss prevention features, all the application activities should extend from `Com.Airwatch.Gateway.UI.GatewayBaseActivity`. It allows the application to handle the lifecycle correctly and to manage the state of **Workspace ONE SDK**.
     
-    **Note**
+### Note
     If the app cannot extend  `AWApplication` class, it can also use the delegate approach, please follow the below link for more details:
     https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/services/SDK_Android/GUID-B59ECD0A-92CF-4EC8-8A39-34B80F1D8788.html
 
