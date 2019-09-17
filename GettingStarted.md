@@ -233,21 +233,7 @@ To integrate Workspace ONE Android SDK Xamarin components into an existing Xamar
 
 1. While integrating **Workspace ONE SDK**, application method count may exceed 64k due to library dependencies. Enable Multi-Dex option for the app in Visual Studio.
 2. Add the VMware Workspace ONE SDK package from the NuGet Gallery.
-3. Add the following dependency (if not already present) NuGet packages from NuGet Package Manager as References to application.
-
-        Xamarin.Android.Support.v13.26.1.0.1
-        Xamarin.Android.Support.v7.AppCompat.26.1.0.1
-        Xamarin.Android.Support.v7.CardView.26.1.0.1
-        Xamarin.Android.Support.v7.RecyclerView.26.1.0.1
-        Xamarin.Android.Support.Design.26.1.0.1
-        Xamarin.Android.Support.v14.Preference.26.1.0.1
-        Xamarin.Android.Support.Vector.Drawable.26.1.0.1
-        Xamarin.GooglePlayServices.Base.60.1142.1
-        Xamarin.Google.Guava.23.2.0
-        Square.OkHttp3 3.6.0
-        Square.OkIO 1.11.0
-
-4. Initialize Workspace ONE SDK:
+3. Initialize Workspace ONE SDK:
     a) Extend the application class of the Xamarin app from **AWApplication** class of Workspace ONE SDK. Override the **MainActivityIntent** to return application's main landing activity. Move app's `onCreate()` business logic to `onPostCreate()`.
 
     **Application class**
@@ -289,7 +275,7 @@ To integrate Workspace ONE Android SDK Xamarin components into an existing Xamar
                     }
                 }
 
-                protected override bool IsInputLogoBrandable
+                public override bool IsInputLogoBrandable
                 {
                     get
                     {
@@ -297,11 +283,20 @@ To integrate Workspace ONE Android SDK Xamarin components into an existing Xamar
                     }
                 }
 
-                public override void OnPostCreate()
-                {
-                    base.OnPostCreate();
-                    // App specific code here
-                }
+        		public override void OnPostCreate()
+        		{
+            	base.OnPostCreate();
+            	// App specific code here
+        		}
+
+
+       		public override void OnSSLPinningValidationFailure(string host1, X509Certificate cert)
+               {
+               }
+
+               public override void OnSSLPinningRequestFailure(string host1, X509Certificate cert)
+               {
+               }
             }
         }
 
