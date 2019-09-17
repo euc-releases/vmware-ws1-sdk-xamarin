@@ -25,5 +25,5 @@
 			<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths" />
 		</provider>
 	</application>
-	<uses-sdk android:targetSdkVersion="27" android:minSdkVersion="14" />
+	<uses-sdk android:targetSdkVersion="28" android:minSdkVersion="19" />
 </manifest>
