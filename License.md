@@ -39,4 +39,4 @@
 12.7 Notices.  Notices to either party must be in writing and must be delivered in person, by United States mail, first‑class certified mail, postage prepaid, return receipt requested, or by a express courier service addressed as stated at the beginning of this Agreement.
 
  13.   **Open Source Licenses**
-         https://www.air-watch.com/downloads/open_source_license_AirWatch_SDK_Xamarin_Bindings_1.3.1_GA.txt
+         ttps://www.air-watch.com/downloads/open_source_license_AirWatch_SDK_Xamarin_Bindings_1.4_GA.txt
