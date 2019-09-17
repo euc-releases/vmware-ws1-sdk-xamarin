@@ -1,5 +1,5 @@
 ﻿using System;
-
+using Java.Security.Cert;
 using Android.App;
 using Android.Content;
 using Android.Runtime;
@@ -43,7 +43,7 @@ namespace XamarinAndroidSampleApp.Landing
             }
         }
 
-        protected override bool IsInputLogoBrandable
+        public override bool IsInputLogoBrandable
         {
             get
             {
@@ -57,5 +57,13 @@ namespace XamarinAndroidSampleApp.Landing
             // App specific code here
         }
 
+
+        public override void OnSSLPinningValidationFailure(string host1, X509Certificate cert)
+        {
+        }
+
+        public override void OnSSLPinningRequestFailure(string host1, X509Certificate cert)
+        {
+        }
     }
 }
