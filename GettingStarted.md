@@ -5,7 +5,7 @@
 
 This document explains how to integrate the Workspace ONE SDKs into your Xamarin-built apps.
 
- For detailed information about the Workspace ONE SDK and managing internal apps, See the **VMware Workspace ONE UEM Mobile Application Management Guide** and the **VMware Workspace ONE SDK Technical Implementation Guides** located on the Workspace ONE Resources Portal at https://resources.workspaceone.com.
+ For detailed information about the Workspace ONE SDK and managing internal apps, See the **VMware Workspace ONE UEM Mobile Application Management Guide** and the **VMware Workspace ONE SDK Technical Implementation Guides** located on the Workspace ONE Resources Portal at <https://resources.workspaceone.com.>
 
 ## iOS Overview
 
@@ -88,122 +88,122 @@ To complete integration of Xamarin and Workspace ONE SDK within your app use a c
 
 1. Create a class to act as an `AWSDKDelegate` and to receive SDK callbacks.  
 
-		using Foundation;
-		using System.Diagnostics;
-		using System;
-		using AirWatchSDK;
+        using Foundation;
+        using System.Diagnostics;
+        using System;
+        using AirWatchSDK;
 
-		namespace sdkSampleApp
-		{
-			public class AirWatchSDKManager: AWSDKDelegate
-			{			
-				private static AirWatchSDKManager instance;
-				private static string LogCategory = "AirWatchSDK";
+        namespace sdkSampleApp
+        {
+            public class AirWatchSDKManager: AWSDKDelegate
+            {            
+                private static AirWatchSDKManager instance;
+                private static string LogCategory = "AirWatchSDK";
 
-				// private, use the Instance below
-				private AirWatchSDKManager ()
-				{
-				}
+                // private, use the Instance below
+                private AirWatchSDKManager ()
+                {
+                }
 
-				// singleton
-				public static AirWatchSDKManager Instance {
-					get {
-						if (instance == null) {
-							instance = new AirWatchSDKManager ();
-						}
-						return instance;
-					}
-				}
+                // singleton
+                public static AirWatchSDKManager Instance {
+                    get {
+                        if (instance == null) {
+                            instance = new AirWatchSDKManager ();
+                        }
+                        return instance;
+                    }
+                }
 
-				// Below are all the protocol methods defined in AWSDKDelegate
-				// Add customization here for SDK results
+                // Below are all the protocol methods defined in AWSDKDelegate
+                // Add customization here for SDK results
 
-				override public void InitialCheckDoneWithError (NSError error)
-				{
-					// Add any SDK Customization here
-					string message = String.Format ("InitialCheckDoneWithError received {0}, SDK initialized if no error", error);
-					Debug.WriteLine (message, LogCategory);
-				}
+                override public void InitialCheckDoneWithError (NSError error)
+                {
+                    // Add any SDK Customization here
+                    string message = String.Format ("InitialCheckDoneWithError received {0}, SDK initialized if no error", error);
+                    Debug.WriteLine (message, LogCategory);
+                }
 
-				override public void ReceivedProfiles (AWProfile[] profiles)
-				{
-					// Add any SDK Customization here
-					string message = String.Format ("ReceivedProfiles received {0}", profiles);
-					Debug.WriteLine (message, LogCategory);
-				}
+                override public void ReceivedProfiles (AWProfile[] profiles)
+                {
+                    // Add any SDK Customization here
+                    string message = String.Format ("ReceivedProfiles received {0}", profiles);
+                    Debug.WriteLine (message, LogCategory);
+                }
 
-				override public void Wipe ()
-				{
-					// Add any SDK Customization here
-					Debug.WriteLine ("Wipe command received", LogCategory);
-				}
+                override public void Wipe ()
+                {
+                    // Add any SDK Customization here
+                    Debug.WriteLine ("Wipe command received", LogCategory);
+                }
 
-				override public void Lock ()
-				{
-					// Add any SDK Customization here
-					Debug.WriteLine ("Lock command received", LogCategory);
-				}
+                override public void Lock ()
+                {
+                    // Add any SDK Customization here
+                    Debug.WriteLine ("Lock command received", LogCategory);
+                }
 
-				override public void Unlock ()
-				{
-					// Add any SDK Customization here
-					Debug.WriteLine ("Unlock command received", LogCategory);
-				}
+                override public void Unlock ()
+                {
+                    // Add any SDK Customization here
+                    Debug.WriteLine ("Unlock command received", LogCategory);
+                }
 
-				public override void StopNetworkActivity(AWNetworkActivityStatus status)
-        		{
-        			// Add any SDK Customization here
-            		Debug.WriteLine("StopNetworkActivity received", LogCategory);
-        		}
+                public override void StopNetworkActivity(AWNetworkActivityStatus status)
+                {
+                    // Add any SDK Customization here
+                    Debug.WriteLine("StopNetworkActivity received", LogCategory);
+                }
 
-				override public void ResumeNetworkActivity ()
-				{
-					// Add any SDK Customization here
-					Debug.WriteLine ("ResumeNetworkActivity received", LogCategory);
-					}
-				}
-			}
+                override public void ResumeNetworkActivity ()
+                {
+                    // Add any SDK Customization here
+                    Debug.WriteLine ("ResumeNetworkActivity received", LogCategory);
+                    }
+                }
+            }
 
 2. Add the listed functionality to the `AppDelegate.cs`.
 
-		using System;
-		using ObjCRuntime;
-		using System.Diagnostics;
-		using AirWatchSDK;
+        using System;
+        using ObjCRuntime;
+        using System.Diagnostics;
+        using AirWatchSDK;
 
-	   ...
+       ...
 
-		public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
-		{
-			if (Runtime.Arch == Arch.SIMULATOR) {
-				Debug.WriteLine ("Running in Simulator, skipping initialization of the AirWatch SDK!");
-				return true;
-			} else {
-				Debug.WriteLine ("Running on Device, beginning initialization of the AirWatch SDK.");
+        public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
+        {
+            if (Runtime.Arch == Arch.SIMULATOR) {
+                Debug.WriteLine ("Running in Simulator, skipping initialization of the AirWatch SDK!");
+                return true;
+            } else {
+                Debug.WriteLine ("Running on Device, beginning initialization of the AirWatch SDK.");
 
-				// Configure the Controller by:
-				var sdkController = AWController.ClientInstance ();
-				// 1) defining the callback scheme so the app can get called back,
-				sdkController.CallbackScheme = "mysamplescheme"; // defined in Info.plist
-				// 2) set the delegate to know when the initialization has been completed.
-				sdkController.Delegate = AirWatchSDKManager.Instance;
-				return true;
-			}
-		}
+                // Configure the Controller by:
+                var sdkController = AWController.ClientInstance ();
+                // 1) defining the callback scheme so the app can get called back,
+                sdkController.CallbackScheme = "mysamplescheme"; // defined in Info.plist
+                // 2) set the delegate to know when the initialization has been completed.
+                sdkController.Delegate = AirWatchSDKManager.Instance;
+                return true;
+            }
+        }
 
-		public override void OnActivated (UIApplication application)
-		{
-			AWController.ClientInstance ().Start ();
-		}
+        public override void OnActivated (UIApplication application)
+        {
+            AWController.ClientInstance ().Start ();
+        }
 
-		public override bool HandleOpenURL (UIApplication application, NSUrl url)
-		{
-			return AWController.ClientInstance ().HandleOpenURL (url, "");
-		}
+        public override bool HandleOpenURL (UIApplication application, NSUrl url)
+        {
+            return AWController.ClientInstance ().HandleOpenURL (url, "");
+        }
 
 If you are using Xamarin Forms on iOS, you need to add this to your AppDelegate as well.  This will expose the `UIWindow` that is part of the iOS `AppDelegate` but is hidden in `Xamarin.Forms.Platform.iOS.FormsApplicationDelegate`:
 
-	[Export("window")]
+    [Export("window")]
     public UIWindow GetWindow()
     {
         return UIApplication.SharedApplication.Windows[0];
@@ -283,14 +283,14 @@ To integrate Workspace ONE Android SDK Xamarin components into an existing Xamar
                     }
                 }
 
-        		public override void OnPostCreate()
-        		{
-            	base.OnPostCreate();
-            	// App specific code here
-        		}
+                public override void OnPostCreate()
+                {
+                base.OnPostCreate();
+                // App specific code here
+                }
 
 
-       		public override void OnSSLPinningValidationFailure(string host1, X509Certificate cert)
+               public override void OnSSLPinningValidationFailure(string host1, X509Certificate cert)
                {
                }
 
@@ -330,7 +330,8 @@ To integrate Workspace ONE Android SDK Xamarin components into an existing Xamar
 
 
     d) For authentication, timeout and data-loss prevention features, all the application activities should extend from `Com.Airwatch.Gateway.UI.GatewayBaseActivity`. It allows the application to handle the lifecycle correctly and to manage the state of **Workspace ONE SDK**.
-    
+
+
 ### Note
     If the app cannot extend  `AWApplication` class, it can also use the delegate approach, please follow the below link for more details:
     https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/services/SDK_Android/GUID-B59ECD0A-92CF-4EC8-8A39-34B80F1D8788.html
