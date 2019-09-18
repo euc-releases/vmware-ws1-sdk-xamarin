@@ -209,12 +209,9 @@ If you are using Xamarin Forms on iOS, you need to add this to your AppDelegate 
         return UIApplication.SharedApplication.Windows[0];
     }
 
-
 ### Debug Your Application
 
 Your application is now SDK-enlightened!  If you do not see an SSO passcode, ensure that the Organization Group has **Single Sign On** enabled and that an **Authentication Type** is configured. These configurations are explained in the **Workspace ONE UEM MAM Guide**.
-
-
 
 ## Android Overview
 
@@ -328,13 +325,11 @@ To integrate Workspace ONE Android SDK Xamarin components into an existing Xamar
         </receiver>
         </application>
 
-
     d) For authentication, timeout and data-loss prevention features, all the application activities should extend from `Com.Airwatch.Gateway.UI.GatewayBaseActivity`. It allows the application to handle the lifecycle correctly and to manage the state of **Workspace ONE SDK**.
 
-
 ### Note
-    If the app cannot extend  `AWApplication` class, it can also use the delegate approach, please follow the below link for more details:
-    https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/services/SDK_Android/GUID-B59ECD0A-92CF-4EC8-8A39-34B80F1D8788.html
+
+    If the app cannot extend  AWApplication class, it can also use the delegate approach, please follow the below link for more details at <https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/services/SDK_Android/GUID-B59ECD0A-92CF-4EC8-8A39-34B80F1D8788.html>
 
 ### Features
 
