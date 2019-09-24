@@ -25,8 +25,6 @@
     <AndroidSigningKeyAlias>androiddebugkey</AndroidSigningKeyAlias>
     <AndroidSigningKeyPass>android</AndroidSigningKeyPass>
     <NuGetPackageImportStamp></NuGetPackageImportStamp>
-    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
-    <AndroidLinkMode>Full</AndroidLinkMode>
     <AndroidEnableMultiDex>True</AndroidEnableMultiDex>
     <AndroidSupportedAbis>armeabi;armeabi-v7a;x86;x86_64;arm64-v8a</AndroidSupportedAbis>
     <AndroidEnableDesugar>true</AndroidEnableDesugar>
@@ -39,7 +37,9 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
     <Debugger>.Net (Xamarin)</Debugger>
     <JavaMaximumHeapSize>2G</JavaMaximumHeapSize>
     <AndroidKeyStore>True</AndroidKeyStore>
@@ -58,7 +58,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>Full</AndroidLinkMode>
     <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
     <Debugger>.Net (Xamarin)</Debugger>
     <JavaMaximumHeapSize>4096m</JavaMaximumHeapSize>
     <AndroidKeyStore>True</AndroidKeyStore>
@@ -403,4 +405,10 @@
   <Import Project="..\packages\Xamarin.GooglePlayServices.Tasks.71.1601.0\build\MonoAndroid90\Xamarin.GooglePlayServices.Tasks.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Tasks.71.1601.0\build\MonoAndroid90\Xamarin.GooglePlayServices.Tasks.targets')" />
   <Import Project="..\packages\Xamarin.GooglePlayServices.Base.71.1610.0\build\MonoAndroid90\Xamarin.GooglePlayServices.Base.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.Base.71.1610.0\build\MonoAndroid90\Xamarin.GooglePlayServices.Base.targets')" />
   <Import Project="..\packages\Xamarin.GooglePlayServices.SafetyNet.71.1600.0\build\MonoAndroid90\Xamarin.GooglePlayServices.SafetyNet.targets" Condition="Exists('..\packages\Xamarin.GooglePlayServices.SafetyNet.71.1600.0\build\MonoAndroid90\Xamarin.GooglePlayServices.SafetyNet.targets')" />
+  <!--HACK: there is a duplicate multidex.jar from AWFrameworkBindings.dll?-->
+  <Target Name="RemoveExtraMultidex" AfterTargets="_DetermineJavaLibrariesToCompile">
+    <ItemGroup>
+      <_JavaLibrariesToCompileForApp Remove="**\*multidex-1.0.1.jar" />
+    </ItemGroup>
+  </Target>
 </Project>
