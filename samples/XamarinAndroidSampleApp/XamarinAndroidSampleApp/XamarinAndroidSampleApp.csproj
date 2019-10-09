@@ -18,7 +18,7 @@
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
-    <JavaMaximumHeapSize>4096m</JavaMaximumHeapSize>
+    <JavaMaximumHeapSize>2G</JavaMaximumHeapSize>
     <AndroidKeyStore>True</AndroidKeyStore>
     <AndroidSigningKeyStore>android_airwatch_debug.keystore</AndroidSigningKeyStore>
     <AndroidSigningStorePass>android</AndroidSigningStorePass>
@@ -42,11 +42,11 @@
     <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
     <Debugger>.Net (Xamarin)</Debugger>
     <JavaMaximumHeapSize>2G</JavaMaximumHeapSize>
-    <AndroidKeyStore>True</AndroidKeyStore>
-    <AndroidSigningKeyStore>android_airwatch_debug.keystore</AndroidSigningKeyStore>
-    <AndroidSigningStorePass>android</AndroidSigningStorePass>
-    <AndroidSigningKeyAlias>androiddebugkey</AndroidSigningKeyAlias>
-    <AndroidSigningKeyPass>android</AndroidSigningKeyPass>
+    <AndroidKeyStore></AndroidKeyStore>
+    <AndroidSigningKeyStore></AndroidSigningKeyStore>
+    <AndroidSigningStorePass></AndroidSigningStorePass>
+    <AndroidSigningKeyAlias></AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass></AndroidSigningKeyPass>
     <AndroidSupportedAbis>arm64-v8a;x86_64;armeabi-v7a;x86</AndroidSupportedAbis>
     <AndroidDexTool>dx</AndroidDexTool>
   </PropertyGroup>
@@ -224,34 +224,34 @@
       <HintPath>..\packages\Xamarin.GooglePlayServices.SafetyNet.71.1600.0\lib\monoandroid90\Xamarin.GooglePlayServices.SafetyNet.dll</HintPath>
     </Reference>
     <Reference Include="AWClientSDKBindings">
-      <HintPath>..\packages\AWSDK.1.4.0\lib\MonoAndroid\AWClientSDKBindings.dll</HintPath>
+      <HintPath>..\packages\AWSDK.1.4.0.1\lib\MonoAndroid\AWClientSDKBindings.dll</HintPath>
     </Reference>
     <Reference Include="AWComplianceLibrary">
-      <HintPath>..\packages\AWSDK.1.4.0\lib\MonoAndroid\AWComplianceLibrary.dll</HintPath>
+      <HintPath>..\packages\AWSDK.1.4.0.1\lib\MonoAndroid\AWComplianceLibrary.dll</HintPath>
     </Reference>
     <Reference Include="AWCredentialsExtLibraryBinding">
-      <HintPath>..\packages\AWSDK.1.4.0\lib\MonoAndroid\AWCredentialsExtLibraryBinding.dll</HintPath>
+      <HintPath>..\packages\AWSDK.1.4.0.1\lib\MonoAndroid\AWCredentialsExtLibraryBinding.dll</HintPath>
     </Reference>
     <Reference Include="AWFrameworkBindings">
-      <HintPath>..\packages\AWSDK.1.4.0\lib\MonoAndroid\AWFrameworkBindings.dll</HintPath>
+      <HintPath>..\packages\AWSDK.1.4.0.1\lib\MonoAndroid\AWFrameworkBindings.dll</HintPath>
     </Reference>
     <Reference Include="AWMixPanelBindings">
-      <HintPath>..\packages\AWSDK.1.4.0\lib\MonoAndroid\AWMixPanelBindings.dll</HintPath>
+      <HintPath>..\packages\AWSDK.1.4.0.1\lib\MonoAndroid\AWMixPanelBindings.dll</HintPath>
     </Reference>
     <Reference Include="AWNetworkLibraryBindings">
-      <HintPath>..\packages\AWSDK.1.4.0\lib\MonoAndroid\AWNetworkLibraryBindings.dll</HintPath>
+      <HintPath>..\packages\AWSDK.1.4.0.1\lib\MonoAndroid\AWNetworkLibraryBindings.dll</HintPath>
     </Reference>
     <Reference Include="AWOldCredentialExtBinding">
-      <HintPath>..\packages\AWSDK.1.4.0\lib\MonoAndroid\AWOldCredentialExtBinding.dll</HintPath>
+      <HintPath>..\packages\AWSDK.1.4.0.1\lib\MonoAndroid\AWOldCredentialExtBinding.dll</HintPath>
     </Reference>
     <Reference Include="AWSCEPClientBindings">
-      <HintPath>..\packages\AWSDK.1.4.0\lib\MonoAndroid\AWSCEPClientBindings.dll</HintPath>
+      <HintPath>..\packages\AWSDK.1.4.0.1\lib\MonoAndroid\AWSCEPClientBindings.dll</HintPath>
     </Reference>
     <Reference Include="AWSQLCipherBindings">
-      <HintPath>..\packages\AWSDK.1.4.0\lib\MonoAndroid\AWSQLCipherBindings.dll</HintPath>
+      <HintPath>..\packages\AWSDK.1.4.0.1\lib\MonoAndroid\AWSQLCipherBindings.dll</HintPath>
     </Reference>
     <Reference Include="AWTunnelSDKBinding">
-      <HintPath>..\packages\AWSDK.1.4.0\lib\MonoAndroid\AWTunnelSDKBinding.dll</HintPath>
+      <HintPath>..\packages\AWSDK.1.4.0.1\lib\MonoAndroid\AWTunnelSDKBinding.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

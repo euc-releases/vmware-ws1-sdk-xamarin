@@ -1,9 +1,12 @@
-﻿using Android.App;
+﻿//  Copyright © 2019 VMware, Inc. All rights reserved. This product is protected
+//  by copyright and intellectual property laws in the United States and other
+//  countries as well as by international treaties. VMware products are covered
+//  by one or more patents listed at http://www.vmware.com/go/patents.
+
+using Android.App;
 using Android.Content;
 using Android.Widget;
 using Android.OS;
-using Android.Support.V7.App;
-
 using Com.Airwatch.Gateway.UI;
 using System.Collections.Generic;
 
