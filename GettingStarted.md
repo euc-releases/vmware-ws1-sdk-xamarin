@@ -34,9 +34,9 @@ Upload your internal app to the Workspace ONE UEM Console to register it with th
 8. Assign the app to a smart group and select a **Push Mode**.
 9. Select **Add**, and **Save & Publish** the app to complete the upload process.
 
-### Add Required SDK DLL to Project
+### Add Required SDK package to Project
 
-Add the Workspace ONE SDK DLL to your Xamarin project to enable the Xamarin IPA file in UEM Console to recognize and apply the Workspace ONE SDK functionality.
+Add the Workspace ONE SDK nuget package to your Xamarin project to enable the Xamarin IPA file in UEM Console to recognize and apply the Workspace ONE SDK functionality.
 
 1. Open Visual Studio.
 2. Right-click **Packages** and select **Add Packages**.
@@ -327,9 +327,9 @@ To integrate Workspace ONE Android SDK Xamarin components into an existing Xamar
 
     d) For authentication, timeout and data-loss prevention features, all the application activities should extend from `Com.Airwatch.Gateway.UI.GatewayBaseActivity`. It allows the application to handle the lifecycle correctly and to manage the state of **Workspace ONE SDK**.
 
-### Note
+#### Note
 
-    If the app cannot extend  AWApplication class, it can also use the delegate approach, please follow the below link for more details at <https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/services/SDK_Android/GUID-B59ECD0A-92CF-4EC8-8A39-34B80F1D8788.html>
+    If the app cannot extend  AWApplication class, it can also use the delegate approach, more details at <https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/services/SDK_Android/GUID-B59ECD0A-92CF-4EC8-8A39-34B80F1D8788.html>
 
 ### Features
 
