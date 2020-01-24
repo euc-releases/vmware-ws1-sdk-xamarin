@@ -5,7 +5,7 @@
 
 This document explains how to integrate the Workspace ONE SDKs into your Xamarin-built apps.
 
- For detailed information about the Workspace ONE SDK and managing internal apps, See the **VMware Workspace ONE UEM Mobile Application Management Guide** and the **VMware Workspace ONE SDK Technical Implementation Guides** located on the Workspace ONE Resources Portal at <https://my.workspaceone.com/products/Workspace-ONE-SDK/>
+ For detailed information about the Workspace ONE SDK and managing internal apps, See the **VMware Workspace ONE UEM Mobile Application Management Guide** and the **VMware Workspace ONE SDK Technical Implementation Guides** located on the Workspace ONE Resources Portal at <https://my.workspaceone.com/products/Workspace-ONE-SDK>
 
 ## iOS Overview
 
@@ -14,7 +14,7 @@ In order to inject Workspace ONE SDK functionality into your  Xamarin AWSDK App,
 ### Requirements
 
 * iOS 10.0+
-* Visual Studio 2019 for Windows / Visual Studio for Mac 7.5+
+* Visual Studio 2019 (16.4 and above) for Windows / Visual Studio 2019 for Mac (8.4 and above)
 * Workspace ONE-enrolled iOS test device
 * The Workspace ONE Xamarin SDK (AWSDK) package from the Nuget Store.
 * A Xamarin iOS app to integrate with the Workspace ONE SDK
@@ -219,7 +219,7 @@ To integrate Workspace ONE Android SDK Xamarin components into an existing Xamar
 
 ### Requirements
 
-* Visual Studio 2019 for Windows / Visual Studio for Mac 7.5+
+* Visual Studio 2019 (16.4 and above) for Windows / Visual Studio 2019 for Mac (8.4 and above)
 * Workspace ONE Xamarin Android SDK binaries from the Nuget Store.
 * Android test device running Ice Cream Sandwich and above.
 * Xamarin Android app to integrate with the Workspace ONE SDK targeting Android 5.0+ / API Level 14+.
