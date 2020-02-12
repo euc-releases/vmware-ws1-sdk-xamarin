@@ -226,6 +226,8 @@ To integrate Workspace ONE Android SDK Xamarin components into an existing Xamar
 * Intelligent Hub(formerly AirWatch Agent v7.0+) for Android from Google Playstore.
 * Whitelisted Release/Debug signing key as explained below should be used for signing the Xamarin android application.
 
+**Note: Applications using the Workspace ONE SDK for Xamarin must make changes in their HTTP networking classes to support Android 10 (Q) devices. Applications must use version 1.4.0+ of AWSDK nuget package, and use the HTTP Client classes provided in the Android component. For more details, please refer to the [troubleshooting guide](#troubleshooting-guide).**
+
 ### Integrating Workspace ONE SDK
 
 1. While integrating **Workspace ONE SDK**, application method count may exceed 64k due to library dependencies. Enable Multi-Dex option for the app in Visual Studio.
@@ -383,3 +385,11 @@ For applications that are deployed publicly through the Play Store, send the pub
 ### Push App to Dev Device using App Catalog
 
 In order for the **Intelligent Hub** to manage an app, it needs to be sent to the device.  This can be done via an installation policy of **Automatic** or by pushing the app down once using the **Hub**'s *APP CATALOG*.  Once the app is listed in the *Managed Apps* section of the Hub, it is ready for local management.
+
+### Troubleshooting Guide
+
+**Q. On Android 10 (Q), HTTP requests fail with a "407 Proxy Authentication Required" error when the "VMware Tunnel Proxy" option is enabled.**
+
+A. To resolve this error, applications need to use the AW wrapper classes provided for the WebView and HTTP clients in the `Com.Airwatch.Gateway.Clients` package. This is required because, on Android 10 (Q), the Android platform removed access to the [/proc/net file system](https://developer.android.com/about/versions/10/privacy/changes#proc-net-filesystem). This change caused the SDK's internal authentication process to fail. The AW wrapper classes present in the `Com.Airwatch.Gateway.Clients` package perform the authentication. 
+
+This solution is available from AWSDK nuget package version 1.4.0. Please refer to the Xamarin-AWSDK Sample application's [`TunnelActivity`](https://github.com/vmwareairwatchsdk/Xamarin-AWSDK/blob/master/samples/XamarinAndroidSampleApp/XamarinAndroidSampleApp/Tunneling/TunnelingActivity.cs) to see the usage of wrapper classes.
