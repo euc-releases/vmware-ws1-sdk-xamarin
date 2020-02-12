@@ -226,7 +226,7 @@ To integrate Workspace ONE Android SDK Xamarin components into an existing Xamar
 * Intelligent Hub(formerly AirWatch Agent v7.0+) for Android from Google Playstore.
 * Whitelisted Release/Debug signing key as explained below should be used for signing the Xamarin android application.
 
-**Note: Applications using the Android component of Workspace ONE SDK for Xamarin must make a change in their HTTP networking classes to support Android 10 (Q) devices. Applications must use Xamarin component version 1.4.0 and above, and use the HTTP Client classes provided in the Android component. For more details, please refer to the [troubleshooting guide](#troubleshooting-guide).**
+**Note: Applications using the Workspace ONE SDK for Xamarin must make changes in their HTTP networking classes to support Android 10 (Q) devices. Applications must use version 1.4.0+ of AWSDK nuget package, and use the HTTP Client classes provided in the Android component. For more details, please refer to the [troubleshooting guide](#troubleshooting-guide).**
 
 ### Integrating Workspace ONE SDK
 

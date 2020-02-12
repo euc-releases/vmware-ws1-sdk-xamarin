@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:padding="@dimen/padding_size" />
-    <WebView
+    <com.airwatch.gateway.clients.AWWebView
         android:id="@+id/webview"
         android:layout_width="match_parent"
         android:layout_height="0dp"
