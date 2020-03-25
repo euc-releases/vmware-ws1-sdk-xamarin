@@ -50,7 +50,7 @@
 			<string>com.air-watch.XamarinSampleApp</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>XamarinSampleApp</string>
+				<string>xamarinsampleapp</string>
 			</array>
 			<key>CFBundleURLTypes</key>
 			<string>Editor</string>

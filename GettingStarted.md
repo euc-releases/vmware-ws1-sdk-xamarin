@@ -187,13 +187,14 @@ To complete integration of Xamarin and Workspace ONE SDK within your app use a c
                 sdkController.CallbackScheme = "mysamplescheme"; // defined in Info.plist
                 // 2) set the delegate to know when the initialization has been completed.
                 sdkController.Delegate = AirWatchSDKManager.Instance;
+                AWController.ClientInstance ().Start ();
+
                 return true;
             }
         }
 
         public override void OnActivated (UIApplication application)
         {
-            AWController.ClientInstance ().Start ();
         }
 
         public override bool HandleOpenURL (UIApplication application, NSUrl url)
