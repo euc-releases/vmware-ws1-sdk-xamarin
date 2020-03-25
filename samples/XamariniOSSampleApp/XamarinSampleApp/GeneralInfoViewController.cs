@@ -45,12 +45,6 @@ namespace XamarinSampleApp
 			base.DidReceiveMemoryWarning();
 		}
 
-        public override void ViewDidLayoutSubviews()
-        {
-            base.ViewDidLayoutSubviews();
-            tableView.Frame = View.Bounds;
-        }
-
 		public nint NumberOfSections(UITableView tableView)
 		{
 			return 1;
@@ -79,7 +73,12 @@ namespace XamarinSampleApp
 					break;
 
 				case 1:
-                    NSUrl dsUrl = AWServer.SharedInstance().DeviceServicesURL;
+                    NSUrl dsUrl = null;
+                    if (clientInstance.DeviceServicesURL != null )
+                    {
+                        dsUrl = new NSUrl(clientInstance.DeviceServicesURL);
+                    }
+                    
                     cell.TextLabel.Text = string.Concat(generalInfoElements[rowNo] + "Not Recieved");
                     if (dsUrl != null && dsUrl.Host != null)
                     {

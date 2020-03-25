@@ -22,12 +22,6 @@ namespace XamarinSampleApp
 			setUpViews();
 		}
 
-        public override void ViewDidLayoutSubviews()
-        {
-            base.ViewDidLayoutSubviews();
-            textView.Frame = View.Bounds;
-        }
-
 		public override void DidReceiveMemoryWarning()
 		{
 			base.DidReceiveMemoryWarning();
