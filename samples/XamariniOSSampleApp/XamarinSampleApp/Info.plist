@@ -7,7 +7,7 @@
 	<key>NSFaceIDUsageDescription</key>
 	<string>Sample App supports use of FaceID to unlock the app.</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.4.0</string>
+	<string>1.5.0</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -50,7 +50,7 @@
 			<string>com.air-watch.XamarinSampleApp</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>XamarinSampleApp</string>
+				<string>xamarinsampleapp</string>
 			</array>
 			<key>CFBundleURLTypes</key>
 			<string>Editor</string>

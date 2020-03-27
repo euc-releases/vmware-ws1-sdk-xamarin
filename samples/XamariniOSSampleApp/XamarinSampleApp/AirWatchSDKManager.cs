@@ -12,7 +12,7 @@ using UIKit;
 
 namespace XamarinSampleApp
 {
-	public class AirWatchSDKManager : AWSDKDelegate
+	public class AirWatchSDKManager : AWSDKDelegate, IUIDocumentInteractionControllerDelegate
 	{
 		const string LogCategory = "AirWatchSDKManager";
 
@@ -57,7 +57,7 @@ namespace XamarinSampleApp
 		override public void ReceivedProfiles(AWProfile[] profiles)
 		{
 			recievedProfiles = true;
-			string message = String.Format("AWXamarin ReceivedProfiles received {0}", profiles);
+			string message = String.Format("AWXamarin ReceivedProfiles received {0}", profiles.ToString());
 			Console.WriteLine(message, LogCategory);
 
 			NSNotificationCenter.DefaultCenter.PostNotificationName(Constants.ReceivedProfilesNotification, null);
@@ -65,7 +65,7 @@ namespace XamarinSampleApp
 			for (int i = 0; i < profiles.Length; i++)
 			{
 				AWProfile profile = (AWProfile)profiles[i];
-				if (profile.ProfileType == AWProfileType.SDKProfile)
+				if (profile.IsSDKProfile)
 				{
 					sdkProfile = profile;
 				}
@@ -121,7 +121,7 @@ namespace XamarinSampleApp
 			if (sdkProfile != null && sdkProfile.RestrictionsPayload != null)
 			{
 				AWRestrictionsPayload restrictionsPayload = sdkProfile.RestrictionsPayload;
-				copyPastePermission = !(restrictionsPayload.PreventCopyAndCut);
+				copyPastePermission = !(restrictionsPayload.PreventCopyAndPasteInTo);
 			}
 			return copyPastePermission;
 		}
@@ -208,85 +208,35 @@ namespace XamarinSampleApp
 			}
 			return allowedSites;
 		}
-
+		UIDocumentInteractionController uIDocumentInteractionController;
 		public void openDocumentFromUrl(NSUrl fileUrl, UIView view)
 		{
 			if (fileUrl != null && view != null)
 			{
-				AWDocumentInteractionController documentInteractionController = AWDocumentInteractionController.InteractionControllerWithURL(fileUrl);
-				if (sdkProfile != null && sdkProfile.RestrictionsPayload != null)
-                {
-					documentInteractionController.AllowedApps = AirWatchSDKManager.sharedInstance.allowedApplicationsList();
-				}
-				CGRect frame = new CGRect(0,0,0,0);
-				documentInteractionController.PresentOpenInMenuFromRect(frame, view, true);
-			}
+				
+			    CGRect frame = new CGRect(0,0,0,0);
+				uIDocumentInteractionController =  UIDocumentInteractionController.FromUrl(fileUrl);
+				uIDocumentInteractionController.PresentOpenInMenu(frame, view, true);
+            }
 			else
 			{
 				Console.WriteLine("AWXamarin file opening URL or View is null");
 			}
 		}
 
-        public void openDocumentFromFile(string fileName, string fileExtension)
-        {
-            if (fileName != null && fileExtension != null)
-            {
-                NSUrl fileURL = NSBundle.MainBundle.GetUrlForResource(fileName, fileExtension);
-                if(UIDevice.CurrentDevice.AW_osVersionMajor() >= 11)
-                {
-                    fileURL = moveItemToDocumentsDirectory(fileName, fileExtension);
-                }
-
-                var window = UIApplication.SharedApplication.KeyWindow;
-                var view = window.RootViewController.View;
-                openDocumentFromUrl(fileURL, view);
-            }
-            else
-            {
-                Console.WriteLine("AWXamarin file name or extension not valid");
-            }
-        }
-
-        public NSUrl moveItemToDocumentsDirectory(string fileName, string fileExtension)
-        {
-            NSFileManager fileManager = NSFileManager.DefaultManager;
-
-            string[] dataPath = new string[] { applicationDocumentsDirectory() + "/" + fileName + "." + fileExtension };
-
-            NSUrl fileURLPrivate = NSBundle.MainBundle.GetUrlForResource(fileName, fileExtension);
-
-            if (fileManager.FileExists(fileURLPrivate.Path))
-            {
-                //First run, if file is not copied then copy, else return the path if already copied
-                if (fileManager.FileExists(dataPath[0]) == false)
-                {
-                    fileManager.Copy(fileURLPrivate.Path, dataPath[0], out NSError error);
-                    if (error == null)
-                    {
-                        return NSUrl.CreateFileUrl(dataPath);
-                    }
-                    else
-                    {
-                        Console.WriteLine("AWXamarin Error occured while copying");
-                    }
-                }
-                else
-                {
-                    return NSUrl.CreateFileUrl(dataPath);
-                }
-
-                Console.WriteLine("AWXamarin fileURLPrivate doesnt exist");
-                return null;
-            }
-            return null;
-        }
-
-        public string applicationDocumentsDirectory()
-        {
-            // Get the documents directory
-            string dirPath = NSSearchPath.GetDirectories(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomain.User, true)[0];
-            return dirPath;
-        }
-
-	}
+		public void openDocumentFromFile(string fileName, string fileExtension)
+		{
+			if (fileName != null && fileExtension != null)
+			{
+				NSUrl fileURL = NSBundle.MainBundle.GetUrlForResource(fileName, fileExtension);
+				var window = UIApplication.SharedApplication.KeyWindow;
+				var view = window.RootViewController.View;
+				openDocumentFromUrl(fileURL, view);
+			}
+			else
+			{
+				Console.WriteLine("AWXamarin file name or extension not valid");
+			}
+		}
+    }
 }

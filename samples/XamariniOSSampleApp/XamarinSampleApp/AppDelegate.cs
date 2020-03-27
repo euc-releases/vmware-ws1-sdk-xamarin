@@ -25,31 +25,36 @@ namespace XamarinSampleApp
 
 		public override bool HandleOpenURL (UIApplication application, NSUrl url)
 		{
-			//return AWController.ClientInstance ().HandleOpenURL (url, application);
-			return AWController.ClientInstance().HandleOpenURL(url, "");
+            Console.WriteLine(url.AbsoluteString);
+            return AWController.ClientInstance().HandleOpenURL(url, "");
 		}
 
 		public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
 		{
-			if (Runtime.Arch == Arch.SIMULATOR) {
-				Debug.WriteLine ("AWXamarin Running in Simulator, skipping initialization of the AirWatch SDK!");
-			} else {
-				Debug.WriteLine ("AWXamarin Running on Device, beginning initialization of the AirWatch SDK.");
+            if (Runtime.Arch == Arch.SIMULATOR)
+            {
+                Debug.WriteLine("AWXamarin Running in Simulator, skipping initialization of the AirWatch SDK!");
+            }
+            else
+            {
+                Debug.WriteLine ("AWXamarin Running on Device, beginning initialization of the AirWatch SDK.");
 
 				// Configure the Controller by:
 				var sdkController = AWController.ClientInstance ();
 				// 1) defining the callback scheme so the app can get called back,
-				sdkController.CallbackScheme = "XamarinSampleApp"; // defined in Info.plist
+				sdkController.CallbackScheme = "xamarinsampleapp"; // defined in Info.plist
 				// 2) set the delegate to know when the initialization has been completed.
 				sdkController.Delegate = AirWatchSDKManager.sharedInstance;
-			}
+
+			    AWController.ClientInstance().Start();
+            }
 
 			return true;
 		}
 
 		public override void OnActivated (UIApplication application)
 		{
-			AWController.ClientInstance ().Start ();
+			
 		}
 
 		public override void OnResignActivation (UIApplication application)

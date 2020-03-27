@@ -15,10 +15,6 @@ namespace XamarinSampleApp
 	{
         UITextField urlTextField = null;
 		UIWebView webView = null;
-        UISegmentedControl segmentedControl = null;
-        const float btnHeight = 40;
-        const float offsetXForUIElements = 10.0f;
-        CGRect webViewFrame = new CGRect(0.0, 0.0, 0.0, 0.0);
 
 		public TunnelingViewController() : base("TunnelingViewController", null)
 		{
@@ -49,27 +45,27 @@ namespace XamarinSampleApp
             base.ViewWillDisappear(animated);
 		}
 
-        public override void ViewDidLayoutSubviews()
-        {
-            base.ViewDidLayoutSubviews();
-            setFrameForUIElements();
-        }
-
 		void setUpViews()
 		{
 			this.Title = "Tunneling";
-            urlTextField = new UITextField();
+			CGSize mainScreenSize = UIScreen.MainScreen.Bounds.Size;
+
+			float offsetXForUIElements = 10.0f;
+			float widthForUIElements = (float)(mainScreenSize.Width - (offsetXForUIElements * 2.0f));
+			float btnHeight = 40;
 
 			//uisegmented control
 			string[] stringArray = { "UIWebView", "NSUrlSession" };
-			segmentedControl = new UISegmentedControl(stringArray);
-
-            setFrameForUIElements();
-			
-            segmentedControl.SelectedSegment = 0;
+			CGRect segmentedControlFrame = new CGRect(offsetXForUIElements, 100, widthForUIElements, btnHeight);
+			UISegmentedControl segmentedControl = new UISegmentedControl(stringArray);
+			segmentedControl.Frame = segmentedControlFrame;
+			segmentedControl.SelectedSegment = 0;
 			View.AddSubview(segmentedControl);
 
 			//tunnel url text field
+
+			urlTextField = new UITextField();
+			urlTextField.Frame = new CGRect(offsetXForUIElements, 150, widthForUIElements, btnHeight);
    			urlTextField.Placeholder = "Enter the url with http/https ";
 			urlTextField.BackgroundColor = UIColor.LightGray;
 			urlTextField.UserInteractionEnabled = true;
@@ -106,7 +102,9 @@ namespace XamarinSampleApp
 			this.NavigationItem.RightBarButtonItem = rightBarButtonItem;
 
 			//uiwebview
-            webView = new UIWebView(webViewFrame);
+			CGRect webViewFrame = new CGRect(offsetXForUIElements, 200, widthForUIElements, 300f);
+			webView = new UIWebView(webViewFrame);
+
 			webView.BackgroundColor = UIColor.White;
 			webView.Layer.CornerRadius = 10;
 			webView.Layer.BorderColor = UIColor.Black.CGColor;
@@ -114,26 +112,6 @@ namespace XamarinSampleApp
 
 			View.AddSubview(webView);
 		}
-
-        public void setFrameForUIElements()
-        {
-            //segmented Control
-            CGSize mainScreenSize = UIScreen.MainScreen.Bounds.Size;
-            float widthForUIElements = (float)(mainScreenSize.Width - (offsetXForUIElements * 2.0f));
-            CGRect segmentedControlFrame = new CGRect(offsetXForUIElements, 100, widthForUIElements, btnHeight);
-            segmentedControl.Frame = segmentedControlFrame;
-
-            //textField
-            urlTextField.Frame = new CGRect(offsetXForUIElements, 150, widthForUIElements, btnHeight);
-
-            //webView
-            webViewFrame = new CGRect(offsetXForUIElements, 200, widthForUIElements, 300f);
-            if (webView != null)
-            {
-                webView.Frame = webViewFrame;
-                webView.BackgroundColor = UIColor.White;
-            }
-        }
 
 		void showAlert(string msg)
 		{

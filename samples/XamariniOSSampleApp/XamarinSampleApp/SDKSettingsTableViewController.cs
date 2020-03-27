@@ -86,8 +86,14 @@ namespace XamarinSampleApp
 
 		public void reloadTableData(NSNotification notification)
 		{
-			removeActivityIndicator(notification);
-			TableView.ReloadData();
+
+			new System.Threading.Thread(new System.Threading.ThreadStart(() => {
+				InvokeOnMainThread(() => {
+					removeActivityIndicator(notification);
+					TableView.ReloadData();
+				});
+			})).Start();
+			
 		}
 
         //UITableView Delegates

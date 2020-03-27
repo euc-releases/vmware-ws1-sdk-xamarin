@@ -13,6 +13,12 @@
 		<true/>
 	</dict>
 	<key>AWBlockerViewEnableKey</key>
-	<string>YES</string>
+	<false/>
+	<key>AWClipboardEnabled</key>
+	<true/>
+	<key>EnableSecureDocumentController</key>
+	<true/>
+	<key>DisableActivityViewController</key>
+	<false/>
 </dict>
 </plist>

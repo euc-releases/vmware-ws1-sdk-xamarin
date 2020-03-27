@@ -36,12 +36,6 @@ namespace XamarinSampleApp
 			tableView.TableFooterView = new UIView(new CGRect(0, 0, 0, 0));
 		}
 
-        public override void ViewDidLayoutSubviews()
-        {
-            base.ViewDidLayoutSubviews();
-            tableView.Frame = View.Bounds;
-        }
-
 		public override void DidReceiveMemoryWarning()
 		{
 			base.DidReceiveMemoryWarning();
