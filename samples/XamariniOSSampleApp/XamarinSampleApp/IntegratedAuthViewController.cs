@@ -8,6 +8,7 @@ using UIKit;
 using Foundation;
 using CoreGraphics;
 using AirWatchSDK;
+using CoreFoundation;
 
 namespace XamarinSampleApp
 {
@@ -17,9 +18,7 @@ namespace XamarinSampleApp
 		NSUrlResponse connectionResponse;
 		NSMutableData connectionData;
 		UIWebView webView;
-        UISegmentedControl segmentedControl;
-        CGRect webViewFrame = new CGRect(0.0, 0.0, 0.0, 0.0);
-
+		private NSUrlSessionDataTask dataTask;
         const string SDKErrorLoginFailedTitle = "SDK Error";
         const string SDKErrorLoginFailedMessage = "An Error Occured while SDK was trying to perform Integrated Authentication. Please make sure your enrollment credentials have access to this endpoint";
         const string SDKErrorAuthNotSupportedTitle = "Authentication Reqired";
@@ -54,29 +53,26 @@ namespace XamarinSampleApp
 			// Release any cached data, images, etc that aren't in use.
 		}
 
-        public override void ViewDidLayoutSubviews()
-        {
-            base.ViewDidLayoutSubviews();
-            setFrameForUIElements();
-        }
-
 		//user defined methods
 		void setUpViews()
 		{
 			this.Title = "Authentication";
-
-            urlTextField = new UITextField();
+			CGSize mainScreenSize = UIScreen.MainScreen.Bounds.Size;
+			float btnHeight = 40;
+			float offsetXForUIElements = 10.0f;
+			float widthForUIElements = (float)(mainScreenSize.Width - (offsetXForUIElements * 2.0f));
 
 			//uisegmented control
 			string[] stringArray = { "NSUrlConnection", "NSUrlSession"};
-			segmentedControl = new UISegmentedControl(stringArray);
-
-            setFrameForUIElements();
-
+			CGRect segmentedControlFrame = new CGRect(offsetXForUIElements, 100, widthForUIElements, btnHeight);
+			UISegmentedControl segmentedControl = new UISegmentedControl(stringArray);
+			segmentedControl.Frame = segmentedControlFrame;
 			segmentedControl.SelectedSegment = 0;
 			View.AddSubview(segmentedControl);
 
 			//url text field
+			urlTextField = new UITextField();
+			urlTextField.Frame = new CGRect(offsetXForUIElements, 150, widthForUIElements, btnHeight);
 			urlTextField.Placeholder = "Enter the url with http/https ";
 			urlTextField.BackgroundColor = UIColor.LightGray;
 			urlTextField.UserInteractionEnabled = true;
@@ -112,6 +108,7 @@ namespace XamarinSampleApp
 			this.NavigationItem.RightBarButtonItem = rightBarButtonItem;
 
 			//uiwebview
+			CGRect webViewFrame = new CGRect(offsetXForUIElements, 200, widthForUIElements, 300f);
 			webView = new UIWebView(webViewFrame);
 
 			webView.BackgroundColor = UIColor.White;
@@ -121,25 +118,6 @@ namespace XamarinSampleApp
 
 			View.AddSubview(webView);
 		}
-
-        public void setFrameForUIElements()
-        {
-            CGSize mainScreenSize = UIScreen.MainScreen.Bounds.Size;
-            float btnHeight = 40;
-            float offsetXForUIElements = 10.0f;
-            float widthForUIElements = (float)(mainScreenSize.Width - (offsetXForUIElements * 2.0f));
-
-            CGRect segmentedControlFrame = new CGRect(offsetXForUIElements, 100, widthForUIElements, btnHeight);
-            segmentedControl.Frame = segmentedControlFrame;
-
-            urlTextField.Frame = new CGRect(offsetXForUIElements, 150, widthForUIElements, btnHeight);
-
-            webViewFrame = new CGRect(offsetXForUIElements, 200, widthForUIElements, 300f);
-            if(webView != null)
-            {
-                webView.Frame = webViewFrame;
-            }
-        }
 
 		void showAlert(string msg)
 		{
@@ -159,19 +137,6 @@ namespace XamarinSampleApp
 		{
 			NSUrlProtocol.RegisterClass(new ObjCRuntime.Class(typeof(CustomUrlProtocol)));
 			webView.LoadRequest(request);
-		}
-
-		void handleChallengeForConnection(NSUrlAuthenticationChallenge challenge)
-		{
-			NSError outError;
-			if (AWController.ClientInstance().CanHandleProtectionSpace(challenge.ProtectionSpace, out outError))
-			{
-				bool success = AWController.ClientInstance().HandleChallenge(challenge);
-				if (success)
-				{
-					Console.WriteLine("AWXamarin Client Challenge successful using connection");
-				}
-			}
 		}
 
 		void handleChallangeforSession(NSUrlAuthenticationChallenge challenge, Action<NSUrlSessionAuthChallengeDisposition, NSUrlCredential> completionHandler)
@@ -211,7 +176,7 @@ namespace XamarinSampleApp
 				}
 				else if ((challenge.ProtectionSpace.AuthenticationMethod == "NSURLAuthenticationMethodHTTPBasic") || (challenge.ProtectionSpace.AuthenticationMethod == "NSURLAuthenticationMethodNTLM") || (challenge.ProtectionSpace.AuthenticationMethod == "NSURLAuthenticationMethodClientCertificate"))
 				{
-					handleChallengeForConnection(challenge);
+					//handleChallengeForConnection(challenge);
 				}
 				else
 				{
