@@ -13,8 +13,8 @@ In order to inject Workspace ONE SDK functionality into your  Xamarin AWSDK App,
 
 ### Requirements
 
-* iOS 10.0+
-* Visual Studio 2019 (16.4 and above) for Windows / Visual Studio 2019 for Mac (8.4 and above)
+* iOS 11.0+
+* Visual Studio 2019 (16.6 and above) for Windows / Visual Studio 2019 for Mac (8.6 and above)
 * Workspace ONE-enrolled iOS test device
 * The Workspace ONE Xamarin SDK (AWSDK) package from the Nuget Store.
 * A Xamarin iOS app to integrate with the Workspace ONE SDK
@@ -220,14 +220,12 @@ To integrate Workspace ONE Android SDK Xamarin components into an existing Xamar
 
 ### Requirements
 
-* Visual Studio 2019 (16.4 and above) for Windows / Visual Studio 2019 for Mac (8.4 and above)
+* Visual Studio 2019 (16.6 and above) for Windows / Visual Studio 2019 for Mac (8.6 and above)
 * Workspace ONE Xamarin Android SDK binaries from the Nuget Store.
-* Android test device running Ice Cream Sandwich and above.
-* Xamarin Android app to integrate with the Workspace ONE SDK targeting Android 5.0+ / API Level 14+.
+* Android test device running KitKat and above.
+* Xamarin Android app to integrate with the Workspace ONE SDK targeting Android 4.4+ / API Level 19+.
 * Intelligent Hub(formerly AirWatch Agent v7.0+) for Android from Google Playstore.
 * Whitelisted Release/Debug signing key as explained below should be used for signing the Xamarin android application.
-
-**Note: For Android use Visual Studio 2019 for Windows v16.4 / Visual Studio 2019 for Mac v8.4 due to a known issue with VS - https://github.com/xamarin/xamarin-android/issues/4369
 
 **Note: Applications using the Workspace ONE SDK for Xamarin must make changes in their HTTP networking classes to support Android 10 (Q) devices. Applications must use version 1.4.0+ of AWSDK nuget package, and use the HTTP Client classes provided in the Android component. For more details, please refer to the [troubleshooting guide](#troubleshooting-guide).**
 
@@ -235,7 +233,8 @@ To integrate Workspace ONE Android SDK Xamarin components into an existing Xamar
 
 1. While integrating **Workspace ONE SDK**, application method count may exceed 64k due to library dependencies. Enable Multi-Dex option for the app in Visual Studio.
 2. Add the VMware Workspace ONE SDK package from the NuGet Gallery.
-3. Initialize Workspace ONE SDK:
+3. Add Xamarin.GooglePlayServices.Base (v71.1610.4) and Xamarin.GooglePlayServices.SafetyNet (v71.1600.4)
+4. Initialize Workspace ONE SDK:
     a) Extend the application class of the Xamarin app from **AWApplication** class of Workspace ONE SDK. Override the **MainActivityIntent** to return application's main landing activity. Move app's `onCreate()` business logic to `onPostCreate()`.
 
     **Application class**
