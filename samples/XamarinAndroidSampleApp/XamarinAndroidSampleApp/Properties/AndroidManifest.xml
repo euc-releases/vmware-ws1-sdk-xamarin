@@ -26,5 +26,5 @@
 		</provider>
 		<uses-library android:name="org.apache.http.legacy" android:required="false" />
 	</application>
-	<uses-sdk android:targetSdkVersion="28" android:minSdkVersion="19" />
+	<uses-sdk android:targetSdkVersion="29" android:minSdkVersion="21" />
 </manifest>

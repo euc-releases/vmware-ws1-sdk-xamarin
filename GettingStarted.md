@@ -222,8 +222,8 @@ To integrate Workspace ONE Android SDK Xamarin components into an existing Xamar
 
 * Visual Studio 2019 (16.6 and above) for Windows / Visual Studio 2019 for Mac (8.6 and above)
 * Workspace ONE Xamarin Android SDK binaries from the Nuget Store.
-* Android test device running KitKat and above.
-* Xamarin Android app to integrate with the Workspace ONE SDK targeting Android 4.4+ / API Level 19+.
+* Android test device running Lollipop and above.
+* Xamarin Android app to integrate with the Workspace ONE SDK targeting Android 5.0+ / API Level 21+.
 * Intelligent Hub(formerly AirWatch Agent v7.0+) for Android from Google Playstore.
 * Whitelisted Release/Debug signing key as explained below should be used for signing the Xamarin android application.
 
