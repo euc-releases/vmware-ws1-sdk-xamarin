@@ -63,12 +63,11 @@ Expose a custom scheme in the Info.plist file in the Xamarin project to enable t
 3. Select the green "PLUS" in the selected row.
 4. Double click **Custom Property**, and change it to **LSApplicationQueriesSchemes**.
 5. Change the *Type* from *String* to *Array*.
-6. Within the *Array*, select *Add new entry*.
-7. Select the green "PLUS" in the selected row.
-8. Double-click the *Value* column, and set the value depending on the anchor application.
-   * If the is device enrolled with the Intelligent Hub, use **airwatch**.
-   * If the is device enrolled with the Workspace ONE app, use **awws1enroll**.
-9. Save the file.
+6. Within the *Array*,  Add following 3 values for  anchor application.
+   * Type String  and Value **airwatch**.
+   * Type String  and Value  **awws1enroll**.
+   * Type String  and Value   **wsonesdk**.
+7. Save the file.
 
 ### Add Support for QR Scan and FaceId
 
