@@ -14,7 +14,7 @@ In order to inject Workspace ONE SDK functionality into your  Xamarin AWSDK App,
 ### Requirements
 
 * iOS 12.0+
-* Visual Studio 2019 (16.6 and above) for Windows / Visual Studio 2019 for Mac (8.6 and above)
+* Visual Studio 2019 (16.9 and above) for Windows / Visual Studio 2019 for Mac (8.9 and above)
 * Workspace ONE-enrolled iOS test device
 * The Workspace ONE Xamarin SDK (AWSDK) package from the Nuget Store.
 * A Xamarin iOS app to integrate with the Workspace ONE SDK
@@ -219,7 +219,7 @@ To integrate Workspace ONE Android SDK Xamarin components into an existing Xamar
 
 ### Requirements
 
-* Visual Studio 2019 (16.6 and above) for Windows / Visual Studio 2019 for Mac (8.6 and above)
+* Visual Studio 2019 (16.9 and above) for Windows / Visual Studio 2019 for Mac (8.9 and above)
 * Workspace ONE Xamarin Android SDK binaries from the Nuget Store.
 * Android test device running Marshmallow and above.
 * Xamarin Android app to integrate with the Workspace ONE SDK targeting Android 6.0+ / API Level 23+.
