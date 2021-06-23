@@ -6,10 +6,6 @@
 	<string>XamarinSampleApp</string>
 	<key>NSFaceIDUsageDescription</key>
 	<string>Sample App supports use of FaceID to unlock the app.</string>
-	<key>CFBundleShortVersionString</key>
-	<string>1.5.0</string>
-	<key>CFBundleVersion</key>
-	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MinimumOSVersion</key>
@@ -72,5 +68,11 @@
 	</array>
 	<key>CFBundleIdentifier</key>
 	<string>com.vmware.sampleapp</string>
+	<key>CFBundleDisplayName</key>
+	<string>XamarinSampleApp</string>
+	<key>CFBundleShortVersionString</key>
+	<string>2.3.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
 </dict>
 </plist>
