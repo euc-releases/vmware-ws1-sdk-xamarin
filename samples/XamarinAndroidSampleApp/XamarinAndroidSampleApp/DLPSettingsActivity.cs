@@ -12,7 +12,6 @@ using Android.App;
 using Android.Content;
 using Android.Net;
 using Android.Runtime;
-using Android.Support.V4.Content;
 using Android.Views;
 using Android.Widget;
 
@@ -23,6 +22,7 @@ using Com.Airwatch.Sdk.Configuration;
 using Com.Airwatch.UI.Widget;
 using Android.OS;
 using System.IO;
+using AndroidX.Core.Content;
 
 namespace XamarinAndroidSampleApp
 {

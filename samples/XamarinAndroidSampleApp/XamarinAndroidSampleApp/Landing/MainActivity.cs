@@ -9,6 +9,10 @@ using Android.Widget;
 using Android.OS;
 using Com.Airwatch.Gateway.UI;
 using System.Collections.Generic;
+using Com.Airwatch.Gateway.Clients.Utils;
+using System;
+using System.Threading.Tasks;
+using System.Threading;
 
 namespace XamarinAndroidSampleApp.Landing
 {
@@ -29,6 +33,7 @@ namespace XamarinAndroidSampleApp.Landing
             useCases.Add(new SdkUseCase() { PrimaryText = "Authentication", SecondaryText = "Automated local and network authentication", ImageResourceId = Resource.Drawable.Auth });
             useCases.Add(new SdkUseCase() { PrimaryText = "Remote Config", SecondaryText = "Push configurations and settings to the app", ImageResourceId = Resource.Drawable.Payload });
             useCases.Add(new SdkUseCase() { PrimaryText = "Dlp", SecondaryText = "Data loss prevention capabilities", ImageResourceId = Resource.Drawable.Dlp });
+            useCases.Add(new SdkUseCase() { PrimaryText = "Logout", SecondaryText = "Check Logout", ImageResourceId = Resource.Drawable.Dlp });
 
             listView.Adapter = new SdkUseCaseAdapter(this, useCases);
 
@@ -59,6 +64,15 @@ namespace XamarinAndroidSampleApp.Landing
                 var intent = new Intent(this, typeof(DLPSettingsActivity));
                 StartActivity(intent);
             }
+            else if (e.Position == 5)
+            {
+                new Thread(() =>
+                {
+                    Thread.CurrentThread.IsBackground = true;
+                    IACredentialsManagerFactory.Instance.IaCredentialsManager.PromptAndUpdateCredentials(this, "");
+                }).Start();
+            }
+
         }
     }
 }
