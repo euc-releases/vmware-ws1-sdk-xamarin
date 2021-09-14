@@ -35,7 +35,8 @@ namespace XamarinAndroidSampleApp.Landing
         {
             get
             {
-                var intent = new Intent(ApplicationContext, typeof(GatewaySplashActivity));
+                var intent = new Intent(ApplicationContext, typeof(Com.Airwatch.Gateway.UI.GatewayBaseActivity));
+
                 return intent;
             }
         }
@@ -69,6 +70,11 @@ namespace XamarinAndroidSampleApp.Landing
 
         public override void OnSSLPinningRequestFailure(string host1, X509Certificate cert)
         {
+        }
+
+        public void setPushNotification()
+        {
+            Com.Airwatch.Notification.PushNotificationManager.GetInstance(ApplicationContext).RegisterToken("");
         }
     }
 }
