@@ -87,127 +87,133 @@ To complete integration of Xamarin and Workspace ONE SDK within your app use a c
 
 1. Create a class to act as an `AWSDKDelegate` and to receive SDK callbacks.  
 
-        using Foundation;
-        using System.Diagnostics;
-        using System;
-        using AirWatchSDK;
+```c
+    using Foundation;
+    using System.Diagnostics;
+    using System;
+    using AirWatchSDK;
 
-        namespace sdkSampleApp
-        {
-            public class AirWatchSDKManager: AWSDKDelegate
-            {            
-                private static AirWatchSDKManager instance;
-                private static string LogCategory = "AirWatchSDK";
+    namespace sdkSampleApp
+    {
+        public class AirWatchSDKManager: AWSDKDelegate
+        {            
+            private static AirWatchSDKManager instance;
+            private static string LogCategory = "AirWatchSDK";
 
-                // private, use the Instance below
-                private AirWatchSDKManager ()
-                {
-                }
+            // private, use the Instance below
+            private AirWatchSDKManager ()
+            {
+            }
 
-                // singleton
-                public static AirWatchSDKManager Instance {
-                    get {
-                        if (instance == null) {
-                            instance = new AirWatchSDKManager ();
-                        }
-                        return instance;
+            // singleton
+            public static AirWatchSDKManager Instance {
+                get {
+                    if (instance == null) {
+                        instance = new AirWatchSDKManager ();
                     }
-                }
-
-                // Below are all the protocol methods defined in AWSDKDelegate
-                // Add customization here for SDK results
-
-                override public void InitialCheckDoneWithError (NSError error)
-                {
-                    // Add any SDK Customization here
-                    string message = String.Format ("InitialCheckDoneWithError received {0}, SDK initialized if no error", error);
-                    Debug.WriteLine (message, LogCategory);
-                }
-
-                override public void ReceivedProfiles (AWProfile[] profiles)
-                {
-                    // Add any SDK Customization here
-                    string message = String.Format ("ReceivedProfiles received {0}", profiles);
-                    Debug.WriteLine (message, LogCategory);
-                }
-
-                override public void Wipe ()
-                {
-                    // Add any SDK Customization here
-                    Debug.WriteLine ("Wipe command received", LogCategory);
-                }
-
-                override public void Lock ()
-                {
-                    // Add any SDK Customization here
-                    Debug.WriteLine ("Lock command received", LogCategory);
-                }
-
-                override public void Unlock ()
-                {
-                    // Add any SDK Customization here
-                    Debug.WriteLine ("Unlock command received", LogCategory);
-                }
-
-                public override void StopNetworkActivity(AWNetworkActivityStatus status)
-                {
-                    // Add any SDK Customization here
-                    Debug.WriteLine("StopNetworkActivity received", LogCategory);
-                }
-
-                override public void ResumeNetworkActivity ()
-                {
-                    // Add any SDK Customization here
-                    Debug.WriteLine ("ResumeNetworkActivity received", LogCategory);
-                    }
+                    return instance;
                 }
             }
+
+            // Below are all the protocol methods defined in AWSDKDelegate
+            // Add customization here for SDK results
+
+            override public void InitialCheckDoneWithError (NSError error)
+            {
+                // Add any SDK Customization here
+                string message = String.Format ("InitialCheckDoneWithError received {0}, SDK initialized if no error", error);
+                Debug.WriteLine (message, LogCategory);
+            }
+
+            override public void ReceivedProfiles (AWProfile[] profiles)
+            {
+                // Add any SDK Customization here
+                string message = String.Format ("ReceivedProfiles received {0}", profiles);
+                Debug.WriteLine (message, LogCategory);
+            }
+
+            override public void Wipe ()
+            {
+                // Add any SDK Customization here
+                Debug.WriteLine ("Wipe command received", LogCategory);
+            }
+
+            override public void Lock ()
+            {
+                // Add any SDK Customization here
+                Debug.WriteLine ("Lock command received", LogCategory);
+            }
+
+            override public void Unlock ()
+            {
+                // Add any SDK Customization here
+                Debug.WriteLine ("Unlock command received", LogCategory);
+            }
+
+            public override void StopNetworkActivity(AWNetworkActivityStatus status)
+            {
+                // Add any SDK Customization here
+                Debug.WriteLine("StopNetworkActivity received", LogCategory);
+            }
+
+            override public void ResumeNetworkActivity ()
+            {
+                // Add any SDK Customization here
+                Debug.WriteLine ("ResumeNetworkActivity received", LogCategory);
+                }
+            }
+        }
+```
 
 2. Add the listed functionality to the `AppDelegate.cs`.
 
-        using System;
-        using ObjCRuntime;
-        using System.Diagnostics;
-        using AirWatchSDK;
+```c
+    using System;
+    using ObjCRuntime;
+    using System.Diagnostics;
+    using AirWatchSDK;
 
-       ...
+    ...
 
-        public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
-        {
-            if (Runtime.Arch == Arch.SIMULATOR) {
-                Debug.WriteLine ("Running in Simulator, skipping initialization of the AirWatch SDK!");
-                return true;
-            } else {
-                Debug.WriteLine ("Running on Device, beginning initialization of the AirWatch SDK.");
+    public override bool FinishedLaunching (UIApplication application, NSDictionary launchOptions)
+    {
+        if (Runtime.Arch == Arch.SIMULATOR) {
+            Debug.WriteLine ("Running in Simulator, skipping initialization of the AirWatch SDK!");
+            return true;
+        } else {
+            Debug.WriteLine ("Running on Device, beginning initialization of the AirWatch SDK.");
 
-                // Configure the Controller by:
-                var sdkController = AWController.ClientInstance ();
-                // 1) defining the callback scheme so the app can get called back,
-                sdkController.CallbackScheme = "mysamplescheme"; // defined in Info.plist
-                // 2) set the delegate to know when the initialization has been completed.
-                sdkController.Delegate = AirWatchSDKManager.Instance;
-                AWController.ClientInstance ().Start ();
+            // Configure the Controller by:
+            var sdkController = AWController.ClientInstance ();
+            // 1) defining the callback scheme so the app can get called back,
+            sdkController.CallbackScheme = "mysamplescheme"; // defined in Info.plist
+            // 2) set the delegate to know when the initialization has been completed.
+            sdkController.Delegate = AirWatchSDKManager.Instance;
+            AWController.ClientInstance ().Start ();
 
-                return true;
-            }
+            return true;
         }
+    }
 
-        public override void OnActivated (UIApplication application)
-        {
-        }
+    public override void OnActivated (UIApplication application)
+    {
+    }
 
-        public override bool HandleOpenURL (UIApplication application, NSUrl url)
-        {
-            return AWController.ClientInstance ().HandleOpenURL (url, "");
-        }
+    public override bool HandleOpenURL (UIApplication application, NSUrl url)
+    {
+        return AWController.ClientInstance ().HandleOpenURL (url, "");
+    }
+```
 
 If you are using Xamarin Forms on iOS, you need to add this to your AppDelegate as well.  This will expose the `UIWindow` that is part of the iOS `AppDelegate` but is hidden in `Xamarin.Forms.Platform.iOS.FormsApplicationDelegate`:
 
+```c
     [Export("window")]
     public UIWindow GetWindow()
     {
         return UIApplication.SharedApplication.Windows[0];
     }
+```
 
 ### Debug Your Application
 
@@ -234,105 +240,106 @@ To integrate Workspace ONE Android SDK Xamarin components into an existing Xamar
 2. Add the Omnissa Workspace ONE SDK package from the NuGet Gallery.
 3. Add Xamarin.GooglePlayServices.Base (v71.1610.4) and Xamarin.GooglePlayServices.SafetyNet (v71.1600.4)
 4. Initialize Workspace ONE SDK:
-    a) Extend the application class of the Xamarin app from **AWApplication** class of Workspace ONE SDK. Override the **MainActivityIntent** to return application's main landing activity. Move app's `onCreate()` business logic to `onPostCreate()`.
+    1. Extend the application class of the Xamarin app from **AWApplication** class of Workspace ONE SDK. Override the **MainActivityIntent** to return application's main landing activity. Move app's `onCreate()` business logic to `onPostCreate()`.  
+    **Application class**  
+```c
+    namespace XamarinAndroidSampleApp.Landing
+    {
+        [Application(Label = "@string/app_name", Icon = "@drawable/AppLogo", Theme = "@style/AppTheme")]
 
-    **Application class**
-
-        namespace XamarinAndroidSampleApp.Landing
+        public class SampleApplication : AWApplication
         {
-            [Application(Label = "@string/app_name", Icon = "@drawable/AppLogo", Theme = "@style/AppTheme")]
-
-            public class SampleApplication : AWApplication
+            public SampleApplication(IntPtr handle, JniHandleOwnership ownerShip)
+            : base(handle, ownerShip)
             {
-                public SampleApplication(IntPtr handle, JniHandleOwnership ownerShip)
-                : base(handle, ownerShip)
+            }
+
+            public override Intent MainActivityIntent
+            {
+                get
                 {
+                var intent = new Intent(ApplicationContext, typeof(MainActivity)); // MainActivity is application's main landing activity
+                return intent;
                 }
+            }
 
-                public override Intent MainActivityIntent
+            public override Intent MainLauncherIntent
+            {
+                get
                 {
-                    get
-                    {
-                    var intent = new Intent(ApplicationContext, typeof(MainActivity)); // MainActivity is application's main landing activity
-                    return intent;
-                    }
+                var intent = new Intent(ApplicationContext, typeof(GatewaySplashActivity));
+                return intent;
                 }
+            }
 
-                public override Intent MainLauncherIntent
+            public override bool MagCertificateEnable
+            {
+                get
                 {
-                    get
-                    {
-                    var intent = new Intent(ApplicationContext, typeof(GatewaySplashActivity));
-                    return intent;
-                    }
+                return true; // to fetch mag certificate during initial setup
                 }
+            }
 
-                public override bool MagCertificateEnable
+            public override bool IsInputLogoBrandable
+            {
+                get
                 {
-                    get
-                    {
-                    return true; // to fetch mag certificate during initial setup
-                    }
+                return true; // to brand application logo
                 }
+            }
 
-                public override bool IsInputLogoBrandable
-                {
-                    get
-                    {
-                    return true; // to brand application logo
-                    }
-                }
-
-                public override void OnPostCreate()
-                {
-                base.OnPostCreate();
-                // App specific code here
-                }
+            public override void OnPostCreate()
+            {
+            base.OnPostCreate();
+            // App specific code here
+            }
 
 
-               public override void OnSSLPinningValidationFailure(string host1, X509Certificate cert)
-               {
-               }
+            public override void OnSSLPinningValidationFailure(string host1, X509Certificate cert)
+            {
+            }
 
-               public override void OnSSLPinningRequestFailure(string host1, X509Certificate cert)
-               {
-               }
+            public override void OnSSLPinningRequestFailure(string host1, X509Certificate cert)
+            {
             }
         }
+    }
+```
+   2. Add **AirWatchSDKIntentService** by setting the name as `<AppPackageName>.AirWatchSDKIntentService`.
+   3. Set `GatewaySplashActivity` as your main launching activity and and `AirWatchSDKBroadcastReceiver` broadcast receiver declarations in manifest file. With these changes, the manifest file should have entries as shown below:
 
-    b) Add **AirWatchSDKIntentService** by setting the name as `<AppPackageName>.AirWatchSDKIntentService`.
-    c) Set `GatewaySplashActivity` as your main launching activity and and `AirWatchSDKBroadcastReceiver` broadcast receiver declarations in manifest file. With these changes, the manifest file should have entries as shown below:
+ **Manifest File**
 
-    **Manifest File**
+```c
+    <application android:name="SampleApplication" android:theme="@style/AppTheme" tools:replace="android:label">
+    <activity android:name="com.airwatch.gateway.ui.GatewaySplashActivity" android:label="@string/app_name">
+    <intent-filter>
+    <action android:name="android.intent.action.MAIN" />
+    <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter>
+    </activity>
+    <activity android:name=".MainActivity" android:label="@string/app_name" />
+    <receiver android:name="com.airwatch.sdk.AirWatchSDKBroadcastReceiver" android:permission="com.airwatch.sdk.BROADCAST">
+    <intent-filter>
+    <action android:name="com.airwatch.xamarinsampleapp.airwatchsdk.BROADCAST" />
+    </intent-filter>
+    <intent-filter>
+    <action android:name="android.intent.action.PACKAGE_ADDED" />
+    <action android:name="android.intent.action.PACKAGE_REMOVED" />
+    <action android:name="android.intent.action.PACKAGE_REPLACED" />
+    <action android:name="android.intent.action.PACKAGE_CHANGED" />
+    <action android:name="android.intent.action.PACKAGE_RESTARTED" />
+    <data android:scheme="package" />
+    </intent-filter>
+    </receiver>
+    </application>
+```
 
-        <application android:name="SampleApplication" android:theme="@style/AppTheme" tools:replace="android:label">
-        <activity android:name="com.airwatch.gateway.ui.GatewaySplashActivity" android:label="@string/app_name">
-        <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
-        <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-        </activity>
-        <activity android:name=".MainActivity" android:label="@string/app_name" />
-        <receiver android:name="com.airwatch.sdk.AirWatchSDKBroadcastReceiver" android:permission="com.airwatch.sdk.BROADCAST">
-        <intent-filter>
-        <action android:name="com.airwatch.xamarinsampleapp.airwatchsdk.BROADCAST" />
-        </intent-filter>
-        <intent-filter>
-        <action android:name="android.intent.action.PACKAGE_ADDED" />
-        <action android:name="android.intent.action.PACKAGE_REMOVED" />
-        <action android:name="android.intent.action.PACKAGE_REPLACED" />
-        <action android:name="android.intent.action.PACKAGE_CHANGED" />
-        <action android:name="android.intent.action.PACKAGE_RESTARTED" />
-        <data android:scheme="package" />
-        </intent-filter>
-        </receiver>
-        </application>
+   4. For authentication, timeout and data-loss prevention features, all the application activities should extend from `Com.Airwatch.Gateway.UI.GatewayBaseActivity`. It allows the application to handle the lifecycle correctly and to manage the state of **Workspace ONE SDK**.
 
-    d) For authentication, timeout and data-loss prevention features, all the application activities should extend from `Com.Airwatch.Gateway.UI.GatewayBaseActivity`. It allows the application to handle the lifecycle correctly and to manage the state of **Workspace ONE SDK**.
+#### Note:
 
-#### Note
-
-    If the app cannot extend  AWApplication class, it can also use the delegate approach, more details at <https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/services/SDK_Android/GUID-B59ECD0A-92CF-4EC8-8A39-34B80F1D8788.html>
+    If the app cannot extend AWApplication class, it can also use the delegate approach, more details at <https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/services/SDK_Android/GUID-B59ECD0A-92CF-4EC8-8A39-34B80F1D8788.html>
 
 ### Features
 
@@ -345,18 +352,20 @@ To integrate Workspace ONE Android SDK Xamarin components into an existing Xamar
     c) In order to restrict OpenIn for documents, weblinks and email, use `UriOpenerFactory.Instance.OpenUri(context, uri)` and `UriOpenerFactory.Instance.OpenUri(context, filepath)` as shown in the sample app.
 5. Custom Settings: Inorder to get custom settings set on the console, SDKManager API needs to be used. In general any SDKManager API can be used in below manner:
 
-        Using SDKManager APIs
+    Using SDKManager APIs
 
-        try
-        {
-            // Below call will return SDKManager instance readily
-            // as it is already initialised as part of Login flow.
-            var sdkmanager = SDKManager.Init(this);
-            textView.Text = sdkmanager.CustomSettings;
-        } catch (AirWatchSDKException e)
-        {
-            // exception while using SDKManager API
-        }
+```c
+    try
+    {
+        // Below call will return SDKManager instance readily
+        // as it is already initialised as part of Login flow.
+        var sdkmanager = SDKManager.Init(this);
+        textView.Text = sdkmanager.CustomSettings;
+    } catch (AirWatchSDKException e)
+    {
+        // exception while using SDKManager API
+    }
+```
 
 ### Whitelist Signing Key
 
@@ -368,14 +377,14 @@ Workspace ONE allows whitelisting for both apps deployed internally or deployed 
 
 1. After building the application apk, sign it using your own specific app signing key.
 2. Upload the signed apk file to the Workspace ONE UEM Console as described below. Workspace ONE UEM Console extracts the application's public signing key and adds it to the whitelisted apps list
-    a) Log into the Workspace ONE UEM Console as an administrator.
-    b) Navigate to **Apps & Books > Applications > List View > Internal** and then choose *Add Application*.
-    c) Select *Upload > Local File*, add the APK file, and select Continue.
-    d) Select **More** and choose *SDK*.
-    e) Select the *Android Default Settings* profile in the SDK Profile field.
-    f) Select *Save and Assign* to continue to the *Assignment* page.
-    g) Assign the app to a smart group and select a *Push Mode*.
-    h) Select *Add*, and *Save & Publish* the app to complete the upload process.
+    1. Log into the Workspace ONE UEM Console as an administrator.
+    1. Navigate to **Apps & Books > Applications > List View > Internal** and then choose *Add Application*.
+    1. Select *Upload > Local File*, add the APK file, and select Continue.
+    1. Select **More** and choose *SDK*.
+    1. Select the *Android Default Settings* profile in the SDK Profile field.
+    1. Select *Save and Assign* to continue to the *Assignment* page.
+    1. Assign the app to a smart group and select a *Push Mode*.
+    1. Select *Add*, and *Save & Publish* the app to complete the upload process.
 
 #### Publicly Deployed Applications
 
@@ -393,4 +402,4 @@ In order for the **Intelligent Hub** to manage an app, it needs to be sent to th
 
 A. To resolve this error, applications need to use the AW wrapper classes provided for the WebView and HTTP clients in the `Com.Airwatch.Gateway.Clients` package. This is required because, on Android 10 (Q), the Android platform removed access to the [/proc/net file system](https://developer.android.com/about/versions/10/privacy/changes#proc-net-filesystem). This change caused the SDK's internal authentication process to fail. The AW wrapper classes present in the `Com.Airwatch.Gateway.Clients` package perform the authentication. 
 
-This solution is available from AWSDK nuget package version 1.4.0. Please refer to the Xamarin-AWSDK Sample application's [`TunnelActivity`](https://github.com/vmwareairwatchsdk/Xamarin-AWSDK/blob/master/samples/XamarinAndroidSampleApp/XamarinAndroidSampleApp/Tunneling/TunnelingActivity.cs) to see the usage of wrapper classes.
+This solution is available from AWSDK nuget package version 1.4.0. Please refer to the Workspace ONE UEM SDK Xamarin Android Sample application's [`TunnelActivity`](https://github.com/euc-releases/workspace-ONE-SDK-integration-samples/blob/main/IntegrationGuideForXamarinNative/samples/XamarinAndroidSampleApp/XamarinAndroidSampleApp/Tunneling/TunnelingActivity.cs) to see the usage of wrapper classes.
