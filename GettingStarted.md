@@ -1,11 +1,11 @@
 
-# VMware Workspace ONE Software Development Kit (SDK)
+# Omnissa Workspace ONE Software Development Kit (SDK)
 
 ## iOS And Android - Getting Started
 
 This document explains how to integrate the Workspace ONE SDKs into your Xamarin-built apps.
 
- For detailed information about the Workspace ONE SDK and managing internal apps, See the **VMware Workspace ONE UEM Mobile Application Management Guide** and the **VMware Workspace ONE SDK Technical Implementation Guides** located on the Workspace ONE Resources Portal at <https://my.workspaceone.com/products/Workspace-ONE-SDK>
+ For detailed information about the Workspace ONE SDK and managing internal apps, See the **Omnissa Workspace ONE UEM Mobile Application Management Guide** and the **Omnissa Workspace ONE SDK Technical Implementation Guides** located on the Workspace ONE Resources Portal at <https://my.workspaceone.com/products/Workspace-ONE-SDK>
 
 ## iOS Overview
 
@@ -231,7 +231,7 @@ To integrate Workspace ONE Android SDK Xamarin components into an existing Xamar
 ### Integrating Workspace ONE SDK
 
 1. While integrating **Workspace ONE SDK**, application method count may exceed 64k due to library dependencies. Enable Multi-Dex option for the app in Visual Studio.
-2. Add the VMware Workspace ONE SDK package from the NuGet Gallery.
+2. Add the Omnissa Workspace ONE SDK package from the NuGet Gallery.
 3. Add Xamarin.GooglePlayServices.Base (v71.1610.4) and Xamarin.GooglePlayServices.SafetyNet (v71.1600.4)
 4. Initialize Workspace ONE SDK:
     a) Extend the application class of the Xamarin app from **AWApplication** class of Workspace ONE SDK. Override the **MainActivityIntent** to return application's main landing activity. Move app's `onCreate()` business logic to `onPostCreate()`.
@@ -389,7 +389,7 @@ In order for the **Intelligent Hub** to manage an app, it needs to be sent to th
 
 ### Troubleshooting Guide
 
-**Q. On Android 10 (Q), HTTP requests fail with a "407 Proxy Authentication Required" error when the "VMware Tunnel Proxy" option is enabled.**
+**Q. On Android 10 (Q), HTTP requests fail with a "407 Proxy Authentication Required" error when the "Omnissa Tunnel Proxy" option is enabled.**
 
 A. To resolve this error, applications need to use the AW wrapper classes provided for the WebView and HTTP clients in the `Com.Airwatch.Gateway.Clients` package. This is required because, on Android 10 (Q), the Android platform removed access to the [/proc/net file system](https://developer.android.com/about/versions/10/privacy/changes#proc-net-filesystem). This change caused the SDK's internal authentication process to fail. The AW wrapper classes present in the `Com.Airwatch.Gateway.Clients` package perform the authentication. 
 

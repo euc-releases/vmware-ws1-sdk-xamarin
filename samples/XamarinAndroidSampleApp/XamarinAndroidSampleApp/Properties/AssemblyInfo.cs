@@ -1,4 +1,9 @@
-﻿using System.Reflection;
+﻿/*
+ * Copyright (c) 2025 Omnissa, LLC.
+ * -- Omnissa Public
+ */
+ 
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using Android.App;

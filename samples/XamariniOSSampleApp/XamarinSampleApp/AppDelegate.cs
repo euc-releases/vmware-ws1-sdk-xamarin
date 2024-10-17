@@ -1,7 +1,7 @@
-﻿//  Copyright © 2019 - 2022 VMware, Inc. All rights reserved. This product is protected
-//  by copyright and intellectual property laws in the United States and other
-//  countries as well as by international treaties. VMware products are covered
-//  by one or more patents listed at http://www.vmware.com/go/patents.
+﻿/*
+ * Copyright (c) 2025 Omnissa, LLC.
+ * -- Omnissa Public
+ */
 
 using Foundation;
 using UIKit;
